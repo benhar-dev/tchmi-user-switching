@@ -1,0 +1,12 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "TcHmiTimespanPicker": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "tchmi-timespan-picker",
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff"
+    }
+  }
+}

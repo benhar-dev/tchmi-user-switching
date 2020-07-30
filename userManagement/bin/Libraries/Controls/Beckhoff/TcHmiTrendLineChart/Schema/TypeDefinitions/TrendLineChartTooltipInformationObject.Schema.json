@@ -1,0 +1,23 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "TrendLineChartTooltipInformationObject": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+       "type": "object",
+        "title": "TrendLineChart tooltip information object",
+      "properties": {
+        "point": {
+          "type": "object",
+          "properties": {
+            "x": { "type": "number" },
+            "y": { "type": "number" }
+          },
+          "required": [ "x", "y" ]
+        },
+        "yAxis": { "$ref": "tchmi:framework#/definitions/ChartYAxisDefinition" },
+        "symbolname": { "type": "string" }
+      },
+        "required": [ "point", "symbolname" ]
+    }
+  }
+}

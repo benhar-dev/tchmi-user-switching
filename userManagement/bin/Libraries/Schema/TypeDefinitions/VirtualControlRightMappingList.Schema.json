@@ -1,0 +1,25 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "VirtualControlRightMappingList": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "engineeringColumns": [ "virtualControlRight", "controlRight" ],
+        "properties": {
+          "virtualControlRight": {
+            "description": "Name of the virtual control right.",
+            "type": "string",
+            "minLength": 1
+          },
+          "controlRight": {
+            "description": "Real control right.",
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

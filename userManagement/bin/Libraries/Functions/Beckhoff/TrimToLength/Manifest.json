@@ -1,0 +1,38 @@
+{
+   "$schema": "../../TcHmiFramework/Schema/Manifest.Schema.json",
+   "metadata": {
+      "industrialField": "",
+      "packageType": "FrameworkExtPrj",
+      "packageSubType": "Function",
+      "packageRelativePath": "Beckhoff/TrimToLength",
+      "packageNamespace": "Beckhoff",
+      "id": "TrimToLength",
+      "version": "1.10.1336.0",
+      "guid": "C9786C91-926E-4DC2-9E2B-907A931641C0",
+      "configurationName": "",
+      "platformName": "",
+      "creationTime": 1505289652,
+      "authors": "Beckhoff Automation GmbH & Co. KG",
+      "owners": "",
+      "summary": "",
+      "licenseUrl": "",
+      "projectUrl": "",
+      "iconUrl": "",
+      "requireLicenseAcceptance": false,
+      "description": "",
+      "releaseNotes": "",
+      "copyright": "Beckhoff Automation GmbH & Co. KG",
+      "tags": "TcHmiFramework, Framework",
+      "dependencies": [
+         {
+            "id": "TcHmiFramework",
+            "guid": "0F6C624F-3208-42CD-82E3-347633AF1B6F"
+         }
+      ],
+      "references": []
+   },
+   "files": [],
+   "symbols": [],
+   "flags": {},
+   "fileformat": 1
+}

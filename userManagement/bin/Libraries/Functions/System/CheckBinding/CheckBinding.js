@@ -1,0 +1,1 @@
+var TcHmi;!function(c){var n,i;n=c.Functions||(c.Functions={}),(i=n.System||(n.System={})).CheckBinding=function(n,i){return!!c.Binding.exists(i,n)},n.registerFrameworkFunction("CheckBinding",i.CheckBinding,"System/CheckBinding/CheckBinding.function.json")}(TcHmi=TcHmi||{});

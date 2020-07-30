@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<!--
+  Copyright (C) 2020     
+  For any information visit: 
+
+  Deployment
+  +++++++++++++++++++++++++++
+	Version: 1.0.0.0
+	Date: Jul Thu 30, 2020, Time: 22:51:57
+-->
+<html lang="en">
+<head>
+  <title>Please enter your Title...</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta http-equiv="cache-control" content="no-cache">
+  <!-- target-densitydpi=device-dpi -->
+  <meta name="viewport" content="width=device-width">
+  <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+  <meta name="google" content="notranslate">
+  <link rel="manifest" crossorigin="use-credentials" href="Properties/tchmimanifest.json">
+  <link rel="icon" href="./Favicon.ico">
+  <link rel="stylesheet" type="text/css" href="./Libraries/Style.css">
+
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/System/TcHmiControl/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiButton/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiDatagrid/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiTextblock/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiTextbox/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiCombobox/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiTimespanPicker/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/System/TcHmiContainerControl/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiDateTimePicker/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiCheckbox/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/System/TcHmiPartial/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiBarChart/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiEllipse/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiEventGrid/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiIFrame/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiImage/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiKeyboard/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiLine/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiLinearGauge/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiLineChart/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiPolygon/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiRadialGauge/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiRectangle/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiTrendLineChart/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/Beckhoff/TcHmiVideo/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/System/TcHmiContainer/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/System/TcHmiGrid/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/System/TcHmiHtmlHost/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/System/TcHmiRegion/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/System/TcHmiUserControlHost/Style.css">
+<link rel="stylesheet" type="text/css" href="Libraries/Controls/System/TcHmiView/Style.css">
+
+
+  <script>
+	TCHMI_CONSOLE_LOG_LEVEL = 2;
+	TCHMI_CONSOLE_LOG_TCHMISERVER_MESSAGES = false;
+	TCHMI_CONSOLE_LOG_DESIGNER_MODE_COM_MESSAGES = false;
+  </script>
+  <script src="./Libraries/Object.js"></script>
+<script src="./Libraries/Lib/jquery/jquery.js"></script>
+<script src="./Libraries/Lib/acorn/acorn.js"></script>
+<script src="./Libraries/Lib/TcHmiCharting/TcHmiCharting.js"></script>
+<script src="./Libraries/TcHmi.js"></script>
+
+<script src="Libraries/Controls/System/TcHmiControl/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiButton/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiToggleButton/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiDatagrid/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiTextblock/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiTextbox/Source.js"></script>
+<script src="Libraries/Controls/System/TcHmiContainerControl/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiCombobox/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiTimespanPicker/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiDateTimePicker/Source.js"></script>
+<script src="Libraries/Controls/System/TcHmiPartial/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiCheckbox/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiBarChart/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiEllipse/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiEventGrid/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiIFrame/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiImage/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiKeyboard/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiLine/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiLinearGauge/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiLineChart/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiPolygon/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiRadialGauge/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiRectangle/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiTrendLineChart/Source.js"></script>
+<script src="Libraries/Controls/Beckhoff/TcHmiVideo/Source.js"></script>
+<script src="Libraries/Controls/System/TcHmiContainer/Source.js"></script>
+<script src="Libraries/Controls/System/TcHmiContent/Source.js"></script>
+<script src="Libraries/Controls/System/TcHmiGrid/Source.js"></script>
+<script src="Libraries/Controls/System/TcHmiHtmlHost/Source.js"></script>
+<script src="Libraries/Controls/System/TcHmiRegion/Source.js"></script>
+<script src="Libraries/Controls/System/TcHmiUserControl/Source.js"></script>
+<script src="Libraries/Controls/System/TcHmiUserControlHost/Source.js"></script>
+<script src="Libraries/Controls/System/TcHmiView/Source.js"></script>
+<script src="./Scripts/LoginUser.js"></script>
+<script src="./Libraries/Functions/Beckhoff/AlarmStateClassesProvider/AlarmStateClassesProvider.js"></script>
+<script src="./Libraries/Functions/Beckhoff/Concatenate/Concatenate.js"></script>
+<script src="./Libraries/Functions/Beckhoff/ConvertBooleanToEnum/ConvertBooleanToEnum.js"></script>
+<script src="./Libraries/Functions/Beckhoff/ConvertBooleanToVisibility/ConvertBooleanToVisibility.js"></script>
+<script src="./Libraries/Functions/Beckhoff/Decrement/Decrement.js"></script>
+<script src="./Libraries/Functions/Beckhoff/FormatString/FormatString.js"></script>
+<script src="./Libraries/Functions/Beckhoff/GaugeValueFormatter/GaugeValueFormatter.js"></script>
+<script src="./Libraries/Functions/Beckhoff/GetElementByIndex/GetElementByIndex.js"></script>
+<script src="./Libraries/Functions/Beckhoff/Increment/Increment.js"></script>
+<script src="./Libraries/Functions/Beckhoff/LineChartTooltipFormatter/LineChartTooltipFormatter.js"></script>
+<script src="./Libraries/Functions/Beckhoff/SetElementByIndex/SetElementByIndex.js"></script>
+<script src="./Libraries/Functions/Beckhoff/ToDateString/ToDateString.js"></script>
+<script src="./Libraries/Functions/Beckhoff/ToDateTimeString/ToDateTimeString.js"></script>
+<script src="./Libraries/Functions/Beckhoff/ToLowerCase/ToLowerCase.js"></script>
+<script src="./Libraries/Functions/Beckhoff/ToTimeString/ToTimeString.js"></script>
+<script src="./Libraries/Functions/Beckhoff/ToUpperCase/ToUpperCase.js"></script>
+<script src="./Libraries/Functions/Beckhoff/TrimToLength/TrimToLength.js"></script>
+<script src="./Libraries/Functions/System/ActivateRecipe/ActivateRecipe.js"></script>
+<script src="./Libraries/Functions/System/CheckAccess/CheckAccess.js"></script>
+<script src="./Libraries/Functions/System/CheckBinding/CheckBinding.js"></script>
+<script src="./Libraries/Functions/System/CheckBindingEx/CheckBindingEx.js"></script>
+<script src="./Libraries/Functions/System/CreateBinding/CreateBinding.js"></script>
+<script src="./Libraries/Functions/System/ForceLogout/ForceLogout.js"></script>
+<script src="./Libraries/Functions/System/GetLocale/GetLocale.js"></script>
+<script src="./Libraries/Functions/System/GetRegisteredLocales/GetRegisteredLocales.js"></script>
+<script src="./Libraries/Functions/System/GetTheme/GetTheme.js"></script>
+<script src="./Libraries/Functions/System/GotoLoginPage/GoToLoginPage.js"></script>
+<script src="./Libraries/Functions/System/Login/Login.js"></script>
+<script src="./Libraries/Functions/System/Logout/Logout.js"></script>
+<script src="./Libraries/Functions/System/RemoveBinding/RemoveBinding.js"></script>
+<script src="./Libraries/Functions/System/SetAttributeToThemeValue/SetAttributeToThemeValue.js"></script>
+<script src="./Libraries/Functions/System/SetLocale/SetLocale.js"></script>
+<script src="./Libraries/Functions/System/SetTheme/SetTheme.js"></script>
+<script src="./Libraries/Functions/System/TeachAsNewRecipe/TeachAsNewRecipe.js"></script>
+<script src="./Libraries/Functions/System/TeachRecipe/TeachRecipe.js"></script>
+</head>
+<body>
+	<noscript style="font-size: large; padding: 50px;">
+		TwinCAT HMI needs to execute JavaScript Code in the browser. 
+		Please enable JavaScript in this browser to use the HMI.
+	</noscript>
+	
+</body>
+</html>

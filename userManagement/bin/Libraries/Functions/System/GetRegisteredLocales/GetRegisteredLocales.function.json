@@ -1,0 +1,28 @@
+{
+   "$schema": "../TcHmiFramework/Schema/FunctionDescription.Schema.json",
+   "version": {
+      "full": "1.10.1336.0",
+      "major": 1,
+      "minor": 10,
+      "build": 1336,
+      "revision": 0
+   },
+   "dependencyFiles": [
+      {
+         "name": "GetRegisteredLocales.js",
+         "type": "JavaScript",
+         "description": ""
+      }
+   ],
+   "function": {
+      "name": "GetRegisteredLocales",
+      "displayName": "GetRegisteredLocales",
+      "visible": true,
+      "category": "Locale",
+      "description": "Returns the list of registered locales as array of string.",
+      "returnValue": {
+         "type": "tchmi:general#/definitions/Array"
+      },
+      "arguments": []
+   }
+}

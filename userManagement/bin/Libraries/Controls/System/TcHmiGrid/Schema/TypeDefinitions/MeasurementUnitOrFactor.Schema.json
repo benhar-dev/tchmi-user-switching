@@ -1,0 +1,11 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "MeasurementUnitOrFactor": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "description": "Defines if the number defines a pixel value (px), percent value (42%) or grow factor (2).\nThe grow factor determines how much the items will grow relative to the rest of the items when positive free space is distributed.",
+      "type": "string",
+      "enum": [ "factor", "px", "%" ]
+    }
+  }
+}

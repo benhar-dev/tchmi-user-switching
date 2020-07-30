@@ -1,0 +1,67 @@
+{
+   "$schema": "../TcHmiFramework/Schema/FunctionDescription.Schema.json",
+   "version": {
+      "full": "1.10.1336.0",
+      "major": 1,
+      "minor": 10,
+      "build": 1336,
+      "revision": 0
+   },
+   "dependencyFiles": [
+      {
+         "name": "Increment.js",
+         "type": "JavaScript",
+         "description": ""
+      }
+   ],
+   "function": {
+      "name": "Increment",
+      "displayName": "Increment",
+      "visible": true,
+      "description": "Increment a binding value.",
+      "category": "Data Conversion",
+      "injectContextObject": true,
+      "waitMode": "Asynchronous",
+      "returnValue": null,
+      "arguments": [
+         {
+            "name": "ctx",
+            "displayName": "ctx",
+            "type": "tchmi:framework#/definitions/ContextReference",
+            "description": "Context Reference",
+            "required": true,
+            "bindable": false
+         },
+         {
+            "name": "value",
+            "displayName": "value",
+            "type": "tchmi:framework#/definitions/IncrementValueSymbol",
+            "description": "Value to be incremented",
+            "required": true,
+            "bindable": true
+         },
+         {
+            "name": "maxValue",
+            "displayName": "maxValue",
+            "type": "tchmi:general#/definitions/Number",
+            "description": "Maximum value(inclusive) to which the symbol will incremented",
+            "required": false,
+            "bindable": true
+         },
+         {
+            "name": "stepWidth",
+            "displayName": "stepWidth",
+            "type": "tchmi:general#/definitions/Number",
+            "description": "Used stepwidth for increment",
+            "required": false,
+            "bindable": true
+         }
+      ]
+   },
+   "dataTypes": [
+      {
+         "name": "tchmi:framework#/definitions/IncrementValueSymbol",
+         "schema": "Schema/TypeDefinitions/IncrementValueSymbol.Schema.json"
+      }
+   ]
+}

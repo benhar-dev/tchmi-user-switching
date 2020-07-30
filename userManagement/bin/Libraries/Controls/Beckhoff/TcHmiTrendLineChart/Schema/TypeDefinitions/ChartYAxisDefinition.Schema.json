@@ -1,0 +1,231 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "ChartYAxisDefinition": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "ChartYAxisDefinition",
+      "type": "object",
+      "propertiesMeta": [
+        {
+          "name": "labelFontColor",
+          "category": "Colors",
+          "displayName": "Label font color",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": {
+            "color": "#4794da"
+          }
+        },
+        {
+          "name": "axisColor",
+          "category": "Colors",
+          "displayName": "Axis color",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": {
+            "color": "#4794da"
+          }
+        },
+        {
+          "name": "axisNameFontColor",
+          "category": "Colors",
+          "displayName": "Axis name font color",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": {
+            "color": "#4794da"
+          }
+        },
+        {
+          "name": "id",
+          "category": "General",
+          "displayName": "Id",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": 1
+        },
+        {
+          "name": "position",
+          "category": "General",
+          "displayName": "Position",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": "Left"
+        },
+        {
+          "name": "mainTickMinValue",
+          "category": "General",
+          "displayName": "Main-tick min-value",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": 0
+        },
+        {
+          "name": "mainTickMaxValue",
+          "category": "General",
+          "displayName": "Main-tick max-value",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": 100
+        },
+        {
+          "name": "autoScaling",
+          "category": "General",
+          "displayName": "Auto scaling",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": false
+        },
+        {
+          "name": "decimalPlaces",
+          "category": "General",
+          "displayName": "decimalPlaces",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": 2
+        },
+        {
+          "name": "showLabels",
+          "category": "General",
+          "displayName": "showLabels",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": true
+        },
+        {
+          "name": "showAxisName",
+          "category": "General",
+          "displayName": "Show axis name",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": true
+        },
+        {
+          "name": "axisName",
+          "category": "General",
+          "displayName": "Axis name",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": "y axis 1"
+        },
+        {
+          "name": "axisNameFontFamily",
+          "category": "General",
+          "displayName": "Axis name font-family",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": null
+        },
+        {
+          "name": "axisNameFontSize",
+          "category": "General",
+          "displayName": "Axis name font-size",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": 15
+        },
+         {
+            "name": "axisNameFontSizeUnit",
+            "refTo": "axisNameFontSize",
+            "category": "General",
+            "displayName": "Axis name font-size unit",
+            "displayPriority": 10,
+            "description": "",
+            "defaultValue": null,
+            "defaultValueInternal": "px"
+         },
+        {
+          "name": "axisNameFontWeight",
+          "category": "General",
+          "displayName": "Axis name font-weight",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": "Bold"
+        },
+        {
+          "name": "unit",
+          "category": "General",
+          "displayName": "Unit",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": null
+        }
+      ],
+      "properties": {
+        "labelFontColor": {
+          "$ref": "tchmi:framework#/definitions/SolidColor"
+        },
+        "axisColor": {
+          "$ref": "tchmi:framework#/definitions/SolidColor"
+        },
+        "axisNameFontColor": {
+          "$ref": "tchmi:framework#/definitions/SolidColor"
+        },
+        "id": {
+          "type": "number"
+        },
+        "position": {
+          "type": "string",
+          "enum": [
+            "Left",
+            "Right"
+          ]
+        },
+        "mainTickMinValue": {
+          "type": "number"
+        },
+        "mainTickMaxValue": {
+          "type": "number"
+        },
+        "autoScaling": {
+          "type": "boolean"
+        },
+        "decimalPlaces": {
+          "type": "number",
+          "minimum": 0
+        },
+        "showLabels": {
+          "type": "boolean"
+        },
+        "showAxisName": {
+          "type": "boolean"
+        },
+        "axisName": {
+          "type": "string"
+        },
+        "axisNameFontFamily": {
+          "$ref": "tchmi:framework#/definitions/FontFamily"
+        },
+        "axisNameFontSize": {
+          "$ref": "tchmi:framework#/definitions/MeasurementValue"
+        },
+        "axisNameFontSizeUnit": {
+          "$ref": "tchmi:framework#/definitions/FontSizeUnit"
+        },
+        "axisNameFontWeight": {
+          "$ref": "tchmi:framework#/definitions/FontWeight"
+        },
+        "unit": {
+          "type": "string"
+        }
+      },
+      "required": [ "id", "position" ]
+    }
+  }
+}

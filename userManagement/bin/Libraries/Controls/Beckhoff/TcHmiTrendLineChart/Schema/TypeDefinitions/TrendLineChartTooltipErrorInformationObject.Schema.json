@@ -1,0 +1,18 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "TrendLineChartTooltipErrorInformationObject": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "type": "object",
+      "title": "TrendLineChart tooltip error information object",
+      "properties": {
+          "yAxis": { "$ref": "tchmi:framework#/definitions/ChartYAxisDefinition" },
+          "beginTime": { "type": "number" },
+          "endTime": { "type": "number" },
+          "errorCode": { "type": "number" },
+          "symbolname": { "type": "string" }
+      },
+      "required": [ "symbolname" ]
+    }
+  }
+}

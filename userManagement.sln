@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1145
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FE7A1B72-C5B7-4D7C-BB7D-76384D4DE8E1}") = "userManagement", "userManagement\userManagement.hmiproj", "{9F80ACFC-03BD-47B7-B452-5E223C793D8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|TwinCAT HMI = Debug|TwinCAT HMI
+		Release|TwinCAT HMI = Release|TwinCAT HMI
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F80ACFC-03BD-47B7-B452-5E223C793D8F}.Debug|TwinCAT HMI.ActiveCfg = Debug|TwinCAT HMI
+		{9F80ACFC-03BD-47B7-B452-5E223C793D8F}.Debug|TwinCAT HMI.Build.0 = Debug|TwinCAT HMI
+		{9F80ACFC-03BD-47B7-B452-5E223C793D8F}.Release|TwinCAT HMI.ActiveCfg = Release|TwinCAT HMI
+		{9F80ACFC-03BD-47B7-B452-5E223C793D8F}.Release|TwinCAT HMI.Build.0 = Release|TwinCAT HMI
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46DA7CC6-9A55-4DA5-B885-16F806BDBB7E}
+	EndGlobalSection
+EndGlobal

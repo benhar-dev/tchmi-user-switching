@@ -1,0 +1,1 @@
+var TcHmi;!function(e){var t,n;t=e.Functions||(e.Functions={}),(n=t.System||(t.System={})).GetTheme=function(){return e.Theme.get()},t.registerFrameworkFunction("GetTheme",n.GetTheme,"System/GetTheme/GetTheme.function.json")}(TcHmi=TcHmi||{});

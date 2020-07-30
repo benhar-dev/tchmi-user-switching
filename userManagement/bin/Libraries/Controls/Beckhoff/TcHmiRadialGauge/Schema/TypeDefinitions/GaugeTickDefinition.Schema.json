@@ -1,0 +1,21 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "GaugeTickDefinition": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "GaugeTickDefinition",
+	    "type": "object",
+	    "properties": {
+		    "mainTickRange": {
+			    "type": "number",
+			    "minimum": 0
+		    },
+		    "subTickRange": {
+			    "type": "number",
+			    "minimum": 0
+		    }
+	    },
+	    "required": [ "mainTickRange", "subTickRange" ]
+    }
+  }
+}

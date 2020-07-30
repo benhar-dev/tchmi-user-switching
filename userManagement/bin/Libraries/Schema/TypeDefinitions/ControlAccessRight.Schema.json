@@ -1,0 +1,42 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "ControlAccessRight": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "type": "object",
+      "description": "An access right which is checked by controls. In the Schema a defaultValue of true mean access is granted, false is denied, null is ask parent.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Name of the access definition in the HTML."
+        },
+        "displayName": {
+          "type": "string",
+          "description": "Name which should be presented the user."
+        },
+        "visible": {
+          "type": "boolean",
+          "description": "Determine if an access definition is shown to the user."
+        },
+        "description": {
+          "type": "string",
+          "description": "A long description of this access definition."
+        },
+        "defaultValueInternal": {
+          "oneOf": [
+            {
+              "type": "boolean"
+
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Defines the default of this control access right. This will be used if the check for this access right does not return a result. true mean access is granted, false is denied, null is ask parent."
+        }
+      },
+      "required": [ "name", "displayName", "visible", "defaultValueInternal" ]
+    }
+  }
+}

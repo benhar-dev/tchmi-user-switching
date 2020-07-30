@@ -1,0 +1,35 @@
+{
+   "$schema": "../TcHmiFramework/Schema/FunctionDescription.Schema.json",
+   "version": {
+      "full": "1.10.1336.0",
+      "major": 1,
+      "minor": 10,
+      "build": 1336,
+      "revision": 0
+   },
+   "dependencyFiles": [
+      {
+         "name": "SetLocale.js",
+         "type": "JavaScript",
+         "description": ""
+      }
+   ],
+   "function": {
+      "name": "SetLocale",
+      "displayName": "SetLocale",
+      "visible": true,
+      "category": "Locale",
+      "description": "Sets the application locale.",
+      "returnValue": null,
+      "arguments": [
+         {
+            "name": "locale",
+            "displayName": "locale",
+            "type": "tchmi:general#/definitions/ProjectLocale",
+            "description": "Locale",
+            "required": true,
+            "bindable": true
+         }
+      ]
+   }
+}

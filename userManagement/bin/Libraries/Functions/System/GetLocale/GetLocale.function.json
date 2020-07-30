@@ -1,0 +1,29 @@
+{
+   "$schema": "../TcHmiFramework/Schema/FunctionDescription.Schema.json",
+   "version": {
+      "full": "1.10.1336.0",
+      "major": 1,
+      "minor": 10,
+      "build": 1336,
+      "revision": 0
+   },
+   "dependencyFiles": [
+      {
+         "name": "GetLocale.js",
+         "type": "JavaScript",
+         "description": ""
+      }
+   ],
+   "function": {
+      "name": "GetLocale",
+      "displayName": "GetLocale",
+      "visible": true,
+      "category": "Locale",
+      "description": "Returns the current locale string for texts or undefined if no localized Symbol is available.",
+      "returnValue": {
+         "type": "tchmi:general#/definitions/ProjectLocale",
+         "description": "Returns the current locale."
+      },
+      "arguments": []
+   }
+}

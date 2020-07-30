@@ -1,0 +1,26 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "VideoSourceList": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "VideoSourceList",
+      "description": "Video Source List",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "engineeringColumns": [ "source", "type" ],
+        "properties": {
+          "source": {
+            "$ref": "tchmi:framework#/definitions/Path"
+          },
+          "type": {
+            "type": "string",
+            "category": "Common",
+            "enum": [ "", "video/mp4", "video/webm", "video/ogg", "application/dash+xml", "application/vnd.apple.mpegurl" ]
+          }
+        },
+        "required": [ "source" ]
+      }
+    }
+  }
+}

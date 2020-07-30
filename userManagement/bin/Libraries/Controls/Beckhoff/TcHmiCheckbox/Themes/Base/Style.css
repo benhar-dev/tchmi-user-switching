@@ -1,0 +1,17 @@
+﻿/** Styles for the theme: Base */
+
+/* Style for the main element */
+.tchmi-checkbox {
+    background-color: white;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.02), inset 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.tchmi-checkbox-toggle-state-icon {
+    stroke: white;
+}
+
+
+/* class tchmi-checkbox-active will be set/unset in the control */
+.tchmi-checkbox.tchmi-checkbox-active {
+    background: linear-gradient(to bottom right, #2774ba, #4794da 20%);
+}

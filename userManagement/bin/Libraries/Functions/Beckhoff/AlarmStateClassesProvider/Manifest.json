@@ -1,0 +1,38 @@
+{
+   "$schema": "../../TcHmiFramework/Schema/Manifest.Schema.json",
+   "metadata": {
+      "industrialField": "",
+      "packageType": "FrameworkExtPrj",
+      "packageSubType": "Function",
+      "packageRelativePath": "Beckhoff/AlarmStateClassesProvider",
+      "packageNamespace": "Beckhoff",
+      "id": "AlarmStateClassesProvider",
+      "version": "1.10.1336.0",
+      "guid": "676C5C28-CB33-4F31-BFC8-7AC16F68C83E",
+      "configurationName": "",
+      "platformName": "",
+      "creationTime": 1547561086,
+      "authors": "Beckhoff Automation GmbH & Co. KG",
+      "owners": "",
+      "summary": "",
+      "licenseUrl": "",
+      "projectUrl": "",
+      "iconUrl": "",
+      "requireLicenseAcceptance": false,
+      "description": "",
+      "releaseNotes": "",
+      "copyright": "Beckhoff Automation GmbH & Co. KG",
+      "tags": "TcHmiFramework, Framework",
+      "dependencies": [
+         {
+            "id": "TcHmiFramework",
+            "guid": "0F6C624F-3208-42CD-82E3-347633AF1B6F"
+         }
+      ],
+      "references": []
+   },
+   "files": [],
+   "symbols": [],
+   "flags": {},
+   "fileformat": 1
+}

@@ -1,0 +1,42 @@
+{
+   "$schema": "../../../TcHmiFramework/Schema/Manifest.Schema.json",
+   "metadata": {
+      "industrialField": "",
+      "packageType": "FrameworkExtPrj",
+      "packageSubType": "Control",
+      "packageRelativePath": "Beckhoff/TcHmiRadialGauge",
+      "packageNamespace": "Beckhoff",
+      "id": "TcHmiRadialGauge",
+      "version": "1.10.1336.0",
+      "guid": "2C476B68-BE53-4266-88A0-339C82DF8FB4",
+      "configurationName": "",
+      "platformName": "",
+      "creationTime": 1505289652,
+      "authors": "Beckhoff Automation GmbH & Co. KG",
+      "owners": "",
+      "summary": "",
+      "licenseUrl": "",
+      "projectUrl": "",
+      "iconUrl": "",
+      "requireLicenseAcceptance": false,
+      "description": "",
+      "releaseNotes": "",
+      "copyright": "Beckhoff Automation GmbH & Co. KG",
+      "tags": "TcHmiFramework, Framework",
+      "dependencies": [
+         {
+            "id": "TcHmiControl",
+            "guid": "3A201780-1C37-40FC-8943-1E873EA4408D"
+         },
+         {
+            "id": "GaugeValueFormatter",
+            "guid": "E12E9A23-61B5-4DF6-9746-45413A6FF13A"
+         }
+      ],
+      "references": []
+   },
+   "files": [],
+   "symbols": [],
+   "flags": {},
+   "fileformat": 1
+}

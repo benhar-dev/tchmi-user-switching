@@ -1,0 +1,66 @@
+{
+   "$schema": "../../../TcHmiFramework/Schema/Manifest.Schema.json",
+   "metadata": {
+      "industrialField": "",
+      "packageType": "FrameworkExtPrj",
+      "packageSubType": "Control",
+      "packageRelativePath": "Beckhoff/TcHmiEventGrid",
+      "packageNamespace": "Beckhoff",
+      "id": "TcHmiEventGrid",
+      "version": "1.10.1336.0",
+      "guid": "FC2A511C-3A1F-4EB5-9F38-3FEA5E53659C",
+      "configurationName": "",
+      "platformName": "",
+      "creationTime": 1505289652,
+      "authors": "Beckhoff Automation GmbH & Co. KG",
+      "owners": "",
+      "summary": "",
+      "licenseUrl": "",
+      "projectUrl": "",
+      "iconUrl": "",
+      "requireLicenseAcceptance": false,
+      "description": "",
+      "releaseNotes": "",
+      "copyright": "Beckhoff Automation GmbH & Co. KG",
+      "tags": "TcHmiFramework, Framework",
+      "dependencies": [
+         {
+            "id": "TcHmiControl",
+            "guid": "3A201780-1C37-40FC-8943-1E873EA4408D"
+         },
+         {
+            "id": "TcHmiButton",
+            "guid": "33C086CF-D61B-468E-9594-DBBDECBB5544"
+         },
+         {
+            "id": "TcHmiToggleButton",
+            "guid": "C4D4B747-DC44-43BF-8974-A768010769D8"
+         },
+         {
+            "id": "TcHmiDatagrid",
+            "guid": "645403A3-36CA-4A07-9CA7-1C64AFA0DEEA"
+         },
+         {
+            "id": "TcHmiTextbox",
+            "guid": "0EF6A87F-EA10-4113-BE10-65D167112489"
+         },
+         {
+            "id": "TcHmiCombobox",
+            "guid": "3D073CCC-1F87-4E31-BD96-A9321F4406E8"
+         },
+         {
+            "id": "TcHmiDateTimePicker",
+            "guid": "32FD9232-5EC3-4CBF-80DA-BD935439FF2D"
+         },
+         {
+            "id": "TcHmiCheckbox",
+            "guid": "C6BB7087-1CA4-41DF-BE16-0F6EE642B49B"
+         }
+      ],
+      "references": []
+   },
+   "files": [],
+   "symbols": [],
+   "flags": {},
+   "fileformat": 1
+}

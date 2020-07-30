@@ -1,0 +1,61 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "ListItem": {
+      "title": "List Item",
+      "description": "List Item List",
+      "type": "object",
+      "engineeringColumns": [ "index", "text", "value" ],
+      "propertiesMeta": [
+        {
+          "name": "index",
+          "displayName": "Index",
+          "category": "General",
+          "displayPriority": 10,
+          "description": "Index for this entry",
+          "defaultValue": null,
+          "defaultValueInternal": null
+        },
+        {
+          "name": "text",
+          "displayName": "Text",
+          "category": "General",
+          "displayPriority": 10,
+          "description": "Text to show for this entry",
+          "defaultValue": null,
+          "defaultValueInternal": null
+        },
+        {
+          "name": "value",
+          "displayName": "Value",
+          "category": "General",
+          "displayPriority": 10,
+          "description": "Value which is associated to this entry",
+          "defaultValue": null,
+          "defaultValueInternal": null
+        }
+      ],
+      "properties": {
+        "index": {
+          "type": "number"
+        },
+        "text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "boolean"
+            }
+          ]
+        },
+        "value": { }
+      },
+      "required": [ "text" ]
+
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+   "$schema": "../../../TcHmiFramework/Schema/Manifest.Schema.json",
+   "metadata": {
+      "industrialField": "",
+      "packageType": "FrameworkExtPrj",
+      "packageSubType": "Control",
+      "packageRelativePath": "Beckhoff/TcHmiTextblock",
+      "packageNamespace": "Beckhoff",
+      "id": "TcHmiTextblock",
+      "version": "1.10.1336.0",
+      "guid": "C5DAAA56-A4E7-41EF-A9CF-36988BA37D3D",
+      "configurationName": "",
+      "platformName": "",
+      "creationTime": 1505289652,
+      "authors": "Beckhoff Automation GmbH & Co. KG",
+      "owners": "",
+      "summary": "",
+      "licenseUrl": "",
+      "projectUrl": "",
+      "iconUrl": "",
+      "requireLicenseAcceptance": false,
+      "description": "",
+      "releaseNotes": "",
+      "copyright": "Beckhoff Automation GmbH & Co. KG",
+      "tags": "TcHmiFramework, Framework",
+      "dependencies": [
+         {
+            "id": "TcHmiControl",
+            "guid": "3A201780-1C37-40FC-8943-1E873EA4408D"
+         }
+      ],
+      "references": []
+   },
+   "files": [],
+   "symbols": [],
+   "flags": {},
+   "fileformat": 1
+}

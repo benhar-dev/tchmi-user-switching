@@ -1,0 +1,1 @@
+var TcHmi;!function(n){var c,e;c=n.Functions||(n.Functions={}),(e=c.System||(c.System={})).CheckAccess=function(c,e){if(!c||!e)return!1;var s=n.Access.checkAccess(c,e);return null!==s&&s},c.registerFrameworkFunction("CheckAccess",e.CheckAccess,"System/CheckAccess/CheckAccess.function.json")}(TcHmi=TcHmi||{});

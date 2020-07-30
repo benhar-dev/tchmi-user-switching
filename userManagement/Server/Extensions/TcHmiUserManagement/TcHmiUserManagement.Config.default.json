@@ -1,0 +1,19 @@
+{
+    "USERS": {
+        "BaseUser": {
+            "ENABLED": true,
+            "PASSWORD": "5b68ca6cf84ba3dbc1b09d07d74a652d874b5c54f509c54ec4331c7b46af8dad",
+            "SALT": "qg22BKsFSVxrg6JFOiUwrZBZyup9uSWxCWj4BywOMRNqYqGhqk0X2XEJS0AIvnOqEFPGpzqO5t95iOZ3rk7uAA=="
+        },
+        "__SystemAdministrator": {
+            "ENABLED": false,
+            "PASSWORD": "",
+            "SALT": ""
+        },
+        "__SystemGuest": {
+            "ENABLED": true,
+            "PASSWORD": "",
+            "SALT": ""
+        }
+    }
+}

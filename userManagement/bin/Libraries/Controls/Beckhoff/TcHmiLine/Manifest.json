@@ -1,0 +1,38 @@
+{
+   "$schema": "../../../TcHmiFramework/Schema/Manifest.Schema.json",
+   "metadata": {
+      "industrialField": "",
+      "packageType": "FrameworkExtPrj",
+      "packageSubType": "Control",
+      "packageRelativePath": "Beckhoff/TcHmiLine",
+      "packageNamespace": "Beckhoff",
+      "id": "TcHmiLine",
+      "version": "1.10.1336.0",
+      "guid": "2F8BCEB9-C0E0-41EE-8A00-6DF805DF54C3",
+      "configurationName": "",
+      "platformName": "",
+      "creationTime": 1505289652,
+      "authors": "Beckhoff Automation GmbH & Co. KG",
+      "owners": "",
+      "summary": "",
+      "licenseUrl": "",
+      "projectUrl": "",
+      "iconUrl": "",
+      "requireLicenseAcceptance": false,
+      "description": "",
+      "releaseNotes": "",
+      "copyright": "Beckhoff Automation GmbH & Co. KG",
+      "tags": "TcHmiFramework, Framework",
+      "dependencies": [
+         {
+            "id": "TcHmiControl",
+            "guid": "3A201780-1C37-40FC-8943-1E873EA4408D"
+         }
+      ],
+      "references": []
+   },
+   "files": [],
+   "symbols": [],
+   "flags": {},
+   "fileformat": 1
+}

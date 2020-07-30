@@ -1,0 +1,11 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "ChartMouseMode": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "ChartMouseMode",
+      "type": "string",
+      "enum": [ "ZoomX", "ZoomXY", "PanX", "PanXY" ]
+    }
+  }
+}

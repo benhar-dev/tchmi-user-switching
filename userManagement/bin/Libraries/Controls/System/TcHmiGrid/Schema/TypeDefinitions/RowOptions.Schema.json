@@ -1,0 +1,116 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "RowOptions": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "RowOptions",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "Row definition",
+        "description": "Defines one row.",
+        "engineeringColumns": [ "height", "heightUnit", "heightMode" ],
+        "propertiesMeta": [
+          {
+            "name": "height",
+            "category": "Layout",
+            "displayName": "Height",
+            "displayPriority": 10,
+            "description": "Defines height of the cells of this row in the grid. Can be a pixel value (42px), percent value (42%), a grow factor (1) or 'auto' (equivalent to grow factor 1).\nThe grow factor determines how much the items will grow relative to the rest of the items when positive free space is distributed.",
+            "defaultValue": null,
+            "defaultValueInternal": 1
+          },
+         {
+            "name": "heightUnit",
+            "refTo": "height",
+            "category": "Layout",
+            "displayName": "HeightUnit",
+            "displayPriority": 10,
+            "description": "Defines if the number defines a pixel value (px), percent value (42%) or grow factor (2).",
+            "defaultValue": null,
+            "defaultValueInternal": "factor"
+         },
+          {
+            "name": "heightMode",
+            "category": "Layout",
+            "displayName": "HeightMode",
+            "displayPriority": 30,
+            "description": "Defines if the height is taken from the height value or calculated from child controls in row.",
+            "defaultValue": null,
+            "defaultValueInternal": "Value"
+          },
+         {
+            "name": "maxHeight",
+            "category": "Layout",
+            "displayName": "MaxHeight",
+            "displayPriority": 60,
+            "description": "Defines maximal height of the row in the grid. Can be a pixel value (42px), percent value (42%).\nmax-height overrides height, but min-height overrides max-height.",
+            "defaultValueInternal": null
+         },
+         {
+            "name": "maxHeightUnit",
+            "refTo": "maxHeight",
+            "category": "Layout",
+            "displayName": "MaxHeightUnit",
+            "displayPriority": 60,
+            "description": "",
+            "defaultValueInternal": "px"
+         },
+         {
+            "name": "minHeight",
+            "category": "Layout",
+            "displayName": "MinHeight",
+            "displayPriority": 61,
+            "description": "Defines minimal height of the row in the grid. Can be a pixel value (42px), percent value (42%).\nmax-height overrides height, but min-height overrides max-height.",
+            "defaultValueInternal": null
+         },
+         {
+            "name": "minHeightUnit",
+            "refTo": "minHeight",
+            "category": "Layout",
+            "displayName": "MinHeightUnit",
+            "displayPriority": 61,
+            "description": "",
+            "defaultValueInternal": "px"
+         },
+          {
+            "name": "overflow",
+            "category": "Layout",
+            "displayName": "Overflow",
+            "displayPriority": 65,
+            "description": "Defines if a control should be fully visible if it is outside of this row.",
+            "defaultValue": null,
+            "defaultValueInternal": false
+          }
+        ],
+        "properties": {
+          "height": {
+            "$ref": "tchmi:framework#/definitions/MeasurementValue"
+          },
+          "heightUnit": {
+            "$ref": "tchmi:framework#/definitions/MeasurementUnitOrFactor"
+          },
+          "heightMode": {
+            "type": "string",
+            "enum": [ "Value", "Content" ]
+          },
+          "maxHeight": {
+            "$ref": "tchmi:framework#/definitions/MeasurementValue"
+          },
+          "maxHeightUnit": {
+            "$ref": "tchmi:framework#/definitions/MeasurementUnit"
+          },
+          "minHeight": {
+            "$ref": "tchmi:framework#/definitions/MeasurementValue"
+          },
+          "minHeightUnit": {
+            "$ref": "tchmi:framework#/definitions/MeasurementUnit"
+          },
+          "overflow": {
+            "$ref": "tchmi:general#/definitions/Boolean"
+          }
+        }
+      }
+    }
+  }
+}

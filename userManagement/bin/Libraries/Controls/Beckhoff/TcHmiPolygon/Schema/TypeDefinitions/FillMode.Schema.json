@@ -1,0 +1,11 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "FillMode": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "FillMode",
+      "type": "string",
+      "enum": [ "NonZero", "EvenOdd" ]
+    }
+  }
+}

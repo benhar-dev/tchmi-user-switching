@@ -1,0 +1,220 @@
+﻿.tchmi-date-time-picker-template{
+    position:relative;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+}
+
+.tchmi-date-time-picker-template-overlay {
+    position: absolute;
+
+    padding: 10px;
+    max-width: 95%;
+    max-height: 95%;
+    overflow-y: auto;
+    overflow-x:auto;
+}
+
+.tchmi-date-time-picker-selected-area-template, .tchmi-date-time-picker-calendar-template, .tchmi-date-time-picker-time-and-button-area-template {
+    position:relative;
+    float: left;
+    padding: 5px;
+}
+
+.tchmi-date-time-picker-selected-area-template {
+    width: 100%;
+    margin-bottom: 10px;
+
+
+    min-width:245px;
+}
+
+.tchmi-date-time-picker-choice-area-template{
+    position: relative;
+    float: left;
+    clear: both;
+    height: 300px;
+
+
+    min-width:245px;
+}
+
+.tchmi-date-time-picker-calendar-template {
+    text-align:center;
+    clear:both;
+    width: 350px;
+    height:100%;
+    margin-right: 10px;
+}
+
+.tchmi-date-time-picker-time-and-button-area-template {
+    margin-top: 0px;
+    text-align: center;
+    padding: 0;
+}
+
+.tchmi-date-time-picker-button-area-template {
+    top: 109px;
+    position: relative;
+}
+
+.tchmi-date-time-picker-button-template {
+    clear:both;
+    width: 100%;
+    display: inline-block;
+}
+
+.tchmi-date-time-picker-template-action-button{
+    position:relative;
+    width: 100px;
+    height: 35px;
+    float:right;
+    margin:10px;
+    margin-bottom:0px;
+}
+
+.tchmi-date-time-picker-template-label{
+    position:relative;
+    width: 20%;
+    height:30px;
+    clear:both;
+    float:left;
+    padding-left: 5px;
+}
+
+.tchmi-date-time-picker-template-value{
+    position:relative;
+    height:30px;
+    width:100%;
+}
+
+.tchmi-date-time-picker-parent-date-template, .tchmi-date-time-picker-parent-year-template, .tchmi-date-time-picker-parent-time-template {
+    float: left;
+    width: 100%;
+}
+
+
+/* calendar style */
+.tchmi-date-time-picker-calendar-template-header {
+    width: 100%;
+    text-align: center;
+}
+
+.tchmi-date-time-picker-calendar-template-header ul {
+    margin: 0;
+    padding: 5px;
+    list-style-type: none;
+}
+
+.tchmi-date-time-picker-calendar-template-header-month{
+
+}
+
+.tchmi-date-time-picker-calendar-template-header-year{
+    padding-top:0px;
+}
+
+.tchmi-date-time-picker-calendar-template-header ul li {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    list-style-type: none;
+    
+    display: inline-block;
+    height:100%;
+}
+
+.tchmi-date-time-picker-calendar-template-prev {
+    float: left;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.tchmi-date-time-picker-calendar-template-next {
+    float: right;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.tchmi-date-time-picker-calendar-template-weekdays {
+    margin: 0;
+    padding: 10px 0;
+}
+.tchmi-date-time-picker-calendar-template-weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+}
+
+.tchmi-date-time-picker-calendar-template-days {
+    padding: 10px 0;
+    margin: 0;
+}
+
+.tchmi-date-time-picker-calendar-template-days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size:12px;
+}
+
+.tchmi-date-time-picker-calendar-template-days .active {
+}
+
+/* year style */
+.tchmi-date-time-picker-year-template{
+    max-height: 150px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.tchmi-date-time-picker-year-template-year-element{
+    text-align:center;
+}
+
+
+/* time style */
+.tchmi-date-time-picker-time-area-template{
+    width: 100%;
+}
+
+.tchmi-date-time-picker-time-template{
+    display: inline-block;
+}
+
+.tchmi-date-time-picker-template-time-label{
+    position:relative;
+    width: 100%;
+    height:30px;
+}
+
+.tchmi-date-time-picker-time-template-hour, .tchmi-date-time-picker-time-template-minute, .tchmi-date-time-picker-time-template-second, .tchmi-date-time-picker-time-template-millisecond, .tchmi-date-time-picker-time-template-colon{
+    float: left;
+    margin:5px;
+}
+
+.tchmi-date-time-picker-time-template-colon {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-right:0px;
+    margin-left:0px;
+    font-weight:bold;
+}
+
+.tchmi-date-time-picker-time-template-button{
+    position:relative;
+    width: 45px;
+    height: 35px;
+}
+
+.tchmi-date-time-picker-time-template-textbox{
+    position:relative;
+    width: 45px;
+    height:30px;
+}

@@ -1,0 +1,55 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "GaugeRangeDefinitionList": {
+      "title": "GaugeRangeDefinitionList",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "Range Definition",
+        "engineeringColumns": [ "start", "end", "color" ],
+        "propertiesMeta": [
+          {
+            "name": "color",
+            "displayName": "Color",
+            "category": "Colors",
+            "displayPriority": 10,
+            "description": "Color of this range",
+            "defaultValue": "rgba(0, 0, 0, 1)",
+            "defaultValueInternal": null
+          },
+          {
+            "name": "start",
+            "displayName": "Start",
+            "category": "General",
+            "displayPriority": 10,
+            "description": "Start of this range",
+            "defaultValue": 0,
+            "defaultValueInternal": 0
+          },
+          {
+            "name": "end",
+            "displayName": "End",
+            "category": "General",
+            "displayPriority": 10,
+            "description": "End of this range",
+            "defaultValue": 0,
+            "defaultValueInternal": 0
+          }
+        ],
+        "properties": {
+          "color": {
+            "$ref": "tchmi:framework#/definitions/SolidColor"
+          },
+          "start": {
+            "type": "number"
+          },
+          "end": {
+            "type": "number"
+          }
+        },
+        "required": [ "color", "start", "end" ]
+      }
+    }
+  }
+}

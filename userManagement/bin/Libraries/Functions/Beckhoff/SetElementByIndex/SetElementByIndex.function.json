@@ -1,0 +1,62 @@
+{
+   "$schema": "../TcHmiFramework/Schema/FunctionDescription.Schema.json",
+   "version": {
+      "full": "1.10.1336.0",
+      "major": 1,
+      "minor": 10,
+      "build": 1336,
+      "revision": 0
+   },
+   "dependencyFiles": [
+      {
+         "name": "SetElementByIndex.js",
+         "type": "JavaScript",
+         "description": ""
+      }
+   ],
+   "function": {
+      "name": "SetElementByIndex",
+      "displayName": "SetElementByIndex",
+      "visible": true,
+      "description": "Inserts the value at the array index position.",
+      "category": "Data Conversion",
+      "waitMode": "Asynchronous",
+      "injectContextObject": true,
+      "returnValue": null,
+      "arguments": [
+         {
+            "name": "ctx",
+            "displayName": "ctx",
+            "type": "tchmi:framework#/definitions/ContextReference",
+            "description": "Context Reference",
+            "defaultValue": "",
+            "required": true,
+            "bindable": false
+         },
+         {
+            "name": "arraySymbol",
+            "displayName": "arraySymbol",
+            "type": "tchmi:framework#/definitions/Symbol",
+            "description": "Value to be trimmed",
+            "required": true,
+            "bindable": true
+         },
+         {
+            "name": "index",
+            "displayName": "index",
+            "type": "tchmi:framework#/definitions/PositiveNumber",
+            "description": "Index",
+            "required": true,
+            "bindable": true
+         },
+         {
+            "name": "value",
+            "displayName": "value",
+            "type": "tchmi:general#/definitions/Any",
+            "description": "Value to write to the array.",
+            "required": true,
+            "bindable": true
+         }
+      ]
+   }
+}

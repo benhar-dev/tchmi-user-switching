@@ -1,0 +1,1 @@
+var TcHmi;!function(e){var t,s;t=e.Functions||(e.Functions={}),(s=t.System||(t.System={})).GetRegisteredLocales=function(){return e.Locale.getRegisteredLocales()},t.registerFrameworkFunction("GetRegisteredLocales",s.GetRegisteredLocales,"System/GetRegisteredLocales/GetRegisteredLocales.function.json")}(TcHmi=TcHmi||{});

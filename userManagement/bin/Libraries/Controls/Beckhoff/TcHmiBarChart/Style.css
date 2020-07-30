@@ -1,0 +1,14 @@
+﻿/** Styles for all themes */
+
+/* Style for the main element */
+.tchmi-bar-chart {
+    /* Prevent overflow if the border radius is huge */
+    overflow: hidden;
+}
+
+.tchmi-bar-chart-template {
+    position: relative;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    margin: 5px;
+}

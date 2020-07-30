@@ -1,0 +1,97 @@
+﻿{
+   "$schema": "http://json-schema.org/draft-04/schema",
+   "definitions": {
+      "BorderRadius": {
+         "type": "object",
+         "propertiesMeta": [
+            {
+               "name": "topLeft",
+               "category": "general",
+               "displayName": "topLeft",
+               "displayPriority": 10,
+               "description": "",
+               "defaultValue": null,
+               "defaultValueInternal": null
+            },
+            {
+               "name": "topLeftUnit",
+               "category": "general",
+               "refTo": "topLeft",
+               "displayName": "topLeftUnit",
+               "displayPriority": 10,
+               "description": "",
+               "defaultValue": null,
+               "defaultValueInternal": "px"
+            },
+            {
+               "name": "topRight",
+               "category": "general",
+               "displayName": "topRight",
+               "displayPriority": 10,
+               "description": "",
+               "defaultValue": null,
+               "defaultValueInternal": null
+            },
+            {
+               "name": "topRightUnit",
+               "category": "general",
+               "refTo": "topRight",
+               "displayName": "topRightUnit",
+               "displayPriority": 10,
+               "description": "",
+               "defaultValue": null,
+               "defaultValueInternal": "px"
+            },
+            {
+               "name": "bottomRight",
+               "category": "general",
+               "displayName": "bottomRight",
+               "displayPriority": 10,
+               "description": "",
+               "defaultValue": null,
+               "defaultValueInternal": null
+            },
+            {
+               "name": "bottomRightUnit",
+               "category": "general",
+               "refTo": "bottomRight",
+               "displayName": "bottomRightUnit",
+               "displayPriority": 10,
+               "description": "",
+               "defaultValue": null,
+               "defaultValueInternal": "px"
+            },
+            {
+               "name": "bottomLeft",
+               "category": "general",
+               "displayName": "bottomLeft",
+               "displayPriority": 10,
+               "description": "",
+               "defaultValue": null,
+               "defaultValueInternal": null
+            },
+            {
+               "name": "bottomLeftUnit",
+               "category": "general",
+               "refTo": "bottomLeft",
+               "displayName": "bottomLeftUnit",
+               "displayPriority": 10,
+               "description": "",
+               "defaultValue": null,
+               "defaultValueInternal": "px"
+            }
+         ],
+         "properties": {
+            "topLeft": { "$ref": "tchmi:framework#/definitions/PositiveNumber" },
+            "topLeftUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" },
+            "topRight": { "$ref": "tchmi:framework#/definitions/PositiveNumber" },
+            "topRightUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" },
+            "bottomRight": { "$ref": "tchmi:framework#/definitions/PositiveNumber" },
+            "bottomRightUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" },
+            "bottomLeft": { "$ref": "tchmi:framework#/definitions/PositiveNumber" },
+            "bottomLeftUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" }
+         },
+         "required": [ "topLeft", "topRight", "bottomRight", "bottomLeft" ]
+      }
+   }
+}

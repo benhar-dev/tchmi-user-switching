@@ -1,0 +1,130 @@
+﻿{
+   "$schema": "http://json-schema.org/draft-04/schema",
+   "definitions": {
+      "EventGridColumnList": {
+         "title": "ColumnList",
+         "type": "array",
+         "items": {
+            "oneOf": [
+               {
+                  "title": "Column",
+                  "type": "object",
+                  "engineeringColumns": [ "columnName" ],
+                  "propertiesMeta": [
+                     {
+                        "name": "columnName",
+                        "displayName": "Column Name",
+                        "category": "General",
+                        "displayPriority": 10,
+                        "description": "Source of this column",
+                        "defaultValue": null,
+                        "defaultValueInternal": null
+                     },
+                     {
+                        "name": "width",
+                        "displayName": "Width",
+                        "category": "General",
+                        "displayPriority": 10,
+                        "description": "Width of this column",
+                        "defaultValue": null,
+                        "defaultValueInternal": null
+                     },
+                     {
+                        "name": "widthUnit",
+                        "refTo": "width",
+                        "displayName": "Width Unit",
+                        "category": "General",
+                        "displayPriority": 10,
+                        "description": "Width unit of this column",
+                        "defaultValue": null,
+                        "defaultValueInternal": "px"
+                     }
+                  ],
+                  "properties": {
+                     "columnName": {
+                        "type": "string",
+                        "enum": [
+                           "severity",
+                           "type",
+                           "alarmState",
+                           "domain",
+                           "sourceDomain",
+                           "name",
+                           "text",
+                           "timeAndDateRaised",
+                           "timeRaised",
+                           "dateRaised",
+                           "timeAndDateConfirmed",
+                           "timeConfirmed",
+                           "dateConfirmed",
+                           "timeAndDateCleared",
+                           "timeCleared",
+                           "dateCleared"
+                        ]
+                     },
+                     "width": { "$ref": "tchmi:framework#/definitions/MeasurementValue" },
+                     "widthUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" }
+                  },
+                  "required": [ "columnName" ]
+               },
+               {
+                  "title": "Custom column",
+                  "type": "object",
+                  "engineeringColumns": [ "columnName" ],
+                  "propertiesMeta": [
+                     {
+                        "name": "columnName",
+                        "displayName": "Column Name",
+                        "category": "General",
+                        "displayPriority": 10,
+                        "description": "Source of this column",
+                        "defaultValue": null,
+                        "defaultValueInternal": null
+                     },
+                     {
+                        "name": "label",
+                        "displayName": "Label",
+                        "category": "General",
+                        "displayPriority": 10,
+                        "description": "Label of this column",
+                        "defaultValue": null,
+                        "defaultValueInternal": null
+                     },
+                     {
+                        "name": "width",
+                        "displayName": "Width",
+                        "category": "General",
+                        "displayPriority": 10,
+                        "description": "Width of this column",
+                        "defaultValue": null,
+                        "defaultValueInternal": null
+                     },
+                     {
+                        "name": "widthUnit",
+                        "refTo": "width",
+                        "displayName": "Width Unit",
+                        "category": "General",
+                        "displayPriority": 10,
+                        "description": "Width unit of this column",
+                        "defaultValue": null,
+                        "defaultValueInternal": "px"
+                     }
+                  ],
+                  "properties": {
+                     "columnName": {
+                        "type": "string",
+                        "pattern": "^params::"
+                     },
+                     "label": {
+                        "type": "string"
+                     },
+                     "width": { "$ref": "tchmi:framework#/definitions/MeasurementValue" },
+                     "widthUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" }
+                  },
+                  "required": [ "columnName" ]
+               }
+            ]
+         }
+      }
+   }
+}

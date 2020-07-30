@@ -1,0 +1,22 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "StopPoint": {
+      "title": "StopPoint definition",
+      "type": "object",
+      "engineeringColumns": [ "color", "stop" ],
+      "properties": {
+        "color": {
+          "description": "Defining a color as CSS color: #-hexadecimal, rgb(), rgba(), hsl(), hsla(), lowercase css color keyword or transparent.",
+          "type": "string",
+          "minLength": 1
+        },
+        "stop": {
+          "type": "string",
+          "pattern": "^[0-9]*\\.?[0-9]+(?:px|%)$"
+        }
+      },
+      "required": [ "color" ]
+    }
+  }
+}

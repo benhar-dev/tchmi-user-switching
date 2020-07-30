@@ -1,0 +1,11 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "LinearGaugeUnitOrientation": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "LinearGaugeUnitOrientation",
+      "type": "string",
+      "enum": [ "Theme", "Horizontal", "Vertical" ]
+    }
+  }
+}

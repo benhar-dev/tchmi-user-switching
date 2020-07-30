@@ -1,0 +1,1 @@
+var TcHmi;!function(o){var n,i;n=o.Functions||(o.Functions={}),(i=n.System||(n.System={})).GoToLoginPage=function(){return 4===o.Server.getCurrentUserConfig().state&&(window.location.href="/Login?Location="+window.location.pathname,!0)},n.registerFrameworkFunction("GoToLoginPage",i.GoToLoginPage,"System/GotoLoginPage/GoToLoginPage.function.json")}(TcHmi=TcHmi||{});

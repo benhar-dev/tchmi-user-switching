@@ -1,0 +1,27 @@
+﻿/** Styles for all themes */
+
+.tchmi-ellipse
+{
+ 
+}
+
+.tchmi-ellipse-template
+{
+    position:relative;
+    width:100%;
+    height:100%;
+	font-size: 0;
+}
+
+.tchmi-ellipse-template-svg 
+{
+    /* The containing ellipse can have a few subpixel outside of the bounding box */
+    overflow: visible;
+}
+
+.tchmi-ellipse-template-svg-ellipse 
+{
+    /* SVG default is stroke:1px and fill:black */
+    stroke-width: 0;
+    fill: transparent;
+}

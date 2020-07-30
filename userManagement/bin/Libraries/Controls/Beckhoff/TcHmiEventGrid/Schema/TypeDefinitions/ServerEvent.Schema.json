@@ -1,0 +1,50 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "ServerEvent": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "$ref": "tchmi:server#/definitions/eventType"
+        },
+        "severity": {
+          "$ref": "tchmi:server#/definitions/severity"
+        },
+        "domain": {
+          "type": "string"
+        },
+        "sourceDomain": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": [ "string", "number" ]
+        },
+        "text": {
+          "type": "string"
+        },
+        "timeRaised": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "timeCleared": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "timeConfirmed": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "confirmationState": {
+          "$ref": "tchmi:server#/definitions/confirmationState"
+        },
+        "params": {
+          "type": "object"
+        }
+      },
+      "required": ["type", "severity", "domain", "sourceDomain", "name", "text", "timeRaised", "params"]
+    }
+  }
+}

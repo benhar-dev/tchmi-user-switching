@@ -1,0 +1,12 @@
+﻿{
+  "$schema": "../../../../../TcHmiFramework/Schema/ThemeDescription.Schema.json",
+  "controlTypeValues": {
+    "tchmi-rectangle": {
+      "attributes": {
+        "StrokeThickness": 1
+      },
+      "themedResources": {
+      }
+    }
+  }
+}

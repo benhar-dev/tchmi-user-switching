@@ -1,0 +1,29 @@
+﻿/** Styles for all themes */
+
+/* Style for the main element */
+.tchmi-image {
+    /* Prevent overflow if the border radius is huge */
+    overflow: hidden;
+}
+
+.tchmi-image-template {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+.tchmi-image-template-content {
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+.tchmi-image-template-content[src=""] {
+	display: none;
+}
+
+
+/* class tchmi-control-disabled will be set/unset in the system */
+.tchmi-image.tchmi-control-disabled {
+	opacity: 0.4 !important;
+}

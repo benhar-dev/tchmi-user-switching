@@ -1,0 +1,45 @@
+﻿/** Styles for all themes */
+
+/* Style for the main element */
+.tchmi-radial-gauge {
+    /* Prevent overflow if the border radius is huge */
+    overflow: hidden;
+}
+
+.tchmi-radial-gauge-template {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+.tchmi-radial-gauge-template-main-tick, .tchmi-radial-gauge-template-sub-tick {
+	pointer-events: none;
+}
+
+.tchmi-radial-gauge-template-label {
+	text-anchor:middle;
+	dominant-baseline:central;
+	pointer-events: none;
+}
+
+.tchmi-radial-gauge-template-range-container path {
+	fill: none;
+	pointer-events: none;
+}
+
+.tchmi-radial-gauge-template-circle-under, .tchmi-radial-gauge-template-circle-over {
+	pointer-events: none;
+}
+
+.tchmi-radial-gauge-template-display-value, .tchmi-radial-gauge-template-display-unit {
+    text-anchor: middle;
+	pointer-events: none;
+}
+
+.tchmi-radial-gauge-template-knob {
+	cursor: move;
+}
+
+.tchmi-radial-gauge.tchmi-control-operate-disallowed .tchmi-radial-gauge-template-knob {
+    cursor: not-allowed;
+}

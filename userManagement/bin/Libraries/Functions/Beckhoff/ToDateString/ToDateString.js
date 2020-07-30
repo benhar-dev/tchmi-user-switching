@@ -1,0 +1,1 @@
+var TcHmi;!function(a){var t,n;t=a.Functions||(a.Functions={}),(n=t.Beckhoff||(t.Beckhoff={})).ToDateString=function(t,n){if(null==t)return"";var e;e=t instanceof Date?t:new Date(t);var o=a.Localization.formatDate(e,{locale:n,type:"date"});return o||""},t.registerFrameworkFunction("ToDateString",n.ToDateString,"Beckhoff/ToDateString/ToDateString.function.json")}(TcHmi=TcHmi||{});

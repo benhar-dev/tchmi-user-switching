@@ -1,0 +1,11 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "ChartMenuBarPosition": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "ChartMenuBarPosition",
+      "type": "string",
+      "enum": [ "Bottom", "Top" ]
+    }
+  }
+}

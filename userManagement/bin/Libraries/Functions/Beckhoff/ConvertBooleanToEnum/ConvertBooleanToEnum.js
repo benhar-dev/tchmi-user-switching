@@ -1,0 +1,1 @@
+var TcHmi;!function(r){var o,n;o=r.Functions||(r.Functions={}),(n=o.Beckhoff||(o.Beckhoff={})).ConvertBooleanToEnum=function(o,n,e){return!0===r.ValueConverter.toBoolean(o)?n:e},o.registerFrameworkFunction("ConvertBooleanToEnum",n.ConvertBooleanToEnum,"Beckhoff/ConvertBooleanToEnum/ConvertBooleanToEnum.function.json")}(TcHmi=TcHmi||{});

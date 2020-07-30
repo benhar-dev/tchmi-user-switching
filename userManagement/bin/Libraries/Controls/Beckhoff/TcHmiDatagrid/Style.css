@@ -1,0 +1,268 @@
+﻿/** Styles for all themes */
+.tchmi-datagrid {
+    /* Prevent overflow if the border radius is huge */
+    overflow: hidden;
+}
+
+.tchmi-datagrid-template {
+    top:0px;
+    left:0px;
+    position:relative;
+    width:100%;
+    height:100%;
+    /*background:#eee;*/ /* same as data-tchmi-background-color */
+}
+
+.tchmi-datagrid-template-border {
+    position:absolute;
+    top:0px;
+    left:0px;
+
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.tchmi-datagrid-template-outer {
+    width:100%;
+    height:100%;
+}
+
+.tchmi-datagrid-template-table {
+    padding:0px;
+    margin:0px;
+}
+
+.tchmi-datagrid-template table {
+    border-collapse:separate;
+    border-spacing:0px;
+}
+
+.tchmi-datagrid-template-header {
+	height: 100%;
+    white-space: nowrap;
+
+    padding:0px; /*padding not specify, adapt by header-height*/
+}
+
+.tchmi-datagrid-template-header-border {
+    border-bottom-width: 1px;
+	border-bottom-style: solid; /* table border **/
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	position:relative;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.tchmi-datagrid-template-header-border > table {
+    height: 100%;
+    border-spacing: 0px;
+}
+
+.tchmi-datagrid-template-header-wrapper {
+	position: relative;
+	height:100%;
+}
+
+.tchmi-datagrid-template-sort-element {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.tchmi-datagrid-template-sort-element.sortable {
+	cursor: pointer;
+}
+
+.tchmi-datagrid-template-sort-element-child {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.tchmi-datagrid-template-resize-element {
+    height:100%;
+    position:absolute;
+    width: 8px; /* keep in sync with ./Source.ts (__resizeElementMinWidth) */
+    right: -4px; /* negative half of width */
+    z-index: 1;
+    top:0px;
+}
+
+.tchmi-datagrid-template-header.resizable .tchmi-datagrid-template-resize-element {
+    cursor:e-resize;
+}
+
+.tchmi-datagrid-template-row-numbers {
+    position: relative;
+    border-right: 1px solid; /* table border **/
+    border-bottom: 1px solid; /* table border **/
+    white-space: nowrap;
+    text-align: center;
+    padding: 0px;
+}
+
+th.tchmi-datagrid-template-row-numbers {
+	cursor: pointer;
+}
+
+td.tchmi-datagrid-template-row-numbers {
+    overflow: hidden;
+}
+
+.tchmi-datagrid-template-placeholder {
+	height: 100%;
+	min-width: 17px; /* width of scrollbar in all major browsers */
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
+}
+
+.tchmi-datagrid-template-data-scroll {
+	overflow: auto;
+}
+
+.tchmi-datagrid-template-data-scroll table {
+	table-layout: fixed;
+}
+
+.tchmi-datagrid-template-data-scroll tr.focused td:not(.focused)::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 10000px; /* Because Internet Explorer cannot deal with height: 100% on absolute positioned elements when the parent is a table cell. */
+	pointer-events: none;
+	z-index: 1;
+}
+
+.tchmi-datagrid-template-cell {
+    white-space: nowrap;
+    border-right: 1px solid; /* table border **/
+    border-bottom: 1px solid; /* table border **/    
+    padding: 0;	
+	height: 100%;	
+	position: relative;
+    overflow: hidden;
+    text-overflow: clip;
+	cursor: default;
+}
+
+.tchmi-datagrid-template-cell.textbox {
+	cursor: text;
+}
+
+.tchmi-datagrid-template-cell img {
+	vertical-align: middle;
+	position: relative;
+	margin: 0px;
+}
+
+.tchmi-datagrid-template-cell input[type=checkbox] {
+    /* hide the checkbox itself, whole logic is on the styled label */
+	display: none;
+}
+
+.tchmi-datagrid-template-cell input[type=checkbox] + label {
+	display: inline-block;
+	height: 100%;
+    width: 100%;
+    margin-bottom: -3px;
+    margin-left: -1px;
+}
+
+.tchmi-datagrid-template-cell input[type=text] {
+	height: 100%;
+	width: 100%;
+    box-sizing: border-box;
+	border: 0px;
+	margin: 0px;
+    white-space: nowrap;    
+    padding: inherit;
+}
+
+.tchmi-datagrid-combobox-template {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+	border-radius: inherit;
+}
+
+/*--------------------------------------------Button--------------------------------------------------------------*/
+.tchmi-datagrid-combobox-template-button {
+    width: 26px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+	background-size: 100%;
+	border-top-right-radius: inherit;
+	border-bottom-right-radius: inherit;
+    pointer-events: none; /* Be transparent to pointer events, so the root element receives them and we dont have to deal with SVGElements not having classList in IE. */
+}
+
+/*--------------------------------------------select--------------------------------------------------*/
+.tchmi-datagrid-combobox-template-select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 26px);
+	height: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: default;
+	border-top-left-radius: inherit;
+	border-bottom-left-radius: inherit;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*-----------------------table--------------------------------------*/
+
+.tchmi-datagrid-combobox-template-dropdown {
+    position: absolute;
+    max-width: 60%;
+    max-height: 60%;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.tchmi-datagrid-combobox-template-dropdown-element {
+    white-space: nowrap;
+    cursor: default;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    height: 20px;
+}
+
+
+.tchmi-datagrid.tchmi-control-operate-disallowed .tchmi-datagrid-template-sort-element,
+.tchmi-datagrid.tchmi-control-operate-disallowed .tchmi-datagrid-template-resize-element
+ {
+    cursor: not-allowed;
+}
+/* The main use for this control is interaction. So mark when this is not allowed. */
+.tchmi-datagrid.tchmi-control-operate-disallowed .tchmi-datagrid-template-cell::after
+ {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 100;
+
+    cursor: not-allowed;
+}

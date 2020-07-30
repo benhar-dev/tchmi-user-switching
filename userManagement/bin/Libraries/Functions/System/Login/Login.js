@@ -1,0 +1,1 @@
+var TcHmi;!function(t){var n,i;n=t.Functions||(t.Functions={}),(i=n.System||(n.System={})).Login=function(n,i,o){return t.Server.login(n,i,o)},n.registerFrameworkFunction("Login",i.Login,"System/Login/Login.function.json")}(TcHmi=TcHmi||{});

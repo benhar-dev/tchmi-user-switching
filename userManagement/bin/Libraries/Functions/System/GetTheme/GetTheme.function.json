@@ -1,0 +1,27 @@
+{
+   "$schema": "../TcHmiFramework/Schema/FunctionDescription.Schema.json",
+   "version": {
+      "full": "1.10.1336.0",
+      "major": 1,
+      "minor": 10,
+      "build": 1336,
+      "revision": 0
+   },
+   "dependencyFiles": [
+      {
+         "name": "GetTheme.js",
+         "type": "JavaScript",
+         "description": ""
+      }
+   ],
+   "function": {
+      "name": "GetTheme",
+      "displayName": "GetTheme",
+      "description": "Gets the current Themename.",
+      "category": "Theme",
+      "returnValue": {
+         "type": "tchmi:framework#/definitions/ThemeName"
+      },
+      "arguments": []
+   }
+}

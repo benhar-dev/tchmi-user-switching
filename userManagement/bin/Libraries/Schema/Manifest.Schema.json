@@ -1,0 +1,178 @@
+﻿{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "URL to a schema file"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "industrialField": {
+          "type": "string",
+          "description": ""
+        },
+        "packageType": {
+          "type": "string",
+          "description": "",
+          "enum": [
+            "FrameworkExtPrj"
+          ]
+        },
+        "packageSubType": {
+          "type": "string",
+          "description": "",
+          "enum": [
+            "Framework",
+            "Control",
+            "Function",
+            "ExternalJavaScript"
+          ]
+        },
+        "packageRelativePath": {
+          "oneOf": [
+            {
+              "type": "string",
+              "description": ""
+            },
+            {
+              "type": "null",
+              "description": "Framework does not need to have a relative path"
+            }
+          ]
+        },
+        "packageNamespace": {
+          "oneOf": [
+            {
+              "type": "string",
+              "description": "",
+
+              "enum": [
+                "System",
+                "Beckhoff",
+                "Custom"
+              ]
+            },
+            {
+              "type": "null",
+              "description": "Libraries does not need to have a namespace"
+            }
+          ]
+        },
+        "id": {
+          "type": "string",
+          "description": "The name of the asset",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "description": "",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "guid": {
+          "type": "string",
+          "description": "",
+          "pattern": "^[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}$"
+        },
+        "configurationName": {
+          "type": "string",
+          "description": ""
+        },
+        "platformName": {
+          "type": "string",
+          "description": ""
+        },
+        "creationTime": {
+          "type": "integer",
+          "description": "",
+          "minimum": 0
+        },
+        "authors": {
+          "type": "string",
+          "description": ""
+        },
+        "owners": {
+          "type": "string",
+          "description": ""
+        },
+        "summary": {
+          "type": "string",
+          "description": ""
+        },
+        "licenseUrl": {
+          "type": "string",
+          "description": ""
+        },
+        "projectUrl": {
+          "type": "string",
+          "description": ""
+        },
+        "iconUrl": {
+          "type": "string",
+          "description": ""
+        },
+        "requireLicenseAcceptance": {
+          "type": "boolean",
+          "description": ""
+        },
+        "description": {
+          "type": "string",
+          "description": ""
+        },
+        "releaseNotes": {
+          "type": "string",
+          "description": ""
+        },
+        "copyright": {
+          "type": "string",
+          "description": ""
+        },
+        "tags": {
+          "type": "string",
+          "description": ""
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "The friendly name of the dependency"
+              },
+              "guid": {
+                "type": "string",
+                "description": "GUID of the dependency",
+                "pattern": "^[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}$"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "references": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": false,
+      "required": [ "industrialField", "packageType", "packageSubType", "packageRelativePath", "id", "version", "guid", "configurationName", "platformName", "creationTime", "authors", "owners", "summary", "licenseUrl", "projectUrl", "iconUrl", "requireLicenseAcceptance", "description", "releaseNotes", "copyright", "tags", "dependencies", "references" ]
+    },
+    "files": {
+      "type": "array"
+    },
+    "symbols": {
+      "type": "array"
+    },
+    "flags": {
+      "type": "object"
+    },
+    "fileformat": {
+      "type": "integer",
+      "enum": [
+        1
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": ["metadata", "files", "symbols", "flags", "fileformat"]
+}

@@ -1,0 +1,22 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "ControlKeyboardLayouts": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "ControlKeyboardLayouts",
+      "description": "Enum of existing Layouts from the control",
+      "type": "string",
+      "enum": [
+        "EN-US_QWERTY_standard",
+        "EN-US_QWERTY_full",
+        "EN-US_QWERTY_compact",
+        "DE-DE_QWERTZ_standard",
+        "DE-DE_QWERTZ_full",
+        "DE-DE_QWERTZ_compact",
+        "PINpad",
+        "Numpad",
+        "Calculator"
+      ]
+    }
+  }
+}

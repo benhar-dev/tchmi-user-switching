@@ -1,0 +1,116 @@
+﻿{
+   "$schema": "http://json-schema.org/draft-04/schema",
+   "definitions": {
+      "ChartLineGraphDescriptionDefinitionList": {
+         "title": "ChartLineGraphDescriptionDefinitionList",
+         "type": "array",
+         "items": {
+            "type": "object",
+            "engineeringColumns": [ "yAxisId", "lineWidth" ],
+            "propertiesMeta": [
+               {
+                  "name": "lineColor",
+                  "displayName": "Line color",
+                  "category": "Colors",
+                  "displayPriority": 10,
+                  "description": "Color for this line",
+                  "defaultValue": "rgba(71, 148, 218, 1)",
+                  "defaultValueInternal": null
+               },
+               {
+                  "name": "pointDotFillColor",
+                  "displayName": "Point dot fill color",
+                  "category": "Colors",
+                  "displayPriority": 10,
+                  "description": "Color for the fill of the dots",
+                  "defaultValue": "rgba(71, 148, 218, 1)",
+                  "defaultValueInternal": null
+               },
+               {
+                  "name": "pointDotStrokeColor",
+                  "displayName": "Point dot stroke color",
+                  "category": "Colors",
+                  "displayPriority": 10,
+                  "description": "Color for the stroke of the dots",
+                  "defaultValue": "rgba(71, 148, 218, 1)",
+                  "defaultValueInternal": null
+               },
+               {
+                  "name": "yAxisId",
+                  "displayName": "Y-Axis Id",
+                  "category": "General",
+                  "displayPriority": 10,
+                  "description": "Id of the y-axis to use for this graph",
+                  "defaultValue": null,
+                  "defaultValueInternal": null
+               },
+               {
+                  "name": "lineWidth",
+                  "displayName": "Line width",
+                  "category": "General",
+                  "displayPriority": 10,
+                  "description": "Line width in pixel",
+                  "defaultValue": 1,
+                  "defaultValueInternal": null
+               },
+               {
+                  "name": "pointDot",
+                  "displayName": "Point dot",
+                  "category": "General",
+                  "displayPriority": 10,
+                  "description": "Defines if the line has dots on the data points",
+                  "defaultValue": false,
+                  "defaultValueInternal": false
+               },
+               {
+                  "name": "pointDotRadius",
+                  "displayName": "Point dot radius",
+                  "category": "General",
+                  "displayPriority": 10,
+                  "description": "Dot radius",
+                  "defaultValue": 3,
+                  "defaultValueInternal": 3
+               },
+               {
+                  "name": "pointDotStrokeWidth",
+                  "displayName": "Point dot stroke width",
+                  "category": "General",
+                  "displayPriority": 10,
+                  "description": "Dot stroke width",
+                  "defaultValue": 1,
+                  "defaultValueInternal": 1
+               }
+            ],
+            "properties": {
+               "lineColor": {
+                  "$ref": "tchmi:framework#/definitions/SolidColor"
+               },
+               "pointDotFillColor": {
+                  "$ref": "tchmi:framework#/definitions/SolidColor"
+               },
+               "pointDotStrokeColor": {
+                  "$ref": "tchmi:framework#/definitions/SolidColor"
+               },
+               "yAxisId": {
+                  "type": "number"
+               },
+               "lineWidth": {
+                  "type": "number"
+               },
+               "pointDot": {
+                  "type": "boolean"
+               },
+               "pointDotRadius": {
+                  "type": "number",
+                  "minimum": 0
+               },
+               "pointDotStrokeWidth": {
+                  "type": "number",
+                  "minimum": 0
+               }
+            },
+            "required": [ "yAxisId" ]
+         }
+      }
+   }
+}

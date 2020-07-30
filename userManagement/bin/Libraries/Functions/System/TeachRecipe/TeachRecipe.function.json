@@ -1,0 +1,47 @@
+{
+   "$schema": "../TcHmiFramework/Schema/FunctionDescription.Schema.json",
+   "version": {
+      "full": "1.10.1336.0",
+      "major": 1,
+      "minor": 10,
+      "build": 1336,
+      "revision": 0
+   },
+   "dependencyFiles": [
+      {
+         "name": "TeachRecipe.js",
+         "type": "JavaScript",
+         "description": ""
+      }
+   ],
+   "function": {
+      "name": "TeachRecipe",
+      "displayName": "TeachRecipe",
+      "visible": true,
+      "category": "Recipe",
+      "waitMode": "Asynchronous",
+      "injectContextObject": true,
+      "description": "Reads the current values which are referenced from a base recipe and write it into the same recipe",
+      "returnValue": null,
+      "arguments": [
+         {
+            "name": "ctx",
+            "displayName": "ctx",
+            "type": "tchmi:framework#/definitions/ContextReference",
+            "description": "Context Reference",
+            "defaultValue": null,
+            "required": true,
+            "bindable": false
+         },
+         {
+            "name": "recipeReference",
+            "displayName": "recipeReference",
+            "type": "tchmi:framework#/definitions/RecipeReference",
+            "description": "Reference (path + '::' + name) of the recipe",
+            "defaultValue": "",
+            "required": true,
+            "bindable": true
+         }
+      ]
+   }
+}

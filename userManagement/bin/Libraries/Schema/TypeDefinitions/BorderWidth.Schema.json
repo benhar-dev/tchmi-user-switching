@@ -1,0 +1,36 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "BorderWidth": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "type": "object",
+      "properties": {
+        "left": {
+          "$ref": "tchmi:framework#/definitions/PositiveNumber" 
+        },
+        "leftUnit": {
+          "$ref": "tchmi:framework#/definitions/PixelUnit"
+        },
+        "top": {
+          "$ref": "tchmi:framework#/definitions/PositiveNumber" 
+        },
+        "topUnit": {
+          "$ref": "tchmi:framework#/definitions/PixelUnit"
+        },
+        "right": {
+          "$ref": "tchmi:framework#/definitions/PositiveNumber" 
+        },
+        "rightUnit": {
+          "$ref": "tchmi:framework#/definitions/PixelUnit"
+        },
+        "bottom": {
+          "$ref": "tchmi:framework#/definitions/PositiveNumber" 
+        },
+        "bottomUnit": {
+          "$ref": "tchmi:framework#/definitions/PixelUnit"
+        }
+      },
+      "required": [ "left", "top", "right", "bottom" ]
+    }
+  }
+}

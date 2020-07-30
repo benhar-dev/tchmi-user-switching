@@ -1,0 +1,270 @@
+﻿/** Styles for all themes */
+.tchmi-linear-gauge {
+	padding: 8px 25px;
+    /* Prevent overflow if the border radius is huge */
+    overflow: hidden;
+}
+
+.tchmi-linear-gauge-template {
+	height: 100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+.tchmi-linear-gauge-template-labels {
+	position: relative;
+}
+
+.tchmi-linear-gauge-template-labels span {
+	position: absolute;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	cursor: default;
+}
+
+.tchmi-linear-gauge-template-labels span.hidden {
+	visibility: hidden;
+	position: relative;
+}
+	
+.tchmi-linear-gauge-template-labels span.first {
+	-webkit-transform: translateX(calc(-50% + 1px));
+	transform: translateX(calc(-50% + 1px));
+}
+	
+.tchmi-linear-gauge-template-labels span.last {
+	-webkit-transform: translateX(calc(-50% - 1px));
+	transform: translateX(calc(-50% - 1px));
+}
+
+.tchmi-linear-gauge-template-ticks {
+	-webkit-flex-basis: 10px;
+	flex-basis: 10px;
+	margin: 2px 0;
+	position: relative;
+}
+
+.tchmi-linear-gauge-template-tick {
+	width: 2px;
+	position: absolute;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.tchmi-linear-gauge-template-tick.major {
+	height: 100%;
+}
+
+.tchmi-linear-gauge-template-tick.minor {
+	height: 60%;
+	top: 40%
+}
+
+.tchmi-linear-gauge-template-tick.first {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.tchmi-linear-gauge-template-tick.last {
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+
+.tchmi-linear-gauge-template-track {
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
+	position: relative;
+}
+
+.tchmi-linear-gauge-template-filler {
+	position: absolute;
+	height: 100%;
+	transform-origin: left;
+}
+
+.tchmi-linear-gauge-template-knob {
+	position: absolute;
+    top: 50%;
+    overflow:visible;
+    background: transparent;
+	z-index: 2;
+	display: none;
+    cursor: ew-resize;
+}
+
+.tchmi-linear-gauge-template-range {
+	-webkit-flex-basis: 5px;
+	flex-basis: 5px;
+	margin: 2px 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.tchmi-linear-gauge-template-rangechild {
+	height: 100%;
+	position: absolute;
+}
+
+.tchmi-linear-gauge-template-description {
+	margin: 2px 0 3px 0;
+	color: #4993DA;
+	font-size: 14px;
+	font-weight: 600;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+
+.tchmi-linear-gauge-template-value .content {
+	text-align: right;
+	cursor: default;
+}
+
+.tchmi-linear-gauge-template-value .hidden {
+	visibility: hidden;
+	display: none;
+}
+
+.tchmi-linear-gauge-template-unit .content {
+	width: 16px;
+	white-space: nowrap;
+	cursor: default;
+}
+
+/* Overrides for vertical orientation*/
+.tchmi-linear-gauge.vertical {
+	padding: 20px 10px;
+}
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template {
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-labels {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-labels span {
+	-webkit-transform: translateY(50%);
+	transform: translateY(50%);
+	right: 0;
+}
+	
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-labels span.first {
+	-webkit-transform: translateY(calc(50% - 1px));
+	transform: translateY(calc(50% - 1px));
+}
+	
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-labels span.last {
+	-webkit-transform: translateY(calc(50% + 1px));
+	transform: translateY(calc(50% + 1px));
+}
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-ticks {
+	margin: 0 2px;
+}
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-tick {
+	height: 2px;
+	-webkit-transform: translateY(50%);
+	transform: translateY(50%);
+}
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-tick.major {
+	width: 100%;
+}
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-tick.minor {
+	width: 60%;
+	left: 40%;
+	top: auto;
+}
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-tick.first {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-tick.last {
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+}
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-filler {
+	width: 100%;
+	height: 0;
+	bottom: 0;
+	transform-origin: bottom;
+}
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-knob {
+	left: 50%;
+	top: auto;
+    bottom: 0;
+    cursor: ns-resize;
+}
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-range {
+	margin: 0 2px;
+}
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-rangechild {
+	width: 100%;
+}
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-description {
+	margin: 0 3px 0 2px;
+	-webkit-flex-direction: column-reverse;
+	flex-direction: column-reverse;
+}
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-value {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column-reverse;
+	flex-direction: column-reverse;
+	position: relative;
+}
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-value .content {
+	position: absolute;
+	width: 100%;
+}
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-value .hidden {
+	display: block;
+}
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-unit {
+	text-align: right;
+}
+
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-unit .content:not(.horizontal),
+.tchmi-linear-gauge-template-unit .content.vertical {
+	display: inline-block;
+	-webkit-transform: rotateZ(-90deg);
+	transform: rotateZ(-90deg);
+}
+
+.tchmi-linear-gauge:not(.vertical) .tchmi-linear-gauge-template-unit .content.vertical {
+	width: auto !important;
+}
+
+.tchmi-linear-gauge:not(.vertical) .tchmi-linear-gauge-template-unit .content.vertical::after {
+	content: "";
+    display: block;
+    padding: 50% 0;
+}
+
+.tchmi-linear-gauge.tchmi-control-operate-disallowed .tchmi-linear-gauge-template-knob {
+    cursor: not-allowed;
+}

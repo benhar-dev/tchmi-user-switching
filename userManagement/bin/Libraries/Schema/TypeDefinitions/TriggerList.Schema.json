@@ -1,0 +1,11 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "TriggerList": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "type": "array",
+      "items": { "$ref": "tchmi:framework#/definitions/Trigger" },
+      "minItems": 1
+    }
+  }
+}

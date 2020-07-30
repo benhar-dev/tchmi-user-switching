@@ -1,0 +1,124 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "DGDataDefinitionList": {
+      "oneOf": [
+        {
+          "type": "array",
+          "title": "Definition for an image control",
+          "items": {
+            "type": "object",
+            "title": "Definition for an image selection",
+            "engineeringColumns": [ "value", "source", "width", "height", "text" ],
+            "propertiesMeta": [
+              {
+                "name": "value",
+                "displayName": "Value",
+                "category": "General",
+                "displayPriority": 10,
+                "description": "Value which is compared to select this image.",
+                "defaultValue": null,
+                "defaultValueInternal": null
+              },
+              {
+                "name": "source",
+                "displayName": "Source",
+                "category": "General",
+                "displayPriority": 10,
+                "description": "Path to the image.",
+                "defaultValue": null,
+                "defaultValueInternal": null
+              },
+              {
+                "name": "width",
+                "displayName": "Width",
+                "category": "General",
+                "displayPriority": 10,
+                "description": "Pixel width for this image",
+                "defaultValue": 0,
+                "defaultValueInternal": null
+              },
+              {
+                "name": "height",
+                "displayName": "Height",
+                "category": "General",
+                "displayPriority": 10,
+                "description": "Pixel height for this image",
+                "defaultValue": 0,
+                "defaultValueInternal": null
+              },
+              {
+                "name": "text",
+                "displayName": "Text",
+                "category": "General",
+                "displayPriority": 10,
+                "description": "Alt text (tooltip) for this image",
+                "defaultValue": null,
+                "defaultValueInternal": null
+              }
+            ],
+            "properties": {
+              "value": {
+                "$ref": "tchmi:general#/definitions/Any"
+              },
+              "source": {
+                "$ref": "tchmi:framework#/definitions/Path"
+              },
+              "width": {
+                "type": "number",
+                "minimum": 0
+              },
+              "height": {
+                "type": "number",
+                "minimum": 0
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [ "value", "source", "width", "height" ]
+          }
+        },
+        {
+          "type": "array",
+            "title": "Definition for a combobox control",
+          "items": {
+            "type": "object",
+            "title": "Definition for an combobox entry",
+            "engineeringColumns": [ "text", "value" ],
+            "propertiesMeta": [
+              {
+                "name": "value",
+                "displayName": "Value",
+                "category": "General",
+                "displayPriority": 10,
+                "description": "Value which is compared to create this entry.",
+                "defaultValue": null,
+                "defaultValueInternal": null
+              },
+              {
+                "name": "text",
+                "displayName": "Text",
+                "category": "General",
+                "displayPriority": 10,
+                "description": "Text to show for this entry",
+                "defaultValue": null,
+                "defaultValueInternal": null
+              }
+            ],
+            "properties": {
+              "value": {
+                "$ref": "tchmi:general#/definitions/Any"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [ "value", "text" ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    }
+  }
+}

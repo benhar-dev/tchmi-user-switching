@@ -1,0 +1,274 @@
+{
+   "$schema": "../TcHmiFramework/Schema/FrameworkDescription.Schema.json",
+   "version": {
+      "full": "1.10.1336.0",
+      "major": 1,
+      "minor": 10,
+      "build": 1336,
+      "revision": 0
+   },
+   "dependencyFiles": [
+      {
+         "name": "Object.js",
+         "type": "JavaScript",
+         "description": ""
+      },
+      {
+         "name": "Lib/jquery/jquery.js",
+         "type": "JavaScript",
+         "description": ""
+      },
+      {
+         "name": "Lib/acorn/acorn.js",
+         "type": "JavaScript",
+         "description": ""
+      },
+      {
+         "name": "Lib/TcHmiCharting/TcHmiCharting.js",
+         "type": "JavaScript",
+         "description": ""
+      },
+      {
+         "name": "Style.css",
+         "type": "Stylesheet",
+         "description": ""
+      },
+      {
+         "name": "TcHmi.js",
+         "type": "JavaScript",
+         "description": ""
+      }
+   ],
+   "events": [
+      {
+         "name": "onInitialized",
+         "displayName": "onInitialized",
+         "category": "Framework",
+         "description": "This event is fired after the framework is initialized. Controls and Symbols are not yet initialized at this time."
+      },
+      {
+         "name": "onLocaleChanged",
+         "displayName": "onLocaleChanged",
+         "category": "Framework",
+         "description": "This event is fired after a (perhaps new) locale has been loaded."
+      },
+      {
+         "name": "onThemeDataChanged",
+         "displayName": "onThemeDataChanged",
+         "category": "Framework",
+         "description": "This event is fired after the theme json and all css files have been loaded at a theme change. It is additionally fired when a new font-face file has been fetched."
+      },
+      {
+         "name": "onUserInGroupChanged",
+         "displayName": "onUserInGroupChanged",
+         "category": "Framework",
+         "description": "This event is fired after a user is known to be in different usergroups or no authentification is required."
+      }
+   ],
+   "dataTypes": [
+      {
+         "name": "tchmi:framework#/definitions/AccessConfig",
+         "schema": "Schema/TypeDefinitions/AccessConfig.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/BorderRadius",
+         "schema": "Schema/TypeDefinitions/BorderRadius.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/BorderStyle",
+         "schema": "Schema/TypeDefinitions/BorderStyle.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/BorderWidth",
+         "schema": "Schema/TypeDefinitions/BorderWidth.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/BoxShadowList",
+         "schema": "Schema/TypeDefinitions/BoxShadowList.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/ClassNameList",
+         "schema": "Schema/TypeDefinitions/ClassNameList.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/Color",
+         "schema": "Schema/TypeDefinitions/Color.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/ContextReference",
+         "schema": "Schema/TypeDefinitions/ContextReference.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/Control",
+         "schema": "Schema/TypeDefinitions/Control.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/ControlAccessRightName",
+         "schema": "Schema/TypeDefinitions/ControlAccessRightName.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/ControlPropertyName",
+         "schema": "Schema/TypeDefinitions/ControlPropertyName.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/ContentPath",
+         "schema": "Schema/TypeDefinitions/ContentPath.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/ControlAccessRight",
+         "schema": "Schema/TypeDefinitions/ControlAccessRight.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/ControlType",
+         "schema": "Schema/TypeDefinitions/ControlType.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/Empty",
+         "schema": "Schema/TypeDefinitions/Empty.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/FontFamily",
+         "schema": "Schema/TypeDefinitions/FontFamily.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/FontSizeUnit",
+         "schema": "Schema/TypeDefinitions/FontSizeUnit.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/FontStyle",
+         "schema": "Schema/TypeDefinitions/FontStyle.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/FontWeight",
+         "schema": "Schema/TypeDefinitions/FontWeight.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/Fraction",
+         "schema": "Schema/TypeDefinitions/Fraction.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/Function",
+         "schema": "Schema/TypeDefinitions/Function.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/FunctionList",
+         "schema": "Schema/TypeDefinitions/FunctionList.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/HorizontalAlignment",
+         "schema": "Schema/TypeDefinitions/HorizontalAlignment.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/Id",
+         "schema": "Schema/TypeDefinitions/Id.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/LinearGradientColor",
+         "schema": "Schema/TypeDefinitions/LinearGradientColor.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/Locale",
+         "schema": "Schema/TypeDefinitions/Locale.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/MeasurementUnit",
+         "schema": "Schema/TypeDefinitions/MeasurementUnit.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/MeasurementValue",
+         "schema": "Schema/TypeDefinitions/MeasurementValue.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/Padding",
+         "schema": "Schema/TypeDefinitions/Padding.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/Path",
+         "schema": "Schema/TypeDefinitions/Path.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/PixelUnit",
+         "schema": "Schema/TypeDefinitions/PixelUnit.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/PositiveNumber",
+         "schema": "Schema/TypeDefinitions/PositiveNumber.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/RecipeReference",
+         "schema": "Schema/TypeDefinitions/RecipeReference.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/RecipeTypeReference",
+         "schema": "Schema/TypeDefinitions/RecipeTypeReference.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/ScaleMode",
+         "schema": "Schema/TypeDefinitions/ScaleMode.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/ScrollMode",
+         "schema": "Schema/TypeDefinitions/ScrollMode.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/SizeMode",
+         "schema": "Schema/TypeDefinitions/SizeMode.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/SizeModeWithContent",
+         "schema": "Schema/TypeDefinitions/SizeModeWithContent.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/SolidColor",
+         "schema": "Schema/TypeDefinitions/SolidColor.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/StopPoint",
+         "schema": "Schema/TypeDefinitions/StopPoint.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/Symbol",
+         "schema": "Schema/TypeDefinitions/Symbol.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/ThemeName",
+         "schema": "Schema/TypeDefinitions/ThemeName.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/ToggleState",
+         "schema": "Schema/TypeDefinitions/ToggleState.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/TransformList",
+         "schema": "Schema/TypeDefinitions/TransformList.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/Trigger",
+         "schema": "Schema/TypeDefinitions/Trigger.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/TriggerList",
+         "schema": "Schema/TypeDefinitions/TriggerList.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/TypeRef",
+         "schema": "Schema/TypeDefinitions/TypeRef.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/UserControlPath",
+         "schema": "Schema/TypeDefinitions/UserControlPath.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/VerticalAlignment",
+         "schema": "Schema/TypeDefinitions/VerticalAlignment.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/VirtualControlRightMappingList",
+         "schema": "Schema/TypeDefinitions/VirtualControlRightMappingList.Schema.json"
+      },
+      {
+         "name": "tchmi:framework#/definitions/Visibility",
+         "schema": "Schema/TypeDefinitions/Visibility.Schema.json"
+      }
+   ]
+}

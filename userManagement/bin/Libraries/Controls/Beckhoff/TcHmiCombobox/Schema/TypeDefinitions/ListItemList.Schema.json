@@ -1,0 +1,24 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "ListItemList": {
+      "title": "ListItemList",
+      "description": "List Item List",
+      "engineeringDefaultDatatype": 0,
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "$ref":  "tchmi:framework#/definitions/ListItem"
+          }
+        },
+        {
+          "type": "array"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    }
+  }
+}

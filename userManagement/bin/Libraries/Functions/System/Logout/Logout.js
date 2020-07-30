@@ -1,0 +1,1 @@
+var TcHmi;!function(o){var t,n;t=o.Functions||(o.Functions={}),(n=t.System||(t.System={})).Logout=function(){return o.Server.logout()},t.registerFrameworkFunction("Logout",n.Logout,"System/Logout/Logout.function.json")}(TcHmi=TcHmi||{});

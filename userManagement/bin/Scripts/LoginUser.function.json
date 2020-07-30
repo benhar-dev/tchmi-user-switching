@@ -1,0 +1,61 @@
+﻿{
+  "function": {
+    "name": "LoginUser",
+    "displayName": "LoginUser",
+    "visible": true,
+    "category": "",
+    "waitMode": "Synchronous",
+    "injectContextObject": false,
+    "description": "",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/Null"
+    },
+    "arguments": [
+      {
+        "name": "UserName",
+        "displayName": "UserName",
+        "type": "tchmi:general#/definitions/String",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "Password",
+        "displayName": "Password",
+        "type": "tchmi:general#/definitions/String",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "StayLoggedIn",
+        "displayName": "StayLoggedIn",
+        "type": "tchmi:general#/definitions/Boolean",
+        "description": "",
+        "defaultValue": "False",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "ReloadPage",
+        "displayName": "ReloadPage",
+        "type": "tchmi:general#/definitions/Boolean",
+        "description": "",
+        "defaultValue": "False",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      }
+    ]
+  },
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/FunctionDescription.Schema.json"
+}

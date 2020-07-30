@@ -1,0 +1,82 @@
+{
+   "$schema": "../../../TcHmiFramework/Schema/ControlDescription.Schema.json",
+   "name": "tchmi-content",
+   "classNamespace": "TcHmi.Controls.System",
+   "className": "TcHmiContent",
+   "displayName": "Content",
+   "version": {
+      "full": "1.10.1336.0",
+      "major": 1,
+      "minor": 10,
+      "build": 1336,
+      "revision": 0
+   },
+   "visible": false,
+   "themeable": "Standard",
+   "base": "tchmi-partial",
+   "uses": [],
+   "description": "A reusable Container which can be loaded in a Region.",
+   "properties": {
+      "containerControl": true,
+      "geometry": {
+         "width": 500,
+         "height": 500
+      }
+   },
+   "icons": [
+      {
+         "name": "Icons/16x16.png",
+         "width": 16,
+         "height": 16
+      },
+      {
+         "name": "Icons/24x24.png",
+         "width": 24,
+         "height": 24
+      },
+      {
+         "name": "Icons/32x32.png",
+         "width": 32,
+         "height": 32
+      },
+      {
+         "name": "Icons/64x64.png",
+         "width": 64,
+         "height": 64
+      }
+   ],
+   "dependencyFiles": [
+      {
+         "name": "Source.js",
+         "type": "JavaScript",
+         "description": ""
+      }
+   ],
+   "themes": {},
+   "attributes": [
+      {
+         "name": "data-tchmi-type",
+         "displayName": "",
+         "propertyName": "type",
+         "propertySetterName": "",
+         "propertyGetterName": "getType",
+         "visible": false,
+         "type": "tchmi:framework#/definitions/ControlType",
+         "category": "None",
+         "description": "Type of the control.",
+         "defaultValue": "tchmi-content",
+         "defaultValueInternal": null,
+         "requiredOnCompile": true,
+         "readOnly": true,
+         "bindable": false,
+         "heritable": false
+      }
+   ],
+   "functions": [],
+   "dataTypes": [
+      {
+         "name": "tchmi:framework#/definitions/TcHmiContent",
+         "schema": "Schema/TypeDefinitions/TcHmiContent.Schema.json"
+      }
+   ]
+}

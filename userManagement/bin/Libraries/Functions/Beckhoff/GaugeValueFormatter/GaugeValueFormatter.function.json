@@ -1,0 +1,46 @@
+{
+   "$schema": "../TcHmiFramework/Schema/FunctionDescription.Schema.json",
+   "version": {
+      "full": "1.10.1336.0",
+      "major": 1,
+      "minor": 10,
+      "build": 1336,
+      "revision": 0
+   },
+   "dependencyFiles": [
+      {
+         "name": "GaugeValueFormatter.js",
+         "type": "JavaScript",
+         "description": ""
+      }
+   ],
+   "function": {
+      "name": "GaugeValueFormatter",
+      "displayName": "GaugeValueFormatter",
+      "visible": true,
+      "description": "Return a formatted string for the value passed in.",
+      "category": "Formatting",
+      "returnValue": {
+         "type": "tchmi:general#/definitions/String"
+      },
+      "arguments": [
+         {
+            "name": "value",
+            "displayName": "value",
+            "type": "tchmi:general#/definitions/Number",
+            "description": "The value to format.",
+            "required": true,
+            "bindable": true
+         },
+         {
+            "name": "maxDecimals",
+            "displayName": "maxDecimals",
+            "type": "tchmi:general#/definitions/Number",
+            "description": "How many decimal places the value should have.",
+            "required": false,
+            "bindable": true
+         }
+      ]
+   },
+   "dataTypes": []
+}

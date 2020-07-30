@@ -1,0 +1,38 @@
+{
+   "$schema": "../TcHmiFramework/Schema/FunctionDescription.Schema.json",
+   "version": {
+      "full": "1.10.1336.0",
+      "major": 1,
+      "minor": 10,
+      "build": 1336,
+      "revision": 0
+   },
+   "dependencyFiles": [
+      {
+         "name": "Concatenate.js",
+         "type": "JavaScript",
+         "description": ""
+      }
+   ],
+   "function": {
+      "name": "Concatenate",
+      "displayName": "Concatenate",
+      "visible": true,
+      "category": "Data Conversion",
+      "description": "Concatenate multiple string values.",
+      "returnValue": {
+         "type": "tchmi:general#/definitions/String"
+      },
+      "arguments": [
+         {
+            "name": "value",
+            "displayName": "Value",
+            "type": "tchmi:general#/definitions/String",
+            "description": "Value to concatenate",
+            "required": true,
+            "bindable": true,
+            "restParameter": true
+         }
+      ]
+   }
+}

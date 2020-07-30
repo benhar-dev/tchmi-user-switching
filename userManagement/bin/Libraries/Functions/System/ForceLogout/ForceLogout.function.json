@@ -1,0 +1,39 @@
+{
+   "$schema": "../TcHmiFramework/Schema/FunctionDescription.Schema.json",
+   "version": {
+      "full": "1.10.1336.0",
+      "major": 1,
+      "minor": 10,
+      "build": 1336,
+      "revision": 0
+   },
+   "dependencyFiles": [
+      {
+         "name": "ForceLogout.js",
+         "type": "JavaScript",
+         "description": ""
+      }
+   ],
+   "function": {
+      "name": "ForceLogout",
+      "displayName": "ForceLogout",
+      "visible": false,
+      "category": "UserManagement",
+      "description": "Logout a different user or all from a TcHmiServer",
+      "returnValue": {
+         "type": "tchmi:general#/definitions/Boolean",
+         "description": "Returns a boolean if the logout was called."
+      },
+      "arguments": [
+         {
+            "name": "username",
+            "displayName": "username",
+            "type": "tchmi:general#/definitions/String",
+            "description": "Username to logout. Logout all users if left empty.",
+            "required": true,
+            "bindable": true,
+            "restParameter": false
+         }
+      ]
+   }
+}

@@ -1,0 +1,56 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "AccessConfig": {
+      "definitions": {
+        "access": {
+          "title": "Access",
+          "type": "object",
+          "engineeringColumns": [ "accessright", "group", "permission" ],
+          "propertiesMeta": [
+            {
+              "name": "accessright",
+              "displayName": "Access right",
+              "category": "General",
+              "displayPriority": 10,
+              "description": "Name of the access right."
+            },
+            {
+              "name": "group",
+              "displayName": "Group",
+              "category": "General",
+              "displayPriority": 10,
+              "description": "Name of the user group."
+            },
+            {
+              "name": "permission",
+              "displayName": "Permission",
+              "category": "General",
+              "displayPriority": 10,
+              "description": "Name of the permission described by this rule."
+            }
+          ],
+          "properties": {
+            "accessright": {
+              "type": "string",
+              "minLength": 1
+            },
+            "group": {
+              "type": "string",
+              "minLength": 1
+            },
+            "permission": {
+              "type": "string",
+              "enum": [ "Allow", "Deny", "Inherit" ]
+            }
+          },
+          "required": [ "accessright", "group", "permission" ]
+        }
+      },
+      "type": "array",
+      "items": {
+        "$ref": "tchmi:framework#/definitions/AccessConfig/definitions/access"
+      }
+    }
+  }
+}

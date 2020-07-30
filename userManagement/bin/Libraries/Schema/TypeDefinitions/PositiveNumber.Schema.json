@@ -1,0 +1,15 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "PositiveNumber": {
+      "allOf": [
+        {
+          "$ref": "tchmi:general#/definitions/Number" 
+        },
+        {
+          "minimum": 0
+        }
+      ]
+    }
+  }
+}

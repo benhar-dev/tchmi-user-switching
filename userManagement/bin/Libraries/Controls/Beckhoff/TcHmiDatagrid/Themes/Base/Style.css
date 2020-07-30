@@ -1,0 +1,162 @@
+﻿/** Styles for the theme: Base */
+
+.tchmi-focus {
+    background: #4c6374;
+    opacity: 0.05;
+}
+
+
+.tchmi-datagrid-template-border {
+    border-width: 0px;
+    border-color: #000;
+    border-style: solid;
+}
+
+.tchmi-datagrid-template-header {
+    background: #4794da;
+    color: #ffffff;
+    /* table border **/
+    border-right: 1px solid #ededed;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    font-weight: normal;
+}
+
+.tchmi-datagrid-template-header-border {
+    border-color: #EDEDED;
+}
+
+.tchmi-datagrid-template-sort-element.sortable .tchmi-datagrid-template-sort-element-child::after {
+    content: url("./Images/sort.svg");
+}
+
+.tchmi-datagrid-template-sort-element .tchmi-datagrid-template-sort-element-child.tchmi-datagrid-template-header-sort-asc::after {
+    content: url("./Images/sort_asc.svg");
+}
+
+.tchmi-datagrid-template-sort-element .tchmi-datagrid-template-sort-element-child.tchmi-datagrid-template-header-sort-desc::after {
+    content: url("./Images/sort_desc.svg");
+}
+
+.tchmi-datagrid-template-placeholder {
+    background: #4794da;
+}
+
+.tchmi-datagrid-template-cell
+{
+    color: #4c6374;
+}
+
+td.tchmi-datagrid-template-row-numbers {
+    background: #4c6374;
+    color: #ffffff;
+    border-color: #EDEDED;
+}
+
+.tchmi-datagrid-template-cell {
+    background: #ffffff;
+    color: #4c6374;
+	border-color: #EDEDED;
+}
+
+.tchmi-datagrid-template-cell select {
+	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.02), inset 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+
+.tchmi-datagrid-template-cell select + label {
+    background: url('Images/dropdown.svg') center center no-repeat, linear-gradient(to bottom right, #4994da, #4162b0);
+}
+
+.tchmi-datagrid-template-cell input[type=checkbox] + label {
+	background-color: white;
+	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.02), inset 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.tchmi-datagrid-template-cell input[type=checkbox]:checked + label {
+	background: url(Images/checkbox.svg) center / 100% no-repeat, linear-gradient(to bottom right, #2774ba, #4794da 20%);
+}
+
+.tchmi-datagrid-template-cell input[type=text], .tchmi-datagrid-template-cell input[type="text"]:disabled {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    color: inherit;
+    background-color: inherit;
+	text-align: inherit;
+	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.02), inset 0px 0px 3px 2px rgba(0,0,0,0.3);
+}
+
+.tchmi-datagrid-template-data-scroll tr.focused td:not(.focused)::before {
+	background: #4c6374;
+	opacity: 0.25;
+}
+
+.tchmi-datagrid-combobox-template-button {
+    background: linear-gradient(to bottom right, #4994da, #4162b0);
+}
+
+.tchmi-datagrid-combobox-template-button polyline {
+    stroke: #FFFFFF;
+    fill: none;
+}
+
+.tchmi-datagrid-combobox-template.active .tchmi-datagrid-combobox-template-button {
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.02), inset 0px 0px 3px 2px rgba(0,0,0,0.3);
+    background: linear-gradient(to top left, #4994da, #4162b0);
+}
+
+.tchmi-datagrid-combobox-template.active .tchmi-datagrid-combobox-template-button polyline {
+    stroke: #FFFFFF;
+    fill: none;
+}
+
+/*--------------------------------------------select--------------------------------------------------*/
+.tchmi-datagrid-combobox-template-select {
+    background: #ffffff;
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.02), inset 0px 0px 3px 2px rgba(0,0,0,0.3);
+}
+
+.tchmi-datagrid-combobox-template.active .tchmi-datagrid-combobox-template-select {
+    background: #EDEDED;
+}
+
+.tchmi-datagrid-combobox-template-select-content {
+    color: #4c6374;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*-----------------------table--------------------------------------*/
+
+.tchmi-datagrid-combobox-template-dropdown {
+    box-shadow: inset -7px 0px 6px -7px rgba(0,0,0,0.6), inset 7px 0px 6px -7px rgba(0,0,0,0.6), inset 0px -7px 6px -7px rgba(0,0,0,0.6);
+    background: #ffffff;
+}
+.tchmi-datagrid-combobox-template-dropdown.drop-down-style-mobile {
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.6);
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.tchmi-datagrid-combobox-template-dropdown-element {
+    color: #4c6374;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.tchmi-datagrid-combobox-template-dropdown-element.selected {
+	background: rgba(128, 128, 128, 0.15);
+}
+
+.tchmi-datagrid-combobox-template-dropdown-element:hover {
+    background: #4794da;
+    color: #ffffff;
+}

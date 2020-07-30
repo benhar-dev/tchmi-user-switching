@@ -1,0 +1,11 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "ChartLineStyle": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "ChartLineStyle",
+      "type": "string",
+      "enum": [ "Dashed", "Dotted", "Solid" ]
+    }
+  }
+}

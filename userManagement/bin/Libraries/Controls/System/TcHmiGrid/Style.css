@@ -1,0 +1,48 @@
+﻿/** Styles for all themes */
+
+/* Style for the main element */
+.tchmi-grid {
+    overflow: hidden; /* DO NOT CHANGE Would cut 100% sized child control shadows */
+}
+
+.tchmi-grid-template {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+.tchmi-grid-grid {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    /* some styles for debugging */
+    /*border:1px solid green;*/
+}
+
+.tchmi-grid-gridrow {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    /* some styles for debugging */
+    /*border:1px solid red;*/
+}
+
+.tchmi-grid-gridcell {
+    /* some styles for debugging */
+    /*border: 1px solid black;*/
+    /*background-color: cyan;*/
+
+    position: relative;
+}
+.tchmi-grid-cellpaddingmover {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}

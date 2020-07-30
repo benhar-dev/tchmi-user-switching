@@ -1,0 +1,21 @@
+﻿/** Styles for all themes */
+
+/* Style for the main element */
+.tchmi-iframe {
+    /* Prevent overflow if the border radius is huge */
+    overflow: hidden;
+}
+
+.tchmi-iframe-template {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+.tchmi-iframe-template-frame {
+    position:absolute;
+    width:100%;
+    height:100%;
+
+    border: 0px;
+}

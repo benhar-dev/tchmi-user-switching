@@ -1,0 +1,13 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "TrendLineChartTooltipInformationList": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "TrendLineChartTooltipInformationList",
+      "type": "array",
+      "items": {
+        "$ref": "tchmi:framework#/definitions/TrendLineChartTooltipInformationObject"
+      }
+    }
+  }
+}

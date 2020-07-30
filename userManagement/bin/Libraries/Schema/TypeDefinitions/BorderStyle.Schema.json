@@ -1,0 +1,22 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "BorderStyle": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "definitions": {
+        "style": {
+          "type": "string",
+          "enum": [ "Solid", "Dashed", "Dotted", "None" ]
+        }
+      },
+      "type": "object",
+      "properties": {
+        "left": { "$ref": "tchmi:framework#/definitions/BorderStyle/definitions/style" },
+        "top": { "$ref": "tchmi:framework#/definitions/BorderStyle/definitions/style" },
+        "right": { "$ref": "tchmi:framework#/definitions/BorderStyle/definitions/style" },
+        "bottom": { "$ref": "tchmi:framework#/definitions/BorderStyle/definitions/style" }
+      },
+      "required": [ "left", "top", "right", "bottom" ]
+    }
+  }
+}

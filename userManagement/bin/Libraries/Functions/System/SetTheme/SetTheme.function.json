@@ -1,0 +1,34 @@
+{
+   "$schema": "../TcHmiFramework/Schema/FunctionDescription.Schema.json",
+   "version": {
+      "full": "1.10.1336.0",
+      "major": 1,
+      "minor": 10,
+      "build": 1336,
+      "revision": 0
+   },
+   "dependencyFiles": [
+      {
+         "name": "SetTheme.js",
+         "type": "JavaScript",
+         "description": ""
+      }
+   ],
+   "function": {
+      "name": "SetTheme",
+      "displayName": "SetTheme",
+      "description": "Set a new Theme.",
+      "category": "Theme",
+      "returnValue": null,
+      "arguments": [
+         {
+            "name": "newTheme",
+            "displayName": "newTheme",
+            "type": "tchmi:framework#/definitions/ThemeName",
+            "description": "New theme name.",
+            "required": true,
+            "bindable": true
+         }
+      ]
+   }
+}

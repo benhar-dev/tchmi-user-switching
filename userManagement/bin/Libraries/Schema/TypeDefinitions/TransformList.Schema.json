@@ -1,0 +1,412 @@
+﻿{
+   "$schema": "http://json-schema.org/draft-04/schema",
+   "definitions": {
+      "TransformList": {
+         "$schema": "http://json-schema.org/draft-04/schema",
+         "definitions": {
+            "transform": {
+               "anyOf": [
+                  {
+                     "title": "Translate",
+                     "type": "object",
+                     "propertiesMeta": [
+                        {
+                           "name": "transformType",
+                           "category": "general",
+                           "displayName": "transformType",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": null
+                        },
+                        {
+                           "name": "x",
+                           "category": "general",
+                           "displayName": "x",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": null
+                        },
+                        {
+                           "name": "xUnit",
+                           "category": "general",
+                           "refTo": "x",
+                           "displayName": "xUnit",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": "px"
+                        },
+                        {
+                           "name": "y",
+                           "category": "general",
+                           "displayName": "y",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": null
+                        },
+                        {
+                           "name": "yUnit",
+                           "category": "general",
+                           "refTo": "y",
+                           "displayName": "yUnit",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": "px"
+                        },
+                        {
+                           "name": "z",
+                           "category": "general",
+                           "displayName": "z",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": null
+                        },
+                        {
+                           "name": "zUnit",
+                           "category": "general",
+                           "refTo": "z",
+                           "displayName": "zUnit",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": "px"
+                        }
+                     ],
+                     "properties": {
+                        "transformType": {
+                           "type": "string",
+                           "enum": [ "Translate" ]
+                        },
+                        "x": { "$ref": "tchmi:framework#/definitions/MeasurementValue" },
+                        "xUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" },
+                        "y": { "$ref": "tchmi:framework#/definitions/MeasurementValue" },
+                        "yUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" },
+                        "z": { "$ref": "tchmi:framework#/definitions/MeasurementValue" },
+                        "zUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" }
+                     },
+                     "required": [ "transformType" ]
+                  },
+                  {
+                     "title": "Rotate",
+                     "type": "object",
+                     "propertiesMeta": [
+                        {
+                           "name": "transformType",
+                           "category": "general",
+                           "displayName": "transformType",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": null
+                        },
+                        {
+                           "name": "angle",
+                           "category": "general",
+                           "displayName": "angle",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": null
+                        },
+                        {
+                           "name": "angleUnit",
+                           "category": "general",
+                           "refTo": "angle",
+                           "displayName": "angleUnit",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": "deg"
+                        }
+                     ],
+                     "properties": {
+                        "transformType": {
+                           "type": "string",
+                           "enum": [ "Rotate" ]
+                        },
+                        "angle": { "$ref": "tchmi:framework#/definitions/MeasurementValue" },
+                        "angleUnit": { "$ref": "tchmi:framework#/definitions/TransformList/definitions/angleUnit" },
+                        "vector": {
+                           "type": "object",
+                           "properties": {
+                              "x": { "type": "number" },
+                              "y": { "type": "number" },
+                              "z": { "type": "number" }
+                           },
+                           "required": [ "x", "y", "z" ]
+                        }
+                     },
+                     "required": [ "transformType", "angle" ]
+                  },
+                  {
+                     "title": "Scale",
+                     "type": "object",
+                     "properties": {
+                        "transformType": {
+                           "type": "string",
+                           "enum": [ "Scale" ]
+                        },
+                        "x": { "type": "number" },
+                        "y": { "type": "number" },
+                        "z": { "type": "number" }
+                     },
+                     "required": [ "transformType" ]
+                  },
+                  {
+                     "title": "Skew",
+                     "type": "object",
+                     "propertiesMeta": [
+                        {
+                           "name": "transformType",
+                           "category": "general",
+                           "displayName": "transformType",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": null
+                        },
+                        {
+                           "name": "xAngle",
+                           "category": "general",
+                           "displayName": "xAngle",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": null
+                        },
+                        {
+                           "name": "xAngleUnit",
+                           "category": "general",
+                           "refTo": "xAngle",
+                           "displayName": "xAngleUnit",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": "deg"
+                        },
+                        {
+                           "name": "yAngle",
+                           "category": "general",
+                           "displayName": "yAngle",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": null
+                        },
+                        {
+                           "name": "yAngleUnit",
+                           "category": "general",
+                           "refTo": "yAngle",
+                           "displayName": "yAngleUnit",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": "deg"
+                        }
+                     ],
+                     "properties": {
+                        "transformType": {
+                           "type": "string",
+                           "enum": [ "Skew" ]
+                        },
+                        "xAngle": { "$ref": "tchmi:framework#/definitions/MeasurementValue" },
+                        "xAngleUnit": { "$ref": "tchmi:framework#/definitions/TransformList/definitions/angleUnit" },
+                        "yAngle": { "$ref": "tchmi:framework#/definitions/MeasurementValue" },
+                        "yAngleUnit": { "$ref": "tchmi:framework#/definitions/TransformList/definitions/angleUnit" }
+                     },
+                     "required": [ "transformType" ]
+                  },
+                  {
+                     "title": "Origin",
+                     "type": "object",
+                     "propertiesMeta": [
+                        {
+                           "name": "transformType",
+                           "category": "general",
+                           "displayName": "transformType",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": null
+                        },
+                        {
+                           "name": "x",
+                           "category": "general",
+                           "displayName": "x",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": null
+                        },
+                        {
+                           "name": "xUnit",
+                           "category": "general",
+                           "refTo": "x",
+                           "displayName": "xUnit",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": "px"
+                        },
+                        {
+                           "name": "y",
+                           "category": "general",
+                           "displayName": "y",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": null
+                        },
+                        {
+                           "name": "yUnit",
+                           "category": "general",
+                           "refTo": "y",
+                           "displayName": "yUnit",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": "px"
+                        },
+                        {
+                           "name": "z",
+                           "category": "general",
+                           "displayName": "z",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": null
+                        },
+                        {
+                           "name": "zUnit",
+                           "category": "general",
+                           "refTo": "z",
+                           "displayName": "zUnit",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": "px"
+                        }
+                     ],
+                     "properties": {
+                        "transformType": {
+                           "type": "string",
+                           "enum": [ "Origin" ]
+                        },
+                        "x": { "$ref": "tchmi:framework#/definitions/MeasurementValue" },
+                        "xUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" },
+                        "y": { "$ref": "tchmi:framework#/definitions/MeasurementValue" },
+                        "yUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" },
+                        "z": { "$ref": "tchmi:framework#/definitions/MeasurementValue" },
+                        "zUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" }
+                     },
+                     "required": [ "transformType" ]
+                  },
+                  {
+                     "title": "Perspective",
+                     "type": "object",
+                     "propertiesMeta": [
+                        {
+                           "name": "transformType",
+                           "category": "general",
+                           "displayName": "transformType",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": null
+                        },
+                        {
+                           "name": "distance",
+                           "category": "general",
+                           "displayName": "distance",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": null
+                        },
+                        {
+                           "name": "distanceUnit",
+                           "category": "general",
+                           "refTo": "distance",
+                           "displayName": "distanceUnit",
+                           "displayPriority": 10,
+                           "description": "",
+                           "defaultValue": null,
+                           "defaultValueInternal": "px"
+                        }
+                     ],
+                     "properties": {
+                        "transformType": {
+                           "type": "string",
+                           "enum": [ "Perspective" ]
+                        },
+                        "distance": { "$ref": "tchmi:framework#/definitions/MeasurementValue" },
+                        "distanceUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" },
+                        "origin": {
+                           "type": "object",
+                           "propertiesMeta": [
+                              {
+                                 "name": "x",
+                                 "category": "general",
+                                 "displayName": "x",
+                                 "displayPriority": 10,
+                                 "description": "",
+                                 "defaultValue": null,
+                                 "defaultValueInternal": null
+                              },
+                              {
+                                 "name": "xUnit",
+                                 "category": "general",
+                                 "refTo": "x",
+                                 "displayName": "xUnit",
+                                 "displayPriority": 10,
+                                 "description": "",
+                                 "defaultValue": null,
+                                 "defaultValueInternal": "px"
+                              },
+                              {
+                                 "name": "y",
+                                 "category": "general",
+                                 "displayName": "y",
+                                 "displayPriority": 10,
+                                 "description": "",
+                                 "defaultValue": null,
+                                 "defaultValueInternal": null
+                              },
+                              {
+                                 "name": "yUnit",
+                                 "category": "general",
+                                 "refTo": "y",
+                                 "displayName": "yUnit",
+                                 "displayPriority": 10,
+                                 "description": "",
+                                 "defaultValue": null,
+                                 "defaultValueInternal": "px"
+                              }
+                           ],
+                           "properties": {
+                              "x": { "$ref": "tchmi:framework#/definitions/MeasurementValue" },
+                              "xUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" },
+                              "y": { "$ref": "tchmi:framework#/definitions/MeasurementValue" },
+                              "yUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" }
+                           }
+                        }
+                     },
+                     "required": [ "transformType", "distance" ]
+                  }
+               ]
+            },
+            "angleUnit": {
+               "type": "string",
+               "enum": [ "deg", "rad", "turn", "grad" ]
+            }
+         },
+         "type": "array",
+         "items": { "$ref": "tchmi:framework#/definitions/TransformList/definitions/transform" }
+      }
+   }
+}

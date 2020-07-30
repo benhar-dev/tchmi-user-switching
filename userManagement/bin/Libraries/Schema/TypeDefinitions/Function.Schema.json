@@ -1,0 +1,105 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "Function": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "type": "object",
+      "definitions": {
+        "value": {
+          "anyOf": [
+            {
+              "title": "StaticValue",
+              "type": "object",
+              "properties": {
+                "objectType": {
+                  "description": "An enum defining the variable type.",
+                  "type": "string",
+                  "enum": [ "StaticValue" ]
+                },
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "boolean"
+                    },
+                    {
+                      "type": "array"
+                    },
+                    {
+                      "type": "object"
+                    }
+                  ]
+                },
+                "valueType": { "type": "string" }
+              },
+              "required": [ "objectType", "value", "valueType" ]
+            },
+            {
+              "title": "Symbol",
+              "type": "object",
+              "properties": {
+                "objectType": {
+                  "description": "An enum defining the variable type.",
+                  "type": "string",
+                  "enum": [ "Symbol" ]
+                },
+                "symbolExpression": { "$ref": "tchmi:framework#/definitions/Function/definitions/symbolExpression" }
+              },
+              "required": [ "objectType", "symbolExpression" ]
+            },
+            {
+              "title": "ControlApiFunction",
+              "type": "object",
+              "properties": {
+                "objectType": {
+                  "description": "An enum defining the variable type.",
+                  "type": "string",
+                  "enum": [ "ControlApiFunction" ]
+                },
+                "control": { "type": "string" },
+                "fn": { "type": "string" },
+                "valueType": { "type": "string" }
+              },
+              "required": [ "objectType", "control", "fn", "valueType" ]
+            },
+            {
+              "title": "EventDataObject",
+              "type": "object",
+              "properties": {
+                "objectType": {
+                  "description": "An enum defining the variable type.",
+                  "type": "string",
+                  "enum": [ "EventDataObject" ]
+                },
+                "propertyPath": { "type": "string" }
+              },
+              "required": [ "objectType", "propertyPath" ]
+            }
+          ]
+        },
+        "symbolExpression": {
+          "title": "SymbolExpression",
+          "type": "string",
+          "pattern": "^%(s|i|l|pp|tp|f|ctrl|ca)%.+%\\1%$"
+        }
+      },
+      "properties": {
+        "objectType": {
+          "type": "string",
+          "enum": [ "Function" ]
+        },
+        "fn": { "type": "string" },
+        "fnParams": {
+          "type": "array",
+          "items": { "$ref": "tchmi:framework#/definitions/Function/definitions/value" }
+        }
+      },
+      "required": [ "objectType", "fn", "fnParams" ]
+    }
+  }
+}

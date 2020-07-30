@@ -1,0 +1,1 @@
+var TcHmi;!function(r){var n,i;n=r.Functions||(r.Functions={}),(i=n.System||(n.System={})).CheckBindingEx=function(n,i,e){if(!e)return!1;var t=r.Binding.resolveEx(i,n);return!(!t||t.toString()!==e.getExpression().toString())},n.registerFrameworkFunction("CheckBindingEx",i.CheckBindingEx,"System/CheckBindingEx/CheckBindingEx.function.json")}(TcHmi=TcHmi||{});

@@ -1,0 +1,62 @@
+{
+   "$schema": "../../../TcHmiFramework/Schema/Manifest.Schema.json",
+   "metadata": {
+      "industrialField": "",
+      "packageType": "FrameworkExtPrj",
+      "packageSubType": "Control",
+      "packageRelativePath": "Beckhoff/TcHmiTrendLineChart",
+      "packageNamespace": "Beckhoff",
+      "id": "TcHmiTrendLineChart",
+      "version": "1.10.1336.0",
+      "guid": "A3A905FF-B55F-45F9-BE48-0980AE12A0AB",
+      "configurationName": "",
+      "platformName": "",
+      "creationTime": 1505289652,
+      "authors": "Beckhoff Automation GmbH & Co. KG",
+      "owners": "",
+      "summary": "",
+      "licenseUrl": "",
+      "projectUrl": "",
+      "iconUrl": "",
+      "requireLicenseAcceptance": false,
+      "description": "",
+      "releaseNotes": "",
+      "copyright": "Beckhoff Automation GmbH & Co. KG",
+      "tags": "TcHmiFramework, Framework",
+      "dependencies": [
+         {
+            "id": "TcHmiControl",
+            "guid": "3A201780-1C37-40FC-8943-1E873EA4408D"
+         },
+         {
+            "id": "TcHmiButton",
+            "guid": "33C086CF-D61B-468E-9594-DBBDECBB5544"
+         },
+         {
+            "id": "TcHmiToggleButton",
+            "guid": "C4D4B747-DC44-43BF-8974-A768010769D8"
+         },
+         {
+            "id": "TcHmiCombobox",
+            "guid": "3D073CCC-1F87-4E31-BD96-A9321F4406E8"
+         },
+         {
+            "id": "TcHmiTimespanPicker",
+            "guid": "5B745460-1957-46A4-95CD-25370AA48431"
+         },
+         {
+            "id": "TcHmiDateTimePicker",
+            "guid": "32FD9232-5EC3-4CBF-80DA-BD935439FF2D"
+         },
+         {
+            "id": "TcHmiCharting",
+            "guid": "A1EA10CA-C505-4F20-A3B2-C5A9156F067C"
+         }
+      ],
+      "references": []
+   },
+   "files": [],
+   "symbols": [],
+   "flags": {},
+   "fileformat": 1
+}

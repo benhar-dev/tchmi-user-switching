@@ -1,0 +1,38 @@
+﻿/** Styles for the theme: Base */
+.tchmi-radial-gauge-template-circle-outside {
+	fill: rgba(255, 255, 255, 0.5);
+}
+
+.tchmi-radial-gauge-template-main-tick, 
+.tchmi-radial-gauge-template-sub-tick {
+    stroke:#4794da;
+    stroke-width:2;
+	pointer-events: none;
+}
+
+
+.tchmi-radial-gauge-template-label {
+    font-size:12px;
+    fill:#4794da;
+    font-weight:bold;
+}
+
+.tchmi-radial-gauge-template-circle-under {
+    stroke-width: 9px;
+	stroke-dasharray: 741.5px;
+	stroke-dashoffset: 206px;
+    stroke: #ffffff;
+    fill: transparent;
+}
+
+.tchmi-radial-gauge-template-circle-over {
+    stroke-width: 9px;
+	stroke-dasharray: 741.5px;
+	stroke-dashoffset: 206px;
+    stroke: #4794da;
+    fill: transparent;
+}
+
+.tchmi-radial-gauge-template-display-value, .tchmi-radial-gauge-template-display-unit {
+    fill:#4993da;
+}

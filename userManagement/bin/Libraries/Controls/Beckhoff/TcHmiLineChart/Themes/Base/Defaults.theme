@@ -1,0 +1,29 @@
+﻿{
+  "$schema": "../../../../../TcHmiFramework/Schema/ThemeDescription.Schema.json",
+  "controlTypeValues": {
+    "tchmi-line-chart": {
+      "attributes": {
+        "XLabelFontColor": {
+          "color": "#4794da"
+        },
+        "XAxisNameFontColor": {
+          "color": "#4794da"
+        },
+        "XAxisColor": {
+          "color": "#4794da"
+        },
+        "GridLineColor": {
+          "color": "#4794da"
+        },
+        "SubgridLineColor": {
+          "color": "#4794da"
+        },
+        "GridBackgroundColor": {
+          "color": "#f2f2f2"
+        }
+      },
+      "themedResources": {
+      }
+    }
+  }
+}

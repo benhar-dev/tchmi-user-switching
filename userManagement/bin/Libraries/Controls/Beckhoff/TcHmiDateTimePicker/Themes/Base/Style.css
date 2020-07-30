@@ -1,0 +1,107 @@
+﻿/** Styles for the theme: Base */
+.tchmi-date-time-picker-template-overlay {
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.6);
+    background: #ffffff;
+}
+
+.tchmi-date-time-picker-selected-area-template {
+    border: 1px solid #C0C0C5;
+}
+
+.tchmi-date-time-picker-calendar-template {
+    border: 1px solid #C0C0C5;
+}
+
+.tchmi-date-time-picker-button-area-template {
+}
+
+.tchmi-date-time-picker-template-label, .tchmi-date-time-picker-template-value {
+    color: #4794da;
+}
+
+/* calendar style */
+.tchmi-date-time-picker-calendar-template-header {
+    background: #4794da;
+}
+
+.tchmi-date-time-picker-calendar-template-header ul {
+}
+
+.tchmi-date-time-picker-calendar-template-header ul li {
+    color: #ffffff;
+}
+
+.tchmi-date-time-picker-calendar-template-next {
+}
+.tchmi-date-time-picker-calendar-template-weekdays {
+    background-color: #D7D7D9;
+}
+
+.tchmi-date-time-picker-calendar-template-weekdays li {
+    color: #4c6374;
+}
+
+.tchmi-date-time-picker-calendar-template-days {
+    background: #EDEDED;
+}
+
+.tchmi-date-time-picker-calendar-template-days li {
+    color: #4c6374;
+}
+
+.tchmi-date-time-picker-calendar-template-days .active {
+    background: #4794da;
+    color: #ffffff;
+}
+
+/* year style */
+.tchmi-date-time-picker-year-template-year-element{
+    color: #4794da;
+}
+
+.tchmi-date-time-picker-year-template .active{
+    background-color: #EDEDED;
+}
+
+/* time style */
+.tchmi-date-time-picker-time-template-label, .tchmi-date-time-picker-time-template-textbox, .tchmi-date-time-picker-time-template-colon, .tchmi-date-time-picker-template-time-label{
+    color: #4794da;
+}
+
+.tchmi-date-time-picker-template-overlay .tchmi-date-time-picker-time-template-textbox-error {
+    background-color: rgba(255, 0,0, 0.4);
+}
+
+.tchmi-date-time-picker-template-overlay .tchmi-textbox-template-border{
+    box-shadow: initial;
+}
+
+.tchmi-date-time-picker-time-area-template {
+    border: 1px solid #C0C0C5;
+}
+
+.tchmi-date-time-picker-time-template-up-button > div{
+    background-image: url('Images/icons_plus_normal.svg');
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.tchmi-date-time-picker-time-template-up-button:not(.tchmi-control-disabled):not(.tchmi-control-operate-disallowed).down > div {
+    background-image: url('Images/icons_plus_pressed.svg');
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+}
+
+.tchmi-date-time-picker-time-template-down-button > div{
+    background-image: url('Images/icons_minus_normal.svg');
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.tchmi-date-time-picker-time-template-down-button:not(.tchmi-control-disabled):not(.tchmi-control-operate-disallowed).down > div {
+    background-image: url('Images/icons_minus_pressed.svg');
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+}

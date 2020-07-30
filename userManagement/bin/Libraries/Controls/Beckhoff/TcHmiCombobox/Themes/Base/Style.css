@@ -1,0 +1,71 @@
+﻿/** Styles for the theme: Base */
+
+/*--------------------------------------------Button--------------------------------------------------------------*/
+
+.tchmi-combobox-template-button {
+    background: linear-gradient(to bottom right, #4994da, #4162b0);
+}
+
+.tchmi-combobox-template-button polyline {
+    stroke: #FFFFFF;
+    fill: none;
+}
+
+/* class active will be set/unset in the control */
+.tchmi-combobox-template.active .tchmi-combobox-template-button {
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.02), inset 0px 0px 3px 2px rgba(0,0,0,0.3);
+    background: linear-gradient(to top left, #4994da, #4162b0);
+}
+/* class active will be set/unset in the control */
+.tchmi-combobox-template.active .tchmi-combobox-template-button polyline {
+    stroke: #FFFFFF;
+    fill: none;
+}
+
+/*--------------------------------------------select--------------------------------------------------*/
+.tchmi-combobox-template-select {
+    background: #ffffff;
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.02), inset 0px 0px 3px 2px rgba(0,0,0,0.3);
+}
+
+.tchmi-combobox-template.active .tchmi-combobox-template-select {
+    background: #EDEDED;
+}
+
+.tchmi-combobox-template-select-content {
+    color: #4c6374;
+}
+
+/* class active will be set/unset in the control */
+.tchmi-combobox-template.active .tchmi-combobox-template-select-content, .tchmi-combobox-template.active .tchmi-combobox-template-input {
+    color: #4c6374;
+}
+
+/*-----------------------table--------------------------------------*/
+
+.tchmi-combobox-template-dropdown {
+    box-shadow: inset -7px 0px 6px -7px rgba(0,0,0,0.6), inset 7px 0px 6px -7px rgba(0,0,0,0.6), inset 0px -7px 6px -7px rgba(0,0,0,0.6);
+    background: #ffffff;
+}
+.tchmi-combobox-template-dropdown.drop-down-style-mobile {
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.6);
+    max-width: 60%;
+    max-height: 60%;
+}
+.tchmi-combobox-template-dropdown-element {
+    color: #4c6374;
+}
+
+.tchmi-combobox-template-dropdown-element.selected {
+    background: rgba(76, 99, 116, 0.15); /* darkgray */
+}
+
+.tchmi-combobox-template-dropdown-element.hover {
+    background: #4794da;
+    color: #ffffff;
+}
+
+.tchmi-combobox-template-input {
+    color: #4c6374;
+    background-color: transparent;
+}

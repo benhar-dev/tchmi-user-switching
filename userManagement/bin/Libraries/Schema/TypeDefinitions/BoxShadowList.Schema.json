@@ -1,0 +1,123 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "BoxShadowList": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "type": "array",
+      "items": {
+        "title": "BoxShadow definition",
+        "type": "object",
+        "propertiesMeta": [
+          {
+            "name": "color",
+            "category": "Colors",
+            "displayName": "Color",
+            "displayPriority": 10,
+            "description": "Color of this Box Shadow",
+            "defaultValue": null,
+            "defaultValueInternal": null
+          },
+          {
+            "name": "offsetX",
+            "category": "General",
+            "displayName": "OffsetX",
+            "displayPriority": 10,
+            "description": "The Shadow Offset.",
+            "defaultValue": null,
+            "defaultValueInternal": 0
+          },
+         {
+            "name": "offsetXUnit",
+            "refTo": "offsetX",
+            "category": "General",
+            "displayName": "OffsetX Unit",
+            "displayPriority": 10,
+            "description": "The Shadow Offset.",
+            "defaultValue": null,
+            "defaultValueInternal": "px"
+         },
+          {
+            "name": "offsetY",
+            "category": "General",
+            "displayName": "OffsetY",
+            "displayPriority": 10,
+            "description": "The Shadow Offset.",
+            "defaultValue": null,
+            "defaultValueInternal": 0
+          },
+         {
+            "name": "offsetYUnit",
+            "refTo": "offsetY",
+            "category": "General",
+            "displayName": "OffsetY Unit",
+            "displayPriority": 10,
+            "description": "The Shadow Offset.",
+            "defaultValue": null,
+            "defaultValueInternal": "px"
+         },
+          {
+            "name": "inset",
+            "category": "General",
+            "displayName": "Inset",
+            "displayPriority": 10,
+            "description": "Inset shadows are drawn inside the border (even transparent ones), above the background, but below content.",
+            "defaultValue": null,
+            "defaultValueInternal": false
+          },
+          {
+            "name": "blur",
+            "category": "General",
+            "displayName": "Blur",
+            "displayPriority": 10,
+            "description": "The larger this value, the bigger the blur, so the shadow becomes bigger and lighter.",
+            "defaultValue": null,
+            "defaultValueInternal": 0
+          },
+         {
+            "name": "blurUnit",
+            "refTo": "blur",
+            "category": "General",
+            "displayName": "BlurUnit",
+            "displayPriority": 10,
+            "description": "The larger this value, the bigger the blur, so the shadow becomes bigger and lighter.",
+            "defaultValue": null,
+            "defaultValueInternal": "px"
+         },
+          {
+            "name": "spread",
+            "category": "General",
+            "displayName": "Spread",
+            "displayPriority": 10,
+            "description": "Positive values will cause the shadow to expand and grow bigger, negative values will cause the shadow to shrink.",
+            "defaultValue": null,
+            "defaultValueInternal": 0
+          },
+         {
+            "name": "spreadUnit",
+            "refTo": "spread",
+            "category": "General",
+            "displayName": "SpreadUnit",
+            "displayPriority": 10,
+            "description": "Positive values will cause the shadow to expand and grow bigger, negative values will cause the shadow to shrink.",
+            "defaultValue": null,
+            "defaultValueInternal": "px"
+         }
+        ],
+        "properties": {
+          "color": { "$ref": "tchmi:framework#/definitions/SolidColor" },
+          "offsetX": { "$ref": "tchmi:framework#/definitions/MeasurementValue" },
+          "offsetXUnit": { "$ref": "tchmi:framework#/definitions/PixelUnit" },
+          "offsetY": { "$ref": "tchmi:framework#/definitions/MeasurementValue" },
+          "offsetYUnit": { "$ref": "tchmi:framework#/definitions/PixelUnit" },
+          "inset": { "type": "boolean" },
+          "blur":  { "$ref": "tchmi:framework#/definitions/MeasurementValue" },
+          "blurUnit": { "$ref": "tchmi:framework#/definitions/PixelUnit" },
+          "spread": { "$ref": "tchmi:framework#/definitions/MeasurementValue" },
+          "spreadUnit": { "$ref": "tchmi:framework#/definitions/PixelUnit" }
+        },
+        "required": [ "color" ]
+      },
+      "minItems": 0
+    }
+  }
+}

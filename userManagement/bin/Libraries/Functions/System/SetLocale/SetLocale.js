@@ -1,0 +1,1 @@
+var TcHmi;!function(c){var e,o;e=c.Functions||(c.Functions={}),(o=e.System||(e.System={})).SetLocale=function(e){c.Locale.load(e)},e.registerFrameworkFunction("SetLocale",o.SetLocale,"System/SetLocale/SetLocale.function.json")}(TcHmi=TcHmi||{});

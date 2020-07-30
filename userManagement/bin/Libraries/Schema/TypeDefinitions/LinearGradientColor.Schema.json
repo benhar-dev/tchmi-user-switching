@@ -1,0 +1,44 @@
+﻿{
+   "$schema": "http://json-schema.org/draft-04/schema",
+   "definitions": {
+      "LinearGradientColor": {
+         "type": "object",
+         "engineeringColumns": [ "angle" ],
+         "propertiesMeta": [
+            {
+               "name": "angle",
+               "displayName": "Angle",
+               "category": "General",
+               "displayPriority": 10,
+               "description": "Angle this Gradient is defined"
+            }
+         ],
+         "properties": {
+            "angle": {
+               "type": "number"
+            },
+            "stopPoints": {
+               "type": "array",
+               "items": {
+                  "$ref": "tchmi:framework#/definitions/StopPoint"
+               },
+               "minItems": 2
+            }
+         },
+         "default": {
+            "angle": 0.0,
+            "stopPoints": [
+               {
+                  "color": "rgba(0, 0, 0, 1)",
+                  "stop": "0%"
+               },
+               {
+                  "color": "rgba(255, 255, 255, 1)",
+                  "stop": "100%"
+               }
+            ]
+         },
+         "required": [ "angle", "stopPoints" ]
+      }
+   }
+}

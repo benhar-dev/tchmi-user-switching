@@ -1,0 +1,11 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "LinearGaugeLabelPosition": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "LinearGaugeLabelPosition",
+      "type": "string",
+      "enum": [ "Top", "Bottom", "Left", "Right" ]
+    }
+  }
+}

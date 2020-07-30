@@ -1,0 +1,23 @@
+﻿{
+   "$schema": "http://json-schema.org/draft-04/schema",
+   "definitions": {
+      "TrendLineChartEnd": {
+         "oneOf": [
+            {
+               "title": "Time",
+               "$ref": "tchmi:general#/definitions/DateTime"
+            },
+            {
+               "title": "Timespan",
+               "$ref": "tchmi:general#/definitions/TimeSpan"
+            },
+            {
+               "title": "KeyWords",
+               "type": "string",
+               "enum": [ "Latest" ]
+            }
+         ],
+         "default": "Latest"
+      }
+   }
+}

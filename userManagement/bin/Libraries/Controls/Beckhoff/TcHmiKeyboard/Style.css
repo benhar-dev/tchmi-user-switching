@@ -1,0 +1,177 @@
+﻿/** Styles for all themes */
+.tchmi-keyboard-template {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tchmi-keyboard-template-padding-container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.tchmi-keyboard-template-key {
+	position: absolute;
+}
+
+.tchmi-keyboard-template-key .tchmi-keyboard-template-key.additional-key {
+	display: none;
+}
+
+.tchmi-keyboard-template-key.show-additional-keys .tchmi-keyboard-template-key.additional-key {
+	display: block;
+}
+
+.tchmi-keyboard-template-key .tchmi-keyboard-template-backdrop {
+	pointer-events: none;
+	visibility: hidden;
+	position: absolute;
+}
+
+.tchmi-keyboard-template-key.show-additional-keys .tchmi-keyboard-template-backdrop {
+	visibility: visible;
+}
+
+.tchmi-keyboard-template-key.show-additional-keys {
+	z-index: 1;
+}
+
+/* fix for IE to get active state on key root */
+.tchmi-keyboard-template-label {
+	pointer-events: none;
+}
+
+.tchmi-keyboard-template-label {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	align-items: center;
+	justify-content: center;
+	display: none;
+	overflow: hidden;
+}
+
+.tchmi-keyboard-template-label.top {
+	align-items: flex-start;
+}
+
+.tchmi-keyboard-template-label.bottom {
+	align-items: flex-end;
+}
+
+.tchmi-keyboard-template-label.left {
+	justify-content: flex-start;
+}
+
+.tchmi-keyboard-template-label.right {
+	justify-content: flex-end;
+}
+
+
+
+.tchmi-keyboard-template-label.show-always {
+	display: flex;
+}
+
+.tchmi-keyboard.default-active .tchmi-keyboard-template-label.show-default {
+	display: flex;
+}
+
+.tchmi-keyboard.shift-active:not(.capslock-active) .tchmi-keyboard-template-label.show-shift {
+	display: flex;
+}
+
+.tchmi-keyboard.shift-active.capslock-active .tchmi-keyboard-template-key[data-no-caps-lock=true] .tchmi-keyboard-template-label.show-shift {
+	display: flex;
+}
+
+.tchmi-keyboard.shift-active.capslock-active:not(.control-active):not(.alt-active):not(.altgr-active) .tchmi-keyboard-template-key:not([data-no-caps-lock=true]) .tchmi-keyboard-template-label.show-default {
+	display: flex;
+}
+
+.tchmi-keyboard.control-active .tchmi-keyboard-template-label.show-control {
+	display: flex;
+}
+
+.tchmi-keyboard.alt-active .tchmi-keyboard-template-label.show-alt {
+	display: flex;
+}
+
+.tchmi-keyboard.altgr-active .tchmi-keyboard-template-label.show-altgr {
+	display: flex;
+}
+
+.tchmi-keyboard.meta-active .tchmi-keyboard-template-label.show-meta {
+	display: flex;
+}
+
+.tchmi-keyboard.capslock-active .tchmi-keyboard-template-label.show-capslock {
+	display: flex;
+}
+
+.tchmi-keyboard.capslock-active:not(.shift-active) .tchmi-keyboard-template-key:not([data-no-caps-lock=true]) .tchmi-keyboard-template-label.show-shift {
+	display: flex;
+}
+
+.tchmi-keyboard.numlock-active .tchmi-keyboard-template-label.show-numlock {
+	display: flex;
+}
+
+.tchmi-keyboard-template-key.locked .tchmi-keyboard-template-label.show-locked {
+	display: flex;
+}
+
+
+
+.tchmi-keyboard.default-active .tchmi-keyboard-template-label.hide-default {
+	display: none;
+}
+
+.tchmi-keyboard.shift-active:not(.capslock-active) .tchmi-keyboard-template-label.hide-shift {
+	display: none;
+}
+
+.tchmi-keyboard.shift-active.capslock-active .tchmi-keyboard-template-key[data-no-caps-lock=true] .tchmi-keyboard-template-label.hide-shift {
+	display: none;
+}
+
+.tchmi-keyboard.shift-active.capslock-active:not(.control-active):not(.alt-active):not(.altgr-active) .tchmi-keyboard-template-key:not([data-no-caps-lock=true]) .tchmi-keyboard-template-label.hide-default {
+	display: none;
+}
+
+.tchmi-keyboard.control-active .tchmi-keyboard-template-label.hide-control {
+	display: none;
+}
+
+.tchmi-keyboard.alt-active .tchmi-keyboard-template-label.hide-alt {
+	display: none;
+}
+
+.tchmi-keyboard.altgr-active .tchmi-keyboard-template-label.hide-altgr {
+	display: none;
+}
+
+.tchmi-keyboard.meta-active .tchmi-keyboard-template-label.hide-meta {
+	display: none;
+}
+
+.tchmi-keyboard.capslock-active .tchmi-keyboard-template-label.hide-capslock {
+	display: none;
+}
+
+.tchmi-keyboard.capslock-active:not(.shift-active) .tchmi-keyboard-template-key:not([data-no-caps-lock=true]) .tchmi-keyboard-template-label.hide-shift {
+	display: none;
+}
+
+.tchmi-keyboard.numlock-active .tchmi-keyboard-template-label.hide-numlock {
+	display: none;
+}
+
+.tchmi-keyboard-template-key.locked .tchmi-keyboard-template-label.hide-locked {
+	display: none;
+}

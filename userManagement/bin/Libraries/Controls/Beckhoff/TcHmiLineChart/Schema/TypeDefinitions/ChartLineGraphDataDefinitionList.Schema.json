@@ -1,0 +1,47 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "ChartLineGraphDataDefinitionList": {
+      "title": "ChartLineGraphDataDefinitionList",
+      "type": "array",
+      "items": {
+        "type": "array",
+        "title": "List of coordinate pairs",
+        "items": {
+          "type": "object",
+          "title": "Coordinate pair",
+          "engineeringColumns": [ "x", "y" ],
+          "propertiesMeta": [
+            {
+              "name": "x",
+              "displayName": "X",
+              "category": "General",
+              "displayPriority": 10,
+              "description": "x coordinate",
+              "defaultValue": null,
+              "defaultValueInternal": null
+            },
+            {
+              "name": "y",
+              "displayName": "Y",
+              "category": "General",
+              "displayPriority": 10,
+              "description": "y coordinate",
+              "defaultValue": null,
+              "defaultValueInternal": null
+            }
+          ],
+          "properties": {
+            "x": {
+              "type": "number"
+            },
+            "y": {
+              "type": "number"
+            }
+          },
+          "required": [ "x", "y" ]
+        }
+      }
+    }
+  }
+}

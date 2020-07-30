@@ -1,0 +1,17 @@
+﻿{
+   "$schema": "http://json-schema.org/draft-04/schema",
+   "definitions": {
+      "SolidColor": {
+         "type": "object",
+         "properties": {
+            "color": {
+               "description": "Defining a color as CSS color: #-hexadecimal, rgb(), rgba(), hsl(), hsla(), css color keyword, none or transparent.",
+               "type": "string",
+               "minLength": 1,
+               "default": "#000000"
+            }
+         },
+         "required": [ "color" ]
+      }
+   }
+}

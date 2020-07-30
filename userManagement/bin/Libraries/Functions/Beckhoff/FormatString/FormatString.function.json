@@ -1,0 +1,46 @@
+{
+   "$schema": "../TcHmiFramework/Schema/FunctionDescription.Schema.json",
+   "version": {
+      "full": "1.10.1336.0",
+      "major": 1,
+      "minor": 10,
+      "build": 1336,
+      "revision": 0
+   },
+   "dependencyFiles": [
+      {
+         "name": "FormatString.js",
+         "type": "JavaScript",
+         "description": ""
+      }
+   ],
+   "function": {
+      "name": "FormatString",
+      "displayName": "FormatString",
+      "visible": true,
+      "description": "Format a string. Placeholder syntax in format string: '{' to begin placeholder, optional parameter-index with | as seperator, description and '}' to close the placeholder. Example: {0|.1f}",
+      "category": "Formatting",
+      "returnValue": {
+         "type": "tchmi:general#/definitions/String"
+      },
+      "arguments": [
+         {
+            "name": "formatString",
+            "displayName": "formatString",
+            "type": "tchmi:general#/definitions/String",
+            "description": "FormatString with placeholder to be formatted",
+            "required": true,
+            "bindable": true
+         },
+         {
+            "name": "args",
+            "displayName": "args",
+            "type": "tchmi:general#/definitions/Any",
+            "description": "Argument to format the placeholder in formatString",
+            "required": true,
+            "bindable": true,
+            "restParameter": true
+         }
+      ]
+   }
+}

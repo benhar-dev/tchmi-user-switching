@@ -1,0 +1,74 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "KnobDefinition": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "KnobDefinition",
+      "type": "object",
+      "propertiesMeta": [
+        {
+          "name": "imagePath",
+          "category": "General",
+          "displayName": "ImagePath",
+          "displayPriority": 10,
+          "description": "Path to a Pixel or Vector Image.",
+          "defaultValue": null,
+          "defaultValueInternal": null
+        },
+        {
+          "name": "width",
+          "category": "General",
+          "displayName": "Width",
+          "displayPriority": 10,
+          "description": "Width of the Knob",
+          "defaultValue": null,
+          "defaultValueInternal": null
+        },
+        {
+          "name": "height",
+          "category": "General",
+          "displayName": "Height",
+          "displayPriority": 10,
+          "description": "Height of the Knob",
+          "defaultValue": null,
+          "defaultValueInternal": null
+        },
+        {
+          "name": "offsetX",
+          "category": "General",
+          "displayName": "Offset X",
+          "displayPriority": 10,
+          "description": "Defines the Offset of the Knob.",
+          "defaultValue": null,
+          "defaultValueInternal": null
+        },
+        {
+          "name": "offsetY",
+          "category": "General",
+          "displayName": "Offset Y",
+          "displayPriority": 10,
+          "description": "Defines the Offset of the Knob.",
+          "defaultValue": null,
+          "defaultValueInternal": null
+        }
+      ],
+      "properties": {
+        "imagePath": {
+          "$ref": "tchmi:framework#/definitions/Path"
+        },
+        "width": {
+          "type": "number"
+        },
+        "height": {
+          "type": "number"
+        },
+        "offsetX": {
+          "type": "number"
+        },
+        "offsetY": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+﻿/** Styles for all themes */
+
+/* Style for the main element */
+.tchmi-video {
+    /* Prevent overflow if the border radius is huge */
+    overflow: hidden;
+}
+
+.tchmi-video-template
+{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+.tchmi-video-template-content 
+{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+.tchmi-video-template-focus-border {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+}
+
+.tchmi-video-template-border 
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+}

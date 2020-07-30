@@ -1,0 +1,50 @@
+{
+   "$schema": "../../../TcHmiFramework/Schema/Manifest.Schema.json",
+   "metadata": {
+      "industrialField": "",
+      "packageType": "FrameworkExtPrj",
+      "packageSubType": "Control",
+      "packageRelativePath": "Beckhoff/TcHmiDateTimePicker",
+      "packageNamespace": "Beckhoff",
+      "id": "TcHmiDateTimePicker",
+      "version": "1.11.1336.0",
+      "guid": "32FD9232-5EC3-4CBF-80DA-BD935439FF2D",
+      "configurationName": "",
+      "platformName": "",
+      "creationTime": 1505289652,
+      "authors": "Beckhoff Automation GmbH & Co. KG",
+      "owners": "",
+      "summary": "",
+      "licenseUrl": "",
+      "projectUrl": "",
+      "iconUrl": "",
+      "requireLicenseAcceptance": false,
+      "description": "",
+      "releaseNotes": "",
+      "copyright": "Beckhoff Automation GmbH & Co. KG",
+      "tags": "TcHmiFramework, Framework",
+      "dependencies": [
+         {
+            "id": "TcHmiControl",
+            "guid": "3A201780-1C37-40FC-8943-1E873EA4408D"
+         },
+         {
+            "id": "TcHmiButton",
+            "guid": "33C086CF-D61B-468E-9594-DBBDECBB5544"
+         },
+         {
+            "id": "TcHmiTextblock",
+            "guid": "C5DAAA56-A4E7-41EF-A9CF-36988BA37D3D"
+         },
+         {
+            "id": "TcHmiTextbox",
+            "guid": "0EF6A87F-EA10-4113-BE10-65D167112489"
+         }
+      ],
+      "references": []
+   },
+   "files": [],
+   "symbols": [],
+   "flags": {},
+   "fileformat": 1
+}

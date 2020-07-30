@@ -1,0 +1,1 @@
+var TcHmi;!function(t){var o,r;o=t.Functions||(t.Functions={}),(r=o.System||(o.System={})).ForceLogout=function(o){return t.Server.forceLogout(o)},o.registerFrameworkFunction("ForceLogout",r.ForceLogout,"System/ForceLogout/ForceLogout.function.json")}(TcHmi=TcHmi||{});

@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "DGSorting": {
+      "title": "Sorting",
+      "type": "array",
+      "items": {
+        "title": "Sorting criterion",
+        "type": "object",
+        "engineeringColumns": [ "name", "order" ],
+        "propertiesMeta": [
+          {
+            "name": "name",
+            "displayName": "Name",
+            "category": "General",
+            "displayPriority": 10,
+            "description": "Name of the column to sort",
+            "defaultValue": null,
+            "defaultValueInternal": null
+          },
+          {
+            "name": "order",
+            "displayName": "Order",
+            "category": "General",
+            "displayPriority": 10,
+            "description": "Sort definition",
+            "defaultValue": null,
+            "defaultValueInternal": null
+          }
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "order": {
+            "type": "string",
+            "enum": [ "Ascending", "Descending" ]
+          }
+        },
+        "required": [ "order" ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

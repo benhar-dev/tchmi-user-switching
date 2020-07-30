@@ -1,0 +1,188 @@
+{
+   "$schema": "../../../TcHmiFramework/Schema/ControlDescription.Schema.json",
+   "name": "tchmi-region",
+   "classNamespace": "TcHmi.Controls.System",
+   "className": "TcHmiRegion",
+   "displayName": "Region",
+   "version": {
+      "full": "1.10.1336.0",
+      "major": 1,
+      "minor": 10,
+      "build": 1336,
+      "revision": 0
+   },
+   "visible": true,
+   "themeable": "Advanced",
+   "base": "tchmi-control",
+   "uses": [],
+   "description": "A container for content controls.",
+   "properties": {
+      "containerControl": false,
+      "geometry": {
+         "width": 500,
+         "height": 500
+      }
+   },
+   "icons": [
+      {
+         "name": "Icons/16x16.png",
+         "width": 16,
+         "height": 16
+      },
+      {
+         "name": "Icons/24x24.png",
+         "width": 24,
+         "height": 24
+      },
+      {
+         "name": "Icons/32x32.png",
+         "width": 32,
+         "height": 32
+      },
+      {
+         "name": "Icons/64x64.png",
+         "width": 64,
+         "height": 64
+      }
+   ],
+   "dependencyFiles": [
+      {
+         "name": "Style.css",
+         "type": "Stylesheet",
+         "description": ""
+      },
+      {
+         "name": "Source.js",
+         "type": "JavaScript",
+         "description": ""
+      }
+   ],
+   "themes": {},
+   "attributes": [
+      {
+         "name": "data-tchmi-type",
+         "displayName": "",
+         "propertyName": "type",
+         "propertySetterName": "",
+         "propertyGetterName": "getType",
+         "visible": false,
+         "type": "tchmi:framework#/definitions/ControlType",
+         "category": "None",
+         "description": "Type of the control.",
+         "defaultValue": "tchmi-region",
+         "defaultValueInternal": null,
+         "requiredOnCompile": true,
+         "readOnly": true,
+         "bindable": false,
+         "heritable": false
+      },
+      {
+         "name": "data-tchmi-target-content",
+         "propertyName": "TargetContent",
+         "propertySetterName": "setTargetContent",
+         "propertyGetterName": "getTargetContent",
+         "displayName": "TargetContent",
+         "visible": true,
+         "themeable": "Advanced",
+         "displayPriority": 10,
+         "type": "tchmi:framework#/definitions/ContentPath",
+         "category": "Common",
+         "description": "Path to the content file to show.",
+         "defaultValue": null,
+         "defaultValueInternal": null,
+         "readOnly": false,
+         "bindable": true,
+         "heritable": true
+      },
+      {
+         "name": "data-tchmi-scale-mode",
+         "propertyName": "ScaleMode",
+         "propertySetterName": "setScaleMode",
+         "propertyGetterName": "getScaleMode",
+         "displayName": "ScaleMode",
+         "visible": true,
+         "themeable": "Standard",
+         "displayPriority": 60,
+         "type": "tchmi:framework#/definitions/ScaleMode",
+         "category": "Common",
+         "description": "Possible values are ScaleToFit, ScaleToFitWidth, ScaleToFitHeight, ScaleToFill, None.",
+         "defaultValue": null,
+         "defaultValueInternal": "None",
+         "readOnly": false,
+         "bindable": true,
+         "heritable": true
+      },
+      {
+         "name": "data-tchmi-scrolling",
+         "propertyName": "Scrolling",
+         "propertySetterName": "setScrolling",
+         "propertyGetterName": "getScrolling",
+         "displayName": "Scrolling",
+         "visible": true,
+         "themeable": "Advanced",
+         "displayPriority": 70,
+         "type": "tchmi:framework#/definitions/ScrollMode",
+         "category": "Common",
+         "description": "Possible values are No, Yes, Auto.",
+         "defaultValue": null,
+         "defaultValueInternal": "No",
+         "readOnly": false,
+         "bindable": true,
+         "heritable": true
+      },
+      {
+         "name": "data-tchmi-width-mode",
+         "propertyName": "WidthMode",
+         "propertySetterName": "setWidthMode",
+         "propertyGetterName": "getWidthMode",
+         "displayName": "WidthMode",
+         "visible": true,
+         "themeable": "Advanced",
+         "displayPriority": 60,
+         "type": "tchmi:framework#/definitions/SizeModeWithContent",
+         "category": "Layout",
+         "description": "Defines if the width is taken from the width value, calculated from left and right (parent) or calculated from content.",
+         "readOnly": false,
+         "bindable": true,
+         "heritable": true,
+         "defaultValue": null,
+         "defaultValueInternal": "Value"
+      },
+      {
+         "name": "data-tchmi-height-mode",
+         "propertyName": "HeightMode",
+         "propertySetterName": "setHeightMode",
+         "propertyGetterName": "getHeightMode",
+         "displayName": "HeightMode",
+         "visible": true,
+         "themeable": "Advanced",
+         "displayPriority": 60,
+         "type": "tchmi:framework#/definitions/SizeModeWithContent",
+         "category": "Layout",
+         "description": "Defines if the height is taken from the height value, calculated from top and bottom (parent) or calculated from content.",
+         "readOnly": false,
+         "bindable": true,
+         "heritable": true,
+         "defaultValue": null,
+         "defaultValueInternal": "Value"
+      }
+   ],
+   "events": [
+      {
+         "name": ".onTargetContentReplaced",
+         "displayName": ".onTargetContentReplaced",
+         "category": "Control",
+         "description": "This event is fired when the targetContent has been replaced. The Control is not attached at this time.",
+         "visible": true,
+         "displayPriority": 10,
+         "heritable": true
+      }
+   ],
+   "functions": [],
+   "dataTypes": [
+      {
+         "name": "tchmi:framework#/definitions/TcHmiRegion",
+         "schema": "Schema/TypeDefinitions/TcHmiRegion.Schema.json"
+      }
+   ]
+}

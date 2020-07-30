@@ -1,0 +1,38 @@
+﻿{
+   "$schema": "../TcHmiFramework/Schema/Manifest.Schema.json",
+   "metadata": {
+      "industrialField": "",
+      "packageType": "FrameworkExtPrj",
+      "packageSubType": "Function",
+      "packageRelativePath": "System/GoToLoginPage",
+      "packageNamespace": "System",
+      "id": "GoToLoginPage",
+      "version": "1.10.0.0",
+      "guid": "716878EB-F000-4B23-BAE6-6A815523D7E8",
+      "configurationName": "",
+      "platformName": "",
+      "creationTime": 1505289652,
+      "authors": "Beckhoff Automation GmbH & Co. KG",
+      "owners": "",
+      "summary": "",
+      "licenseUrl": "",
+      "projectUrl": "",
+      "iconUrl": "",
+      "requireLicenseAcceptance": false,
+      "description": "",
+      "releaseNotes": "",
+      "copyright": "Beckhoff Automation GmbH & Co. KG",
+      "tags": "TcHmiFramework, Framework",
+      "dependencies": [
+         {
+            "id": "TcHmiFramework",
+            "guid": "0F6C624F-3208-42CD-82E3-347633AF1B6F"
+         }
+      ],
+      "references": []
+   },
+   "files": [],
+   "symbols": [],
+   "flags": {},
+   "fileformat": 1
+}

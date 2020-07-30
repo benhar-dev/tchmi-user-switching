@@ -1,0 +1,11 @@
+﻿/** Styles for all themes */
+
+/* Style for the main element */
+.tchmi-user-control-host {
+    overflow: hidden;
+}
+
+/* container have no own visual representation so the white overlay is not nice on non white backgrounds */
+.tchmi-user-control-host.tchmi-control-disabled::after {
+    background-color: transparent;
+}

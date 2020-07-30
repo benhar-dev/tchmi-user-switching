@@ -1,0 +1,28 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "ChartBarGraphDataDefinitionList": {
+      "title": "ChartBarGraphDataDefinitionList",
+      "engineeringDefaultDatatype": 0,
+      "anyOf": [
+        {
+          "type": "array",
+          "title": "Array<Array<number>>",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        {
+          "type": "array",
+          "title": "Array<number>",
+          "items": {
+            "type": "number"
+          }
+        }
+      ]
+    }
+  }
+}

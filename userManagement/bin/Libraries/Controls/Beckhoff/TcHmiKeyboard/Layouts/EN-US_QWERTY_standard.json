@@ -1,0 +1,1218 @@
+﻿{
+  "layouts": [
+    {
+      "name": "default",
+      "dimensions": {
+        "width": 890,
+        "height": 290
+      },
+      "keys": [
+        {
+          "geometry": {
+            "left": 0,
+            "top": 0,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "Backquote",
+          "key": "`",
+          "shiftKey": "~",
+          "noCapsLock": true,
+          "labels": [
+            {
+              "position": "top left",
+              "text": "~",
+              "type": "text"
+            },
+            {
+              "position": "bottom left",
+              "text": "`",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 6.741573033707865,
+            "top": 0,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "Digit1",
+          "key": "1",
+          "shiftKey": "!",
+          "noCapsLock": true,
+          "labels": [
+            {
+              "position": "top left",
+              "text": "!",
+              "type": "text"
+            },
+            {
+              "position": "bottom left",
+              "text": "1",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 13.48314606741573,
+            "top": 0,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "Digit2",
+          "key": "2",
+          "noCapsLock": true,
+          "labels": [
+            {
+              "position": "top left",
+              "text": "@",
+              "type": "text"
+            },
+            {
+              "position": "bottom left",
+              "text": "2",
+              "type": "text"
+            }
+          ],
+          "shiftKey": "@"
+        },
+        {
+          "geometry": {
+            "left": 20.224719101123593,
+            "top": 0,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "Digit3",
+          "key": "3",
+          "shiftKey": "#",
+          "noCapsLock": true,
+          "labels": [
+            {
+              "position": "top left",
+              "text": "#",
+              "type": "text"
+            },
+            {
+              "position": "bottom left",
+              "text": "3",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 26.96629213483146,
+            "top": 0,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "Digit4",
+          "key": "4",
+          "shiftKey": "$",
+          "noCapsLock": true,
+          "labels": [
+            {
+              "position": "top left",
+              "text": "$",
+              "type": "text"
+            },
+            {
+              "position": "bottom left",
+              "text": "4",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 33.70786516853933,
+            "top": 0,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "Digit5",
+          "key": "5",
+          "shiftKey": "%",
+          "noCapsLock": true,
+          "labels": [
+            {
+              "position": "top left",
+              "text": "%",
+              "type": "text"
+            },
+            {
+              "position": "bottom left",
+              "text": "5",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 40.44943820224719,
+            "top": 0,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "Digit6",
+          "key": "6",
+          "shiftKey": "^",
+          "noCapsLock": true,
+          "labels": [
+            {
+              "position": "top left",
+              "text": "^",
+              "type": "text"
+            },
+            {
+              "position": "bottom left",
+              "text": "6",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 47.19101123595505,
+            "top": 0,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "Digit7",
+          "key": "7",
+          "shiftKey": "&",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "&",
+              "type": "text"
+            },
+            {
+              "position": "bottom left",
+              "text": "7",
+              "type": "text"
+            }
+          ],
+          "noCapsLock": true
+        },
+        {
+          "geometry": {
+            "left": 53.93258426966292,
+            "top": 0,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "Digit8",
+          "key": "8",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "*",
+              "type": "text"
+            },
+            {
+              "position": "bottom left",
+              "text": "8",
+              "type": "text"
+            }
+          ],
+          "noCapsLock": true,
+          "shiftKey": "*"
+        },
+        {
+          "geometry": {
+            "left": 60.67415730337079,
+            "top": 0,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "Digit9",
+          "key": "9",
+          "shiftKey": "(",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "(",
+              "type": "text"
+            },
+            {
+              "position": "bottom left",
+              "text": "9",
+              "type": "text"
+            }
+          ],
+          "noCapsLock": true
+        },
+        {
+          "geometry": {
+            "left": 67.41573033707866,
+            "top": 0,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "Digit0",
+          "key": "0",
+          "shiftKey": ")",
+          "labels": [
+            {
+              "position": "top left",
+              "text": ")",
+              "type": "text"
+            },
+            {
+              "position": "bottom left",
+              "text": "0",
+              "type": "text"
+            }
+          ],
+          "noCapsLock": true
+        },
+        {
+          "geometry": {
+            "left": 74.15730337078652,
+            "top": 0,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "Minus",
+          "key": "-",
+          "shiftKey": "_",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "_",
+              "type": "text"
+            },
+            {
+              "position": "bottom left",
+              "text": "-",
+              "type": "text"
+            }
+          ],
+          "noCapsLock": true
+        },
+        {
+          "geometry": {
+            "left": 80.89887640449437,
+            "top": 0,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "Equal",
+          "key": "=",
+          "shiftKey": "+",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "+",
+              "type": "text"
+            },
+            {
+              "position": "bottom left",
+              "text": "=",
+              "type": "text"
+            }
+          ],
+          "noCapsLock": true
+        },
+        {
+          "geometry": {
+            "left": 87.64044943820225,
+            "top": 0,
+            "width": 12.359550561797752,
+            "height": 17.24137931034483
+          },
+          "code": "Backspace",
+          "key": "Backspace",
+          "type": "edit",
+          "labels": [
+            {
+              "type": "svg",
+              "svg": {
+                "path": "M 0.5 7 L 7 0.5 L 21.5 0.5 L 21.5 13.5 L 7 13.5 Z M 10 3 L 18 11 M 10 11 L 18 3",
+                "dimensions": {
+                  "width": 22,
+                  "height": 14
+                }
+              }
+            }
+          ],
+          "longpressAction": "repeat"
+        },
+        {
+          "geometry": {
+            "left": 0,
+            "top": 20.689655172413794,
+            "width": 8.98876404494382,
+            "height": 17.24137931034483
+          },
+          "code": "Tab",
+          "key": "Tab",
+          "noCapsLock": true,
+          "labels": [
+            {
+              "type": "svg",
+              "svg": {
+                "path": "M 0.5 0.5 L 0.5 8.5 M 21.5 4.5 L 6.5 4.5 M 6.5 0.5 L 2.5 4.5 L 6.5 8.5 M 21.5 7.5 L 21.5 15.5 M 0.5 11.5 L 15.5 11.5 M 15.5 7.5 L 19.5 11.5 L 15.5 15.5",
+                "dimensions": {
+                  "width": 22,
+                  "height": 16
+                }
+              }
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 10.112359550561797,
+            "top": 20.689655172413794,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyQ",
+          "key": "q",
+          "shiftKey": "Q",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "Q",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 16.853932584269664,
+            "top": 20.689655172413794,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyW",
+          "key": "w",
+          "shiftKey": "W",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "W",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 23.595505617977526,
+            "top": 20.689655172413794,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyE",
+          "key": "e",
+          "shiftKey": "E",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "E",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 30.337078651685395,
+            "top": 20.689655172413794,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyR",
+          "key": "r",
+          "shiftKey": "R",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "R",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 37.07865168539326,
+            "top": 20.689655172413794,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyT",
+          "key": "t",
+          "shiftKey": "T",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "T",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 43.82022471910113,
+            "top": 20.689655172413794,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyY",
+          "key": "y",
+          "shiftKey": "Y",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "Y",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 50.56179775280899,
+            "top": 20.689655172413794,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyU",
+          "key": "u",
+          "shiftKey": "U",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "U",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 57.30337078651685,
+            "top": 20.689655172413794,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyI",
+          "key": "i",
+          "shiftKey": "I",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "I",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 64.04494382022472,
+            "top": 20.689655172413794,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyO",
+          "key": "o",
+          "shiftKey": "O",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "O",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 70.78651685393258,
+            "top": 20.689655172413794,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyP",
+          "key": "p",
+          "shiftKey": "P",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "P",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 77.52808988764045,
+            "top": 20.689655172413794,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "BracketLeft",
+          "key": "[",
+          "shiftKey": "{",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "{",
+              "type": "text"
+            },
+            {
+              "type": "text",
+              "text": "[",
+              "position": "bottom left"
+            }
+          ],
+          "noCapsLock": true
+        },
+        {
+          "geometry": {
+            "left": 84.26966292134831,
+            "top": 20.689655172413794,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "BracketRight",
+          "key": "]",
+          "shiftKey": "}",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "}",
+              "type": "text"
+            },
+            {
+              "position": "bottom left",
+              "text": "]",
+              "type": "text"
+            }
+          ],
+          "noCapsLock": true
+        },
+        {
+          "geometry": {
+            "left": 0,
+            "top": 41.37931034482759,
+            "width": 10.674157303370785,
+            "height": 17.24137931034483
+          },
+          "code": "CapsLock",
+          "key": "CapsLock",
+          "type": "modifier",
+          "mode": "toggle",
+          "labels": [
+            {
+              "type": "svg",
+              "svg": {
+                "path": "M 3.5 0.5 L 3.5 7.5 L 0.5 7.5 L 7 13.5 L 13.5 7.5 L 10.5 7.5 L 10.5 0.5 Z",
+                "dimensions": {
+                  "width": 14,
+                  "height": 14
+                }
+              }
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 11.797752808988763,
+            "top": 41.37931034482759,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyA",
+          "key": "a",
+          "shiftKey": "A",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "A",
+              "type": "text"
+            }
+          ],
+          "ctrlKey": "SelectAll",
+          "ctrlType": "action"
+        },
+        {
+          "geometry": {
+            "left": 18.53932584269663,
+            "top": 41.37931034482759,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyS",
+          "key": "s",
+          "shiftKey": "S",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "S",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 25.280898876404496,
+            "top": 41.37931034482759,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyD",
+          "key": "d",
+          "shiftKey": "D",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "D",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 32.02247191011236,
+            "top": 41.37931034482759,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyF",
+          "key": "f",
+          "shiftKey": "F",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "F",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 38.764044943820224,
+            "top": 41.37931034482759,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyG",
+          "key": "g",
+          "shiftKey": "G",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "G",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 45.50561797752809,
+            "top": 41.37931034482759,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyH",
+          "key": "h",
+          "shiftKey": "H",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "H",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 52.24719101123596,
+            "top": 41.37931034482759,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyJ",
+          "key": "j",
+          "shiftKey": "J",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "J",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 58.98876404494382,
+            "top": 41.37931034482759,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyK",
+          "key": "k",
+          "shiftKey": "K",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "K",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 65.73033707865169,
+            "top": 41.37931034482759,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyL",
+          "key": "l",
+          "shiftKey": "L",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "L",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 72.47191011235955,
+            "top": 41.37931034482759,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "Semicolon",
+          "key": ";",
+          "shiftKey": ":",
+          "labels": [
+            {
+              "position": "top left",
+              "text": ":",
+              "type": "text"
+            },
+            {
+              "type": "text",
+              "text": ";",
+              "position": "bottom left"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 79.21348314606742,
+            "top": 41.37931034482759,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "Quote",
+          "key": "'",
+          "shiftKey": "\"",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "\"",
+              "type": "text"
+            },
+            {
+              "type": "text",
+              "text": "'",
+              "position": "bottom left"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 91.01123595505618,
+            "top": 20.689655172413794,
+            "width": 8.98876404494382,
+            "height": 17.24137931034483
+          },
+          "code": "Backslash",
+          "key": "\\",
+          "shiftKey": "|",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "|",
+              "type": "text"
+            },
+            {
+              "position": "bottom left",
+              "text": "\\",
+              "type": "text"
+            }
+          ],
+          "noCapsLock": true
+        },
+        {
+          "geometry": {
+            "left": 85.95505617977528,
+            "top": 41.37931034482759,
+            "width": 14.04494382022472,
+            "height": 17.24137931034483
+          },
+          "code": "Enter",
+          "key": "Enter",
+          "noCapsLock": true,
+          "labels": [
+            {
+              "type": "svg",
+              "svg": {
+                "path": "M 21.5 8.5 L 21.5 0.5 L 21.5 8.5 L 5.5 8.5 M 5.5 3.5 L 0.5 8.5 L 5.5 13.5",
+                "dimensions": {
+                  "width": 22,
+                  "height": 14
+                }
+              }
+            }
+          ],
+          "ignoreModifiers": true
+        },
+        {
+          "geometry": {
+            "left": 0,
+            "top": 62.06896551724138,
+            "width": 14.04494382022472,
+            "height": 17.24137931034483
+          },
+          "code": "ShiftLeft",
+          "key": "Shift",
+          "type": "modifier",
+          "mode": "sticky",
+          "location": "left",
+          "labels": [
+            {
+              "type": "svg",
+              "svg": {
+                "path": "M 3.5 13.5 L 3.5 6.5 L 0.5 6.5 L 7 0.5 L 13.5 6.5 L 10.5 6.5 L 10.5 13.5 Z",
+                "dimensions": {
+                  "width": 14,
+                  "height": 14
+                }
+              }
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 15.168539325842698,
+            "top": 62.06896551724138,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyZ",
+          "key": "z",
+          "shiftKey": "Z",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "Z",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 21.910112359550563,
+            "top": 62.06896551724138,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyX",
+          "key": "x",
+          "shiftKey": "X",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "X",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 28.651685393258425,
+            "top": 62.06896551724138,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyC",
+          "key": "c",
+          "shiftKey": "C",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "C",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 35.39325842696629,
+            "top": 62.06896551724138,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyV",
+          "key": "v",
+          "shiftKey": "V",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "V",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 42.13483146067416,
+            "top": 62.06896551724138,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyB",
+          "key": "b",
+          "shiftKey": "B",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "B",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 48.87640449438202,
+            "top": 62.06896551724138,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyN",
+          "key": "n",
+          "shiftKey": "N",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "N",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 55.61797752808989,
+            "top": 62.06896551724138,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "KeyM",
+          "key": "m",
+          "shiftKey": "M",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "M",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 62.35955056179775,
+            "top": 62.06896551724138,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "Comma",
+          "key": ",",
+          "shiftKey": "<",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "<",
+              "type": "text"
+            },
+            {
+              "position": "bottom left",
+              "text": ",",
+              "type": "text"
+            }
+          ],
+          "noCapsLock": true
+        },
+        {
+          "geometry": {
+            "left": 69.10112359550563,
+            "top": 62.06896551724138,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "Period",
+          "key": ".",
+          "shiftKey": ">",
+          "labels": [
+            {
+              "position": "top left",
+              "text": ">",
+              "type": "text"
+            },
+            {
+              "position": "bottom left",
+              "text": ".",
+              "type": "text"
+            }
+          ],
+          "noCapsLock": true
+        },
+        {
+          "geometry": {
+            "left": 75.84269662921348,
+            "top": 62.06896551724138,
+            "width": 5.617977528089887,
+            "height": 17.24137931034483
+          },
+          "code": "Slash",
+          "key": "/",
+          "shiftKey": "?",
+          "labels": [
+            {
+              "position": "top left",
+              "text": "?",
+              "type": "text"
+            },
+            {
+              "position": "bottom left",
+              "text": "/",
+              "type": "text"
+            }
+          ],
+          "noCapsLock": true
+        },
+        {
+          "geometry": {
+            "left": 82.58426966292134,
+            "top": 62.06896551724138,
+            "width": 17.415730337078653,
+            "height": 17.24137931034483
+          },
+          "code": "ShiftRight",
+          "key": "Shift",
+          "location": "right",
+          "type": "modifier",
+          "mode": "sticky",
+          "labels": [
+            {
+              "type": "svg",
+              "svg": {
+                "path": "M 3.5 13.5 L 3.5 6.5 L 0.5 6.5 L 7 0.5 L 13.5 6.5 L 10.5 6.5 L 10.5 13.5 Z",
+                "dimensions": {
+                  "width": 14,
+                  "height": 14
+                }
+              }
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 0,
+            "top": 82.75862068965517,
+            "width": 7.303370786516854,
+            "height": 17.24137931034483
+          },
+          "code": "ControlLeft",
+          "key": "Control",
+          "type": "modifier",
+          "mode": "sticky",
+          "location": "left",
+          "labels": [
+            {
+              "text": "Ctrl",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 16.853932584269664,
+            "top": 82.75862068965517,
+            "width": 7.303370786516854,
+            "height": 17.24137931034483
+          },
+          "code": "AltLeft",
+          "key": "Alt",
+          "type": "modifier",
+          "mode": "sticky",
+          "location": "left",
+          "labels": [
+            {
+              "text": "Alt",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 25.280898876404496,
+            "top": 82.75862068965517,
+            "width": 41.01123595505618,
+            "height": 17.24137931034483
+          },
+          "code": "Space",
+          "key": " ",
+          "noCapsLock": true,
+          "ignoreModifiers": true
+        },
+        {
+          "geometry": {
+            "left": 67.41573033707866,
+            "top": 82.75862068965517,
+            "width": 7.303370786516854,
+            "height": 17.24137931034483
+          },
+          "code": "AltRight",
+          "key": "Alt",
+          "type": "modifier",
+          "mode": "sticky",
+          "location": "right",
+          "labels": [
+            {
+              "text": "Alt",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 92.69662921348315,
+            "top": 82.75862068965517,
+            "width": 7.303370786516854,
+            "height": 17.24137931034483
+          },
+          "code": "ControlRight",
+          "key": "Control",
+          "type": "modifier",
+          "mode": "sticky",
+          "location": "right",
+          "labels": [
+            {
+              "text": "Ctrl",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

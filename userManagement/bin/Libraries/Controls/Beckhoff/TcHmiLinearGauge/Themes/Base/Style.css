@@ -1,0 +1,34 @@
+﻿/** Styles for the theme: Base */
+
+/* Style for the main element */
+.tchmi-linear-gauge {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.tchmi-linear-gauge-template-labels {
+	color: #4993DA;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.tchmi-linear-gauge-template-tick {
+	background-color: #4993DA;
+}
+
+.tchmi-linear-gauge-template-track {
+	background-color: #FFFFFF;
+}
+
+.tchmi-linear-gauge-template-filler {
+    background-color: #4994DA;
+}
+
+.tchmi-linear-gauge-template-description {
+	color: #4993DA;
+	font-size: 14px;
+}
+
+/* Overrides for vertical orientation*/
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-filler {
+    background-color: #4994DA;
+}

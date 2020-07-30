@@ -1,0 +1,11 @@
+﻿{
+   "$schema": "http://json-schema.org/draft-04/schema",
+   "definitions": {
+      "RadialGaugeLabelPosition": {
+         "title": "RadialGaugeLabelPosition",
+         "type": "string",
+         "enum": [ "Outside", "Inside" ],
+         "default": "Inside"
+      }
+   }
+}

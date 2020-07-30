@@ -1,0 +1,297 @@
+/** Styles for the theme: Base */
+
+.tchmi-event-grid {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.tchmi-event-grid-template .tchmi-button-template,
+.tchmi-event-grid-template-popup .tchmi-button-template {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tchmi-event-grid-template .tchmi-toggle-button .tchmi-button-template {
+    background-position: 0% 50%;
+}
+
+.tchmi-event-grid-template-alarm-toggle-button .tchmi-button-template {
+    background-image: url("Images/alarm.svg");
+}
+
+.tchmi-event-grid-template-message-toggle-button .tchmi-button-template {
+    background-image: url("Images/message.svg");
+}
+
+.tchmi-event-grid-template-verbose-toggle-button .tchmi-button-template {
+    background-image: url("Images/verbose.svg");
+}
+
+.tchmi-event-grid-template-info-toggle-button .tchmi-button-template {
+    background-image: url("Images/info.svg");
+}
+
+.tchmi-event-grid-template-warning-toggle-button .tchmi-button-template {
+    background-image: url("Images/warning.svg");
+}
+
+.tchmi-event-grid-template-error-toggle-button .tchmi-button-template {
+    background-image: url("Images/error.svg");
+}
+
+.tchmi-event-grid-template-critical-toggle-button .tchmi-button-template {
+    background-image: url("Images/critical.svg");
+}
+
+.tchmi-event-grid-template-filter-button .tchmi-button-template {
+    background-image: url("Images/filter.svg");
+}
+
+.tchmi-event-grid-template-filter-button.down .tchmi-button-template {
+    background-image: url("Images/filter-active.svg");
+}
+
+.tchmi-event-grid-template-sort-button .tchmi-button-template {
+    background-image: url("Images/sort.svg");
+}
+
+.tchmi-event-grid-template-sort-button.down .tchmi-button-template {
+    background-image: url("Images/sort-active.svg");
+}
+
+.tchmi-event-grid-template-columns-button .tchmi-button-template {
+    background-image: url("Images/columns.svg");
+}
+
+.tchmi-event-grid-template-columns-button.down .tchmi-button-template {
+    background-image: url("Images/columns-active.svg");
+}
+
+.tchmi-event-grid-template-details-button .tchmi-button-template {
+    background-image: url("Images/details.svg");
+}
+
+.tchmi-event-grid-template-details-button.down .tchmi-button-template {
+    background-image: url("Images/details-active.svg");
+}
+
+.tchmi-event-grid-template-confirm-button .tchmi-button-template {
+    background-image: url("Images/confirm.svg");
+}
+
+.tchmi-event-grid-template-confirm-button.down .tchmi-button-template {
+    background-image: url("Images/confirm-active.svg");
+}
+
+.tchmi-event-grid-template-confirmall-button .tchmi-button-template {
+    background-image: url("Images/confirmall.svg");
+}
+
+.tchmi-event-grid-template-confirmall-button.down .tchmi-button-template {
+    background-image: url("Images/confirmall-active.svg");
+}
+
+.tchmi-event-grid-template-move-up-button .tchmi-button-template {
+    background-image: url("Images/move-up.svg");
+}
+
+.tchmi-event-grid-template-move-up-button.down .tchmi-button-template {
+    background-image: url("Images/move-up-active.svg");
+}
+
+.tchmi-event-grid-template-move-down-button .tchmi-button-template {
+    background-image: url("Images/move-down.svg");
+}
+
+.tchmi-event-grid-template-move-down-button.down .tchmi-button-template {
+    background-image: url("Images/move-down-active.svg");
+}
+
+.tchmi-event-grid-template-add-button .tchmi-button-template {
+    background-image: url("Images/add.svg");
+}
+
+.tchmi-event-grid-template-add-button.down .tchmi-button-template {
+    background-image: url("Images/add-active.svg");
+}
+
+.tchmi-event-grid-template-remove-button .tchmi-button-template {
+    background-image: url("Images/remove.svg");
+}
+
+.tchmi-event-grid-template-remove-button.down .tchmi-button-template {
+    background-image: url("Images/remove-active.svg");
+}
+
+.tchmi-event-grid-template-group-button .tchmi-button-template {
+    background-image: url("Images/group.svg");
+}
+
+.tchmi-event-grid-template-group-button.down .tchmi-button-template {
+    background-image: url("Images/group-active.svg");
+}
+
+.tchmi-event-grid-template-ungroup-button .tchmi-button-template {
+    background-image: url("Images/ungroup.svg");
+}
+
+.tchmi-event-grid-template-ungroup-button.down .tchmi-button-template {
+    background-image: url("Images/ungroup-active.svg");
+}
+
+.tchmi-event-grid-template-date-time-button .tchmi-button-template {
+    background-image: url("Images/date-time.svg");
+}
+
+.tchmi-event-grid-template-date-time-button.down .tchmi-button-template {
+    background-image: url("Images/date-time-active.svg");
+}
+
+.tchmi-event-grid-template .tchmi-datagrid-template-data-scroll tr.focused td::before,
+.tchmi-event-grid-template-popup .tchmi-datagrid-template-data-scroll tr.focused td::before {
+    background: #4C6374;
+    opacity: 0.25;
+}
+
+.tchmi-event-grid-template-popup {
+	background: #FFFFFF;
+	box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.6);
+	padding: 10px;
+    font-size: 12px;
+}
+
+.tchmi-event-grid-template-popup > h1 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #4C6374;
+}
+
+.tchmi-event-grid-template-details-popup dt {
+    background-color: #4C6374;
+    color: #FFFFFF;
+}
+
+.tchmi-event-grid-template-details-popup dd {
+    background-color: #EDEDED;
+    color: #4C6374;
+}
+
+.tchmi-event-grid-template-details-popup dd dt {
+    background-color: transparent;
+    font-weight: bold;
+    color: #4C6374;
+}
+
+.tchmi-event-grid-template-details-popup dd dt::after {
+    content: ":";
+}
+
+.tchmi-event-grid-template-details-popup dd dd {
+    background-color: transparent;
+}
+
+.tchmi-event-grid-template-columns-config-column {
+    background-color: #EDEDED;
+    color: #4C6374;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.tchmi-event-grid-template-columns-config-selected-columns .tchmi-event-grid-template-columns-config-column:not(.active):hover {
+    background-color: #C0C0C5;
+}
+
+.tchmi-event-grid-template-columns-config-column.active {
+    background-image: linear-gradient(135deg, #4164B1, #4994DA);
+	color: #FFFFFF;
+	box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.3);
+}
+
+.tchmi-event-grid-template-columns-config-available-columns .tchmi-event-grid-template-columns-config-column-selection-toggle {
+    background-image: url("Images/select.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tchmi-event-grid-template-columns-config-available-columns .tchmi-event-grid-template-columns-config-column-selection-toggle:active {
+    background-image: url("Images/select-active.svg");
+}
+
+.tchmi-event-grid-template-columns-config-selected-columns .tchmi-event-grid-template-columns-config-column-selection-toggle {
+    background-image: url("Images/deselect.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tchmi-event-grid-template-columns-config-selected-columns .tchmi-event-grid-template-columns-config-column-selection-toggle:active,
+.tchmi-event-grid-template-columns-config-selected-columns .tchmi-event-grid-template-columns-config-column.active .tchmi-event-grid-template-columns-config-column-selection-toggle:active{
+    background-image: url("Images/deselect-active.svg");
+}
+
+.tchmi-event-grid-template-columns-config-selected-columns .tchmi-event-grid-template-columns-config-column.active .tchmi-event-grid-template-columns-config-column-selection-toggle {
+    background-image: url("Images/deselect-selected.svg");
+}
+
+.tchmi-event-grid-template td.tchmi-datagrid-template-cell:not([data-column-name=type]):not([data-column-name=severity]),
+.tchmi-event-grid-template-popup td.tchmi-datagrid-template-cell:not([data-column-name=type]):not([data-column-name=severity]) {
+    padding: 0 5px;
+}
+
+.tchmi-event-grid-template-filter-table-header tr {
+    border-bottom: 1px solid #ededed;
+}
+
+.tchmi-event-grid-template-filter-table-header th {
+    background: #4794da;
+    color: #ffffff;
+    border-right: 1px solid #ededed;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    font-weight: normal;
+}
+
+.tchmi-event-grid-template-filter-table td {
+    background: #ffffff;
+    color: #4c6374;
+    border-color: #EDEDED;
+}
+
+.tchmi-event-grid-template-filter-table-header .tchmi-event-grid-template-filter-selection-column, .tchmi-event-grid-template-filter-table .tchmi-event-grid-template-filter-selection-column {
+    border-right: none;
+}
+
+.tchmi-event-grid-template-filter-table .tchmi-event-grid-template-filter-indentation-column {
+    border-bottom: none;
+}
+
+.tchmi-event-grid-template-filter-table .tchmi-event-grid-template-filter-indentation-marker {
+    border-color: #4c6374;
+}
+
+.tchmi-event-grid-template td[data-column-name=alarmState] {
+    font-size: 0;
+}
+
+.tchmi-event-grid-template tr.raised td[data-column-name=alarmState] {
+    background-image: linear-gradient(to bottom right, #DF4B47, #DF4B47 50%, #D81623);
+}
+
+.tchmi-event-grid-template tr.confirmed td[data-column-name=alarmState] {
+    background-image: linear-gradient(to bottom right, #ECAA1A, #ECAA1A 50%, #EB941A);
+}
+
+.tchmi-event-grid-template tr.cleared td[data-column-name=alarmState] {
+    background-image: linear-gradient(to bottom right, #F1F218, #F1F218 50%, #EECE19);
+}
+
+.tchmi-event-grid-template tr.cleared-and-confirmed td[data-column-name=alarmState],
+.tchmi-event-grid-template tr.cleared.no-confirmation-needed td[data-column-name=alarmState] {
+    background-image: linear-gradient(to bottom right, #37AE3F, #37AE3F 50%, #2E963F);
+}
+
+/* Do not show focus overlay over alarm state cells, as that somewhat obscures the colors. */
+.tchmi-event-grid-template tr.raised td[data-column-name=alarmState]::before,
+.tchmi-event-grid-template tr.confirmed td[data-column-name=alarmState]::before,
+.tchmi-event-grid-template tr.cleared td[data-column-name=alarmState]::before,
+.tchmi-event-grid-template tr.cleared-and-confirmed td[data-column-name=alarmState]::before {
+    display: none;
+}

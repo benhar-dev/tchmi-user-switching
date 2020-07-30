@@ -1,0 +1,116 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "ColumnOptions": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "ColumnOptions",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "Column definition",
+        "description": "Defines one column.",
+        "engineeringColumns": [ "width", "widthUnit", "widthMode" ],
+        "propertiesMeta": [
+          {
+            "name": "width",
+            "category": "Layout",
+            "displayName": "Width",
+            "displayPriority": 10,
+            "description": "Defines width of the column in the grid. Can be a pixel value (42px), percent value (42%), a grow factor (1) or 'auto' (equivalent to grow factor 1).\nThe grow factor determines how much the items will grow relative to the rest of the items when positive free space is distributed.",
+            "defaultValue": null,
+            "defaultValueInternal": 1
+          },
+         {
+            "name": "widthUnit",
+            "refTo": "width",
+            "category": "Layout",
+            "displayName": "WidthUnit",
+            "displayPriority": 10,
+            "description": "Defines if the number defines a pixel value (px), percent value (42%) or grow factor (2).",
+            "defaultValue": null,
+            "defaultValueInternal": "factor"
+         },
+          {
+            "name": "widthMode",
+            "category": "Layout",
+            "displayName": "WidthMode",
+            "displayPriority": 30,
+            "description": "Defines if the width is taken from the width value or calculated from child controls in this Column.",
+            "defaultValue": null,
+            "defaultValueInternal": "Value"
+          },
+         {
+            "name": "maxWidth",
+            "category": "Layout",
+            "displayName": "MaxWidth",
+            "displayPriority": 60,
+            "description": "Defines maximal width of the column in the grid. Can be a pixel value (42px), percent value (42%).\nmax-width overrides width, but min-width overrides max-width.",
+            "defaultValueInternal": null
+         },
+         {
+            "name": "maxWidthUnit",
+            "refTo": "maxWidth",
+            "category": "Layout",
+            "displayName": "MaxWidthUnit",
+            "displayPriority": 60,
+            "description": "",
+            "defaultValueInternal": "px"
+         },
+         {
+            "name": "minWidth",
+            "category": "Layout",
+            "displayName": "MinWidth",
+            "displayPriority": 61,
+            "description": "Defines minimal width of the column in the grid. Can be a pixel value (42px), percent value (42%).\nmax-width overrides width, but min-width overrides max-width.",
+            "defaultValueInternal": null
+         },
+         {
+            "name": "minWidthUnit",
+            "refTo": "minWidth",
+            "category": "Layout",
+            "displayName": "MinWidthUnit",
+            "displayPriority": 61,
+            "description": "",
+            "defaultValueInternal": "px"
+         },
+          {
+            "name": "overflow",
+            "category": "Layout",
+            "displayName": "Overflow",
+            "displayPriority": 65,
+            "description": "Defines if a control should be fully visible if it is outside of this column.",
+            "defaultValue": null,
+            "defaultValueInternal": false
+          }
+        ],
+        "properties": {
+          "width": {
+            "$ref": "tchmi:framework#/definitions/MeasurementValue"
+          },
+          "widthUnit": {
+            "$ref": "tchmi:framework#/definitions/MeasurementUnitOrFactor"
+          },
+          "widthMode": {
+            "type": "string",
+            "enum": [ "Value", "Content" ]
+          },
+          "maxWidth": {
+            "$ref": "tchmi:framework#/definitions/MeasurementValue"
+          },
+          "maxWidthUnit": {
+            "$ref": "tchmi:framework#/definitions/MeasurementUnit"
+          },
+          "minWidth": {
+            "$ref": "tchmi:framework#/definitions/MeasurementValue"
+          },
+          "minWidthUnit": {
+            "$ref": "tchmi:framework#/definitions/MeasurementUnit"
+          },
+          "overflow": {
+            "$ref": "tchmi:general#/definitions/Boolean"
+          }
+        }
+      }
+    }
+  }
+}

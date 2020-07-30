@@ -1,0 +1,11 @@
+﻿/** Styles for the theme: Base */
+
+/* Style for the main element */
+.tchmi-line {
+    
+}
+
+.tchmi-line-template-svg-line {
+    stroke: rgba(0, 0, 0, 1);
+    stroke-width: 1px;
+}

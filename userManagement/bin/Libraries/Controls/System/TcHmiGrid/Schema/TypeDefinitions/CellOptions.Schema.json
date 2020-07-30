@@ -1,0 +1,194 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "CellOptions": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "title": "CellOptions",
+      "description": "Definition of cell options in the grid.",
+      "type": "array",
+      "items": {
+        "title": "Cell definition",
+        "description": "Definition of a cell.",
+        "type": "object",
+        "engineeringColumns": [ "columnIndex", "rowIndex" ],
+        "propertiesMeta": [
+         {
+            "name": "columnIndex",
+            "category": "Layout",
+            "displayName": "ColumnIndex",
+            "displayPriority": 10,
+            "description": "Column index of the defined cell.",
+            "defaultValueInternal": null
+         },
+         {
+            "name": "rowIndex",
+            "category": "Layout",
+            "displayName": "RowIndex",
+            "displayPriority": 10,
+            "description": "Row index of the defined cell.",
+            "defaultValueInternal": null
+         },
+         {
+            "name": "padding",
+            "category": "Layout",
+            "displayPriority": 60,
+            "displayName": "Padding",
+            "description": "Inner padding of the cell.",
+            "defaultValueInternal": null
+         },
+         {
+            "name": "backgroundColor",
+            "category": "Colors",
+            "displayPriority": 10,
+            "displayName": "BackgroundColor",
+            "description": "Definition of the background color which is used if no or a transparent Background image is set.",
+            "defaultValueInternal": null
+         },
+         {
+            "name": "borderColor",
+            "category": "Colors",
+            "displayPriority": 10,
+            "displayName": "BorderColor",
+            "description": "Definition of the border color.",
+            "defaultValueInternal": null
+         },
+         {
+            "name": "borderWidth",
+            "category": "Border",
+            "displayPriority": 10,
+            "displayName": "BorderWidth",
+            "description": "Definition of the border width.",
+            "defaultValueInternal": null
+         },
+         {
+            "name": "borderStyle",
+            "category": "Border",
+            "displayPriority": 10,
+            "displayName": "BorderStyle",
+            "description": "Definition of the border style.",
+            "defaultValueInternal": null
+         },
+         {
+            "name": "backgroundImage",
+            "category": "Background Image",
+            "displayPriority": 10,
+            "displayName": "BackgroundImage",
+            "description": "Definition of the border style.",
+            "defaultValueInternal": null
+         },
+         {
+            "name": "backgroundImageWidth",
+            "category": "Background Image",
+            "displayPriority": 20,
+            "displayName": "BackgroundImageWidth",
+            "description": "Width of the background image.",
+            "defaultValueInternal": null
+         },
+         {
+            "name": "backgroundImageWidthUnit",
+            "refTo": "backgroundImageWidth",
+            "category": "Background Image",
+            "displayPriority": 20,
+            "displayName": "BackgroundImageWidthUnit",
+            "description": "Width Unit of the background image.",
+            "defaultValue": null,
+            "defaultValueInternal": "px"
+         },
+         {
+            "name": "backgroundImageHeight",
+            "category": "Background Image",
+            "displayPriority": 20,
+            "displayName": "BackgroundImageHeight",
+            "description": "Height of the background image.",
+            "defaultValueInternal": null
+         },
+         {
+            "name": "backgroundImageHeightUnit",
+            "refTo": "backgroundImageHeight",
+            "category": "Background Image",
+            "displayPriority": 20,
+            "displayName": "BackgroundImageHeightUnit",
+            "description": "Height Unit of the background image.",
+            "defaultValue": null,
+            "defaultValueInternal": "px"
+         },
+          {
+            "name": "backgroundImageHorizontalAlignment",
+            "category": "Background Image",
+            "displayPriority": 30,
+            "displayName": "BackgroundImageHorizontalAligment",
+            "description": "Horizontal Aligment of the background image.",
+            "defaultValue": null,
+            "defaultValueInternal": "Center"
+          },
+          {
+            "name": "backgroundImageVerticalAlignment",
+            "category": "Background Image",
+            "displayPriority": 30,
+            "displayName": "BackgroundImageVerticalAligment",
+            "description": "Vertical Aligment of the background image.",
+            "defaultValue": null,
+            "defaultValueInternal": "Center"
+          },
+         {
+            "name": "backgroundImagePadding",
+            "category": "Background Image",
+            "displayPriority": 60,
+            "displayName": "BackgroundImagePadding",
+            "description": "Padding of the background image.",
+            "defaultValueInternal": null
+         }
+        ],
+        "properties": {
+          "columnIndex": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "rowIndex": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "padding": {
+            "$ref": "tchmi:framework#/definitions/Padding"
+          },
+          "backgroundColor": {
+            "$ref": "tchmi:framework#/definitions/SolidColor"
+          },
+          "borderColor": {
+            "$ref": "tchmi:framework#/definitions/SolidColor"
+          },
+          "borderWidth": {
+            "$ref": "tchmi:framework#/definitions/BorderWidth"
+          },
+          "borderStyle": {
+            "$ref": "tchmi:framework#/definitions/BorderStyle"
+          },
+          "backgroundImage": {
+            "$ref": "tchmi:framework#/definitions/Path"
+          },
+          "backgroundImageWidth": {
+            "$ref": "tchmi:framework#/definitions/MeasurementValue"
+          },
+          "backgroundImageWidthUnit": {
+            "$ref": "tchmi:framework#/definitions/MeasurementUnit"
+          },
+          "backgroundImageHeight": {
+            "$ref": "tchmi:framework#/definitions/MeasurementValue"
+          },
+          "backgroundImageHeightUnit": {
+            "$ref": "tchmi:framework#/definitions/MeasurementUnit"
+          },
+          "backgroundImageHorizontalAlignment": {
+            "$ref": "tchmi:framework#/definitions/HorizontalAlignment"
+          },
+          "backgroundImageVerticalAlignment": {
+            "$ref": "tchmi:framework#/definitions/VerticalAlignment"
+          },
+          "backgroundImagePadding": {
+            "$ref": "tchmi:framework#/definitions/Padding"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+﻿{
+   "$schema": "http://json-schema.org/draft-04/schema",
+   "definitions": {
+      "Padding": {
+         "type": "object",
+         "propertiesMeta": [
+            {
+               "name": "Left",
+               "category": "general",
+               "displayName": "Left",
+               "displayPriority": 10,
+               "description": "",
+               "defaultValue": null,
+               "defaultValueInternal": null
+            },
+            {
+               "name": "LeftUnit",
+               "category": "general",
+               "refTo": "Left",
+               "displayName": "LeftUnit",
+               "displayPriority": 10,
+               "description": "",
+               "defaultValue": null,
+               "defaultValueInternal": "px"
+            },
+            {
+               "name": "Top",
+               "category": "general",
+               "displayName": "Top",
+               "displayPriority": 10,
+               "description": "",
+               "defaultValue": null,
+               "defaultValueInternal": null
+            },
+            {
+               "name": "TopUnit",
+               "category": "general",
+               "refTo": "Top",
+               "displayName": "TopUnit",
+               "displayPriority": 10,
+               "description": "",
+               "defaultValue": null,
+               "defaultValueInternal": "px"
+            },
+            {
+               "name": "Right",
+               "category": "general",
+               "displayName": "Right",
+               "displayPriority": 10,
+               "description": "",
+               "defaultValue": null,
+               "defaultValueInternal": null
+            },
+            {
+               "name": "RightUnit",
+               "category": "general",
+               "refTo": "topRight",
+               "displayName": "topRightUnit",
+               "displayPriority": 10,
+               "description": "",
+               "defaultValue": null,
+               "defaultValueInternal": "px"
+            },
+            {
+               "name": "bottom",
+               "category": "general",
+               "displayName": "bottom",
+               "displayPriority": 10,
+               "description": "",
+               "defaultValue": null,
+               "defaultValueInternal": null
+            },
+            {
+               "name": "bottomUnit",
+               "category": "general",
+               "refTo": "bottom",
+               "displayName": "bottomUnit",
+               "displayPriority": 10,
+               "description": "",
+               "defaultValue": null,
+               "defaultValueInternal": "px"
+            }
+         ],
+         "properties": {
+            "left": { "$ref": "tchmi:framework#/definitions/PositiveNumber" },
+            "leftUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" },
+            "top": { "$ref": "tchmi:framework#/definitions/PositiveNumber" },
+            "topUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" },
+            "right": { "$ref": "tchmi:framework#/definitions/PositiveNumber" },
+            "rightUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" },
+            "bottom": { "$ref": "tchmi:framework#/definitions/PositiveNumber" },
+            "bottomUnit": { "$ref": "tchmi:framework#/definitions/MeasurementUnit" }
+         },
+         "required": [ "left", "top", "right", "bottom" ]
+      }
+   }
+}

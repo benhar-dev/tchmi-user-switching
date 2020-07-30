@@ -1,0 +1,19 @@
+﻿{
+   "$schema": "http://json-schema.org/draft-04/schema",
+   "definitions": {
+      "Color": {
+         "anyOf": [
+            {
+               "$ref": "tchmi:framework#/definitions/SolidColor"
+            },
+            {
+               "$ref": "tchmi:framework#/definitions/LinearGradientColor"
+            },
+            {
+               "type": "null"
+            }
+         ],
+         "default": null
+      }
+   }
+}
