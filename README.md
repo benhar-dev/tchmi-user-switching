@@ -19,7 +19,7 @@ Super simple worked example of swapping users.  This function block requies para
 
 ### Example of quick user switching.
 
-![Example](docs/gif/example.gif)
+![Example](docs/gif/Example.gif)
 
 ```javascript
 (function (TcHmi) {
